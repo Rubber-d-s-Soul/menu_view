@@ -1,0 +1,38 @@
+.title {
+    font-family: 'Spectral SC', serif;
+}
+
+
+/*navbar*/
+
+nav {
+    background-color: #fafafa;
+}
+
+nav .nav-wrapper {
+    padding: 0 10px 0 10px;
+}
+
+nav .brand-logo {
+    color: #f57c00;
+    padding: 0 0 0 10px;
+}
+
+nav ul a {
+    color: #f57c00;
+}
+
+
+/*breadcrumb*/
+
+.breadcrumb {
+    color: #f57c00;
+}
+
+.breadcrumb::before {
+    color: #f57c00;
+}
+
+.breadcrumb:last-child {
+    color: #f57c00;
+}
