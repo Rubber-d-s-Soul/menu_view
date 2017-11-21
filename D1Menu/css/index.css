@@ -2,6 +2,10 @@
     font-family: 'Spectral SC', serif;
 }
 
+.btn {
+    background-color: #ffa726;
+}
+
 
 /*navbar*/
 
@@ -35,4 +39,30 @@ nav ul a {
 
 .breadcrumb:last-child {
     color: #f57c00;
+}
+
+
+/*card title*/
+
+span.card-title.title.center-align {
+    margin-bottom: 30px;
+}
+
+
+/**/
+
+#menu_card {
+    margin-top: 40px;
+}
+
+
+/**/
+
+.block_panel {
+    Height: 150px;
+    width: 150px;
+}
+
+.block_panel.btn {
+    padding: 0px;
 }
