@@ -3,18 +3,35 @@ html {
 }
 
 
+/*共通*/
+
+.main-contents {
+    padding: 2em;
+}
+
+
 /*materialize overwrite*/
 
 .title {
-    font-family: 'Spectral SC', ''serif;
+    font-family: 'Spectral SC', serif;
 }
 
 .btn {
     background-color: #ffa726;
 }
 
+.btn:hover,
+.btn-large:hover {
+    background-color: #ffb74d;
+}
+
 .card .card-content p.msg {
     color: red;
+}
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+    color: #f57c00;
 }
 
 
@@ -74,11 +91,12 @@ span.card-title.title.center-align {
 }
 
 
-/**/
+/*メニュー*/
 
 .block_panel {
-    Height: 150px;
-    width: 150px;
+    Height: 250px;
+    width: 250px;
+    margin: 20px 0 20px 0;
 }
 
 .block_panel.btn {
@@ -99,7 +117,19 @@ span.card-title.title.center-align {
 }
 
 
-/*一時的*/
+/**/
+
+a.dropdown-trigger.btn {
+    padding: 0 1rem;
+}
+
+.dropdown-content li.disabled a {
+    cursor: default;
+    color: #999;
+}
+
+
+/*一時的 後で消す*/
 
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {

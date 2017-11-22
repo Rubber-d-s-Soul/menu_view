@@ -6,10 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>[改修]検索条件設定)</title>
+    <title>[改修]検索条件設定</title>
     <link rel="stylesheet" href="./css/materialize.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
 </head>
 
 <body>
@@ -35,14 +36,180 @@
             </div>
         </div>
     </nav>
-    <a href="skMNf02.html" class="btn right"><i class="material-icons">account_balance</i></a>
     <div class="row center-align">
-        <h1>改正対象条文リスト/改正対象確認リスト/PDF追録リスト</h1>
-        <h1>rsJIf05.html</h1>
-        <a href="rsJIf06.html" class="btn">検索</a>
         <div class="card">
             <div class="card-content">
-                <div class="card-title">目次未搭載一覧(rsJIf07.html)</div>
+                <div class="card-title">改正対象条文リスト/改正対象確認リスト/PDF追録リスト(rsJIf05.html)</div>
+                <div style="border:0px solid #353535;mergin:4px;" align="left">
+                    <table class="title_table">
+                        <tr align="center">
+                            <td align="left">
+                                <B>現在の追録発行情報</B>
+                            </td>
+                            <td align="right"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table class="a" width="35%">
+                        <col width="4%">
+                        <col width="8%">
+                        <col width="2%">
+                        <col width="21%">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>書名</td>
+                                <td>：</td>
+                                <td>足寄町例規集（01647A）</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>登録例規数</td>
+                                <td>：</td>
+                                <td>
+                                    662件
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+                <div style="border:0px solid #353535;mergin:4px;" align="left">
+                    <table class="title_table">
+                        <tr align="center">
+                            <td align="left">
+                                <b>改正抽出範囲</b>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table class="a" width="85%">
+                        <col width="5%">
+                        <col width="1%">
+                        <col width="4%">
+                        <col width="3%">
+                        <col width="2%">
+                        <col width="3%">
+                        <col width="2%">
+                        <col width="3%">
+                        <col width="8%">
+                        <col width="8%">
+                        <col width="5%">
+                        <col width="1%">
+                        <col width="4%">
+                        <col width="3%">
+                        <col width="2%">
+                        <col width="3%">
+                        <col width="2%">
+                        <col width="3%">
+                        <col width="8%">
+                        <tbody>
+                            <tr>
+                                <td colspan="10">【自】</td>
+                                <td colspan="9">【至】</td>
+                            </tr>
+                            <tr>
+                                <td>公布日</td>
+                                <td>：</td>
+                                <td>
+                                    <!-- 元号 -->
+                                    <select name="gango">
+                                        <option value="heisei" selected>平成</option>
+                                        <option value="syouwa">昭和</option>
+                                        <option value="taisyo">大正</option>
+                                        <option value="meiji">明治</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" name="gango_year" style="text-align:right" value="24" size="1" maxlength="2" />
+                                </td>
+                                <td>年</td>
+                                <td>
+                                    <input type="text" name="gango_month" style="text-align:right" value="4" size="1" maxlength="2" />
+                                </td>
+                                <td>月</td>
+                                <td>
+                                    <input type="text" name="gango_day" style="text-align:right" value="6" size="1" maxlength="2" />
+                                </td>
+                                <td>日</td>
+                                <td>～</td>
+                                <td>公布日</td>
+                                <td>：</td>
+                                <td>
+                                    <!-- 元号 -->
+                                    <select name="gango2">
+                                        <option value="heisei" selected>平成</option>
+                                        <option value="syouwa">昭和</option>
+                                        <option value="taisyo">大正</option>
+                                        <option value="meiji">明治</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" name="gango2_year" style="text-align:right" value="24" size="1" maxlength="2" />
+                                </td>
+                                <td>年</td>
+                                <td>
+                                    <input type="text" name="gango2_month" style="text-align:right" value="4" size="1" maxlength="2" />
+                                </td>
+                                <td>月</td>
+                                <td>
+                                    <input type="text" name="gango2_day" style="text-align:right" value="6" size="1" maxlength="2" />
+                                </td>
+                                <td>日</td>
+                            </tr>
+                            <tr>
+                                <td colspan="19" align="center">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>施行日</td>
+                                <td>：</td>
+                                <td>
+                                    <!-- 元号 -->
+                                    <select name="gango3">
+                                        <option value="heisei" selected>平成</option>
+                                        <option value="syouwa">昭和</option>
+                                        <option value="taisyo">大正</option>
+                                        <option value="meiji">明治</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" name="gango3_year" style="text-align:right" value="24" size="1" maxlength="2" />
+                                </td>
+                                <td>年</td>
+                                <td>
+                                    <input type="text" name="gango3_month" style="text-align:right" value="4" size="1" maxlength="2" />
+                                </td>
+                                <td>月</td>
+                                <td>
+                                    <input type="text" name="gango3_day" style="text-align:right" value="6" size="1" maxlength="2" />
+                                </td>
+                                <td>日</td>
+                            </tr>
+                            <tr>
+                                <td colspan="19" align="center">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" align="right">到来情報検索の扱い：</td>
+                                <td colspan="6">
+                                    <input type="radio" name="toraiKbn" />する
+                                    <input type="radio" name="toraiKbn" />しない
+                                </td>
+                                <td colspan="9">※公布日（自・至）、施行日（自・至）は必須</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a href="rsJIf06.html" class="btn">検索</a>
             </div>
         </div>
     </div>

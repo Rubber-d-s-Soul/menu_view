@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/materialize.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
 </head>
 
 <body>
@@ -33,26 +34,652 @@
             <div class="col s12">
                 <a href="skMNf01.html" class="breadcrumb">D1Menu</a>
                 <a href="skMNf02.html" class="breadcrumb">書名別行程メニュー</a>
-                <a href="#!" class="breadcrumb">Second</a>
-                <a href="#!" class="breadcrumb">Third</a>
+                <a href="rsJIf02s.html" class="breadcrumb">［追録セットアップ］出力対象一覧</a>
             </div>
         </div>
     </nav>
-    <a href="skMNf02.html" class="btn right"><i class="material-icons">account_balance</i></a>
-    <div class="row center-align">
-        <h1>［追録セットアップ］出力対象一覧</h1>
-        <h1>rsJIf02s.html</h1>
-        <a href="rsCOf01.html" class="btn">出力指示</a>
-        <a href="rsJIf07.html" class="btn">目次未登載一覧</a>
+    <div class="row center-align main-contents">
+
         <div class="card">
             <div class="card-content">
-                <div class="card-title">目次未搭載一覧(rsJIf07.html)</div>
+
+                <!-- Dropdown Trigger -->
+                <a class="dropdown-trigger btn right" data-target="dropdown1" data-constrainWidth=false><i class="material-icons">menu</i></a>
+
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content">
+                    <li class="disabled"><a>MENU</a></li>
+                    <li><a href="rsCOf01.html "><i class="material-icons left">print</i>出力指示</a></li>
+                    <li><a href="rsJIf07.html "><i class="material-icons left">clear_all</i>目次未登載一覧</a></li>
+                </ul>
+                <div class="card-title ">［追録セットアップ］出力対象一覧(rsJIf02s.html)</div>
+                <div style="border:0px solid #353535;height:12%;mergin:4px; " class="flowauto ">
+
+                    <table class="title_table ">
+                        <tr>
+                            <td><b>現在の追録発行情報</b></td>
+                        </tr>
+                    </table>
+                    <table class="bordered " width="90% ">
+                        <col span="1 " width="15% ">
+                        <col span="1 " width="1% ">
+                        <col span="1 " width="19% ">
+                        <col span="1 " width="5% ">
+                        <col span="1 " width="15% ">
+                        <col span="1 " width="1% ">
+                        <col span="1 " width="19% ">
+                        <tbody>
+                            <tr>
+                                <td class="none "><b>書名</b></td>
+                                <td class="none ">：</td>
+                                <td class="none ">足寄町例規集（01647A）</td>
+                            </tr>
+                            <tr>
+                                <td class="none "><b>追録号数</b></td>
+                                <td class="none ">：</td>
+                                <td class="none ">
+                                    1号
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="none "><b>内容現在日</b></td>
+                                <td class="none ">：</td>
+                                <td class="none ">
+                                    平成21年4月1日
+                                </td>
+                                <td class="none ">　</td>
+                                <td class="none "><b>施行状態日</b></td>
+                                <td class="none ">：</td>
+                                <td class="none ">
+                                    平成21年7月1日
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <a href="rsJIf14.html " onclick="notMstUpdSearch(); ">【警告】マスタ更新されていない例規が存在します。[45 例規]</a><br>
+
+                <table class="title_table bordered ">
+                    <col span="1 " width="68% ">
+                    <col span="1 " width="8% ">
+
+                    <col span="1 " width="16% ">
+                    <col span="1 " width="8% ">
+                    <tbody>
+                        <tr>
+                            <td><b>検索結果</b></td>
+                            <td></td>
+                            <td align="right ">被改正例規数：</td>
+                            <td>
+                                674件
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    <div id="link " style="float:left; "></div>
+                    <div id="page " style="float:right; "><span id="nowPage "></span> ／ <span id="allPage "></span></div>
+                </p>
+
+                <div style="border:2px solid #353535;height:76%;width:100%;mergin:4px; " class="flowauto ">
+                    <form name="form " action="/JitenListNext ">
+                        <div id="page1 ">
+
+
+                            <input type="hidden" name="pageNo" value="" />
+                            <input type="hidden" name="kouteiKbn" value="" />
+                            <input type="hidden" name="command" value="">
+                            <input type="hidden" name="outputWindowID" value="">
+
+                            <center>
+
+
+                                <table class="regular" width="100%">
+                                    <col span="1" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <th align="left">
+                                                第1類 通規<br> 　第1章 通則
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+
+
+
+                                <table class="striped bordered" border="1" width="100%">
+                                    <col span="1" width="4%">
+                                    <col span="1" width="26%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="15%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="15%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="5%">
+                                    <col span="1" width="3%">
+                                    <col span="1" width="10%">
+
+                                    <tbody>
+                                        <tr class="kisuu">
+                                            <td class="regular" align="center">
+                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                            </td>
+                                            <td class="regular" align="left">市町の廃置分合</td>
+                                            <td class="regular" align="center"></td>
+                                            <td class="regular" align="left">平成17年5月13日総務省告示第562号</td>
+                                            <td class="regular" align="center">平17.5.13</td>
+                                            <td class="regular" align="left">平成17年5月13日総務省告示第562号</td>
+                                            <td class="regular" align="center">平18.10.1</td>
+                                            <td class="regular" align="center">1-0</td>
+                                            <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                            <td class="regular" align="left">H417122300562</td>
+                                        </tr>
+                                        <tr class="guusuu">
+                                            <td class="regular" align="center">
+                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                            </td>
+                                            <td class="regular" align="left">青南市役所の位置に関する条例</td>
+                                            <td class="regular" align="center"></td>
+                                            <td class="regular" align="left">平成18年3月27日条例第1号</td>
+                                            <td class="regular" align="center">平18.3.27</td>
+                                            <td class="regular" align="left">平成18年3月27日条例第1号</td>
+                                            <td class="regular" align="center">平18.10.1</td>
+                                            <td class="regular" align="center">1-0</td>
+                                            <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                            <td class="regular" align="left">H418901010001</td>
+                                        </tr>
+                                        <tr class="kisuu">
+                                            <td class="regular" align="center">
+                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                            </td>
+                                            <td class="regular" align="left">青南市総合支所設置条例</td>
+                                            <td class="regular" align="center"></td>
+                                            <td class="regular" align="left">平成18年3月27日条例第2号</td>
+                                            <td class="regular" align="center">平18.3.27</td>
+                                            <td class="regular" align="left">平成18年3月27日条例第2号</td>
+                                            <td class="regular" align="center">平18.10.1</td>
+                                            <td class="regular" align="center">1-0</td>
+                                            <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                            <td class="regular" align="left">H418901010002</td>
+                                        </tr>
+                                        <tr class="guusuu">
+                                            <td class="regular" align="center">
+                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                            </td>
+                                            <td class="regular" align="left">青南市地域自治区の設置に関する条例</td>
+                                            <td class="regular" align="center"></td>
+                                            <td class="regular" align="left">平成18年3月27日条例第3号</td>
+                                            <td class="regular" align="center">平18.3.27</td>
+                                            <td class="regular" align="left">平成18年3月27日条例第3号</td>
+                                            <td class="regular" align="center">平18.10.1</td>
+                                            <td class="regular" align="center">1-0</td>
+                                            <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                            <td class="regular" align="left">H418901010003</td>
+                                        </tr>
+                                    </tbody>
+                                    <thead>
+                                        <tr>
+                                            <th align="center" rowspan="2">選択</th>
+                                            <th align="center" rowspan="2">例規名</th>
+                                            <th align="center" rowspan="2">区分</th>
+                                            <th align="center" rowspan="2">発令</th>
+                                            <th align="center" colspan="2">改正例規</th>
+                                            <th align="center" rowspan="2">施行日</th>
+                                            <th align="center" rowspan="2">世代</th>
+                                            <th align="center" rowspan="2">条</th>
+                                            <th rowspan="2">例規コード</th>
+                                        </tr>
+                                        <tr>
+                                            <th align="center">公布日</th>
+                                            <th align="center">発令</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <br><br>
+                                <table class="regular" width="100%">
+                                    <col span="1" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <th align="left">
+                                                第1類 通規<br> 　第2章 公告式
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <table class="regular" border="1" width="100%">
+                                    <col span="1" width="2%">
+                                    <col span="1" width="29%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="15%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="15%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="5%">
+                                    <col span="1" width="3%">
+                                    <col span="1" width="10%">
+
+                                    <tbody>
+                                        <tr class="kisuu">
+                                            <td class="regular" align="center">
+                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                            </td>
+                                            <td class="regular" align="left">青南市公告式条例</td>
+                                            <td class="regular" align="center"></td>
+                                            <td class="regular" align="left">平成18年3月27日条例第6号</td>
+                                            <td class="regular" align="center">平18.3.27</td>
+                                            <td class="regular" align="left">平成18年3月27日条例第6号</td>
+                                            <td class="regular" align="center">平18.10.1</td>
+                                            <td class="regular" align="center">1-0</td>
+                                            <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                            <td class="regular" align="left">H418901010006</td>
+                                        </tr>
+                                        <tr class="guusuu">
+                                            <td class="regular" align="center">
+                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                            </td>
+                                            <td class="regular" align="left">青南市告示規則</td>
+                                            <td class="regular" align="center"></td>
+                                            <td class="regular" align="left">平成18年3月27日規則第1号</td>
+                                            <td class="regular" align="center">平18.3.27</td>
+                                            <td class="regular" align="left">平成18年3月27日規則第1号</td>
+                                            <td class="regular" align="center">平18.10.1</td>
+                                            <td class="regular" align="center">1-0</td>
+                                            <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                            <td class="regular" align="left">H418902100001</td>
+                                        </tr>
+                                    </tbody>
+                                    <thead>
+                                        <tr>
+                                            <th align="center" rowspan="2">選択</th>
+                                            <th align="center" rowspan="2">例規名</th>
+                                            <th align="center" rowspan="2">区分</th>
+                                            <th align="center" rowspan="2">発令</th>
+                                            <th align="center" colspan="2">改正例規</th>
+                                            <th align="center" rowspan="2">施行日</th>
+                                            <th align="center" rowspan="2">世代</th>
+                                            <th align="center" rowspan="2">条</th>
+                                            <th rowspan="2">例規コード</th>
+                                        </tr>
+                                        <tr>
+                                            <th align="center">公布日</th>
+                                            <th align="center">発令</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <br><br>
+                                <table class="regular" width="100%">
+                                    <col span="1" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <th align="left">
+                                                第1類 通規<br> 　第3章 表彰
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <table class="regular" border="1" width="100%">
+                                    <col span="1" width="2%">
+                                    <col span="1" width="29%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="15%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="15%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="5%">
+                                    <col span="1" width="3%">
+                                    <col span="1" width="10%">
+
+                                    <tbody>
+                                        <tr class="kisuu">
+                                            <td class="regular" align="center">
+                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                            </td>
+                                            <td class="regular" align="left">青南市名誉市民条例</td>
+                                            <td class="regular" align="center"></td>
+                                            <td class="regular" align="left">平成19年9月1日条例第901号</td>
+                                            <td class="regular" align="center">平19.9.1</td>
+                                            <td class="regular" align="left">平成19年9月1日条例第901号</td>
+                                            <td class="regular" align="center">平19.9.1</td>
+                                            <td class="regular" align="center">1-0</td>
+                                            <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                            <td class="regular" align="left">H419901010901</td>
+                                        </tr>
+                                        <thead>
+                                            <tr>
+                                                <th align="center" rowspan="2">選択</th>
+                                                <th align="center" rowspan="2">例規名</th>
+                                                <th align="center" rowspan="2">区分</th>
+                                                <th align="center" rowspan="2">発令</th>
+                                                <th align="center" colspan="2">改正例規</th>
+                                                <th align="center" rowspan="2">施行日</th>
+                                                <th align="center" rowspan="2">世代</th>
+                                                <th align="center" rowspan="2">条</th>
+                                                <th rowspan="2">例規コード</th>
+                                            </tr>
+                                            <tr>
+                                                <th align="center">公布日</th>
+                                                <th align="center">発令</th>
+                                            </tr>
+                                        </thead>
+                                </table>
+
+                                <br><br>
+                                <table class="regular" width="100%">
+                                    <col span="1" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <th align="left">
+                                                第1類 通規<br> 　第3章 表彰
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <table class="regular" border="1" width="100%">
+                                    <col span="1" width="2%">
+                                    <col span="1" width="29%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="15%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="15%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="5%">
+                                    <col span="1" width="3%">
+                                    <col span="1" width="10%">
+
+                                    <tbody>
+                                        <tr class="kisuu">
+                                            <td class="regular" align="center">
+                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                            </td>
+                                            <td class="regular" align="left">青南市名誉市民条例</td>
+                                            <td class="regular" align="center"></td>
+                                            <td class="regular" align="left">平成19年9月1日条例第901号</td>
+                                            <td class="regular" align="center">平19.9.1</td>
+                                            <td class="regular" align="left">平成19年9月1日条例第901号</td>
+                                            <td class="regular" align="center">平19.9.1</td>
+                                            <td class="regular" align="center">1-0</td>
+                                            <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                            <td class="regular" align="left">H419901010901</td>
+                                        </tr>
+                                    </tbody>
+                                    <thead>
+                                        <tr>
+                                            <th align="center" rowspan="2">選択</th>
+                                            <th align="center" rowspan="2">例規名</th>
+                                            <th align="center" rowspan="2">区分</th>
+                                            <th align="center" rowspan="2">発令</th>
+                                            <th align="center" colspan="2">改正例規</th>
+                                            <th align="center" rowspan="2">施行日</th>
+                                            <th align="center" rowspan="2">世代</th>
+                                            <th align="center" rowspan="2">条</th>
+                                            <th rowspan="2">例規コード</th>
+                                        </tr>
+                                        <tr>
+                                            <th align="center">公布日</th>
+                                            <th align="center">発令</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+
+                                <br><br>
+                                <table class="regular" width="100%">
+                                    <col span="1" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <th align="left">
+                                                第1類 通規<br> 　第3章 表彰
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <table class="regular" border="1" width="100%">
+                                    <col span="1" width="2%">
+                                    <col span="1" width="29%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="15%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="15%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="5%">
+                                    <col span="1" width="3%">
+                                    <col span="1" width="10%">
+
+                                    <tbody>
+                                        <tr class="kisuu">
+                                            <td class="regular" align="center">
+                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                            </td>
+                                            <td class="regular" align="left">青南市名誉市民条例</td>
+                                            <td class="regular" align="center"></td>
+                                            <td class="regular" align="left">平成19年9月1日条例第901号</td>
+                                            <td class="regular" align="center">平19.9.1</td>
+                                            <td class="regular" align="left">平成19年9月1日条例第901号</td>
+                                            <td class="regular" align="center">平19.9.1</td>
+                                            <td class="regular" align="center">1-0</td>
+                                            <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                            <td class="regular" align="left">H419901010901</td>
+                                        </tr>
+                                    </tbody>
+                                    <thead>
+                                        <tr>
+                                            <th align="center" rowspan="2">選択</th>
+                                            <th align="center" rowspan="2">例規名</th>
+                                            <th align="center" rowspan="2">区分</th>
+                                            <th align="center" rowspan="2">発令</th>
+                                            <th align="center" colspan="2">改正例規</th>
+                                            <th align="center" rowspan="2">施行日</th>
+                                            <th align="center" rowspan="2">世代</th>
+                                            <th align="center" rowspan="2">条</th>
+                                            <th rowspan="2">例規コード</th>
+                                        </tr>
+                                        <tr>
+                                            <th align="center">公布日</th>
+                                            <th align="center">発令</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+
+                                <br><br>
+                                <table class="regular" width="100%">
+                                    <col span="1" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <th align="left">
+                                                第1類 通規<br> 　第3章 表彰
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <table class="regular" border="1" width="100%">
+                                    <col span="1" width="2%">
+                                    <col span="1" width="29%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="15%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="15%">
+                                    <col span="1" width="7%">
+                                    <col span="1" width="5%">
+                                    <col span="1" width="3%">
+                                    <col span="1" width="10%">
+
+                                    <tbody>
+                                        <tr class="kisuu">
+                                            <td class="regular" align="center">
+                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                            </td>
+                                            <td class="regular" align="left">青南市名誉市民条例</td>
+                                            <td class="regular" align="center"></td>
+                                            <td class="regular" align="left">平成19年9月1日条例第901号</td>
+                                            <td class="regular" align="center">平19.9.1</td>
+                                            <td class="regular" align="left">平成19年9月1日条例第901号</td>
+                                            <td class="regular" align="center">平19.9.1</td>
+                                            <td class="regular" align="center">1-0</td>
+                                            <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                            <td class="regular" align="left">H419901010901</td>
+                                        </tr>
+                                    </tbody>
+                                    <thead>
+                                        <tr>
+                                            <th align="center" rowspan="2">選択</th>
+                                            <th align="center" rowspan="2">例規名</th>
+                                            <th align="center" rowspan="2">区分</th>
+                                            <th align="center" rowspan="2">発令</th>
+                                            <th align="center" colspan="2">改正例規</th>
+                                            <th align="center" rowspan="2">施行日</th>
+                                            <th align="center" rowspan="2">世代</th>
+                                            <th align="center" rowspan="2">条</th>
+                                            <th rowspan="2">例規コード</th>
+                                        </tr>
+                                        <tr>
+                                            <th align="center">公布日</th>
+                                            <th align="center">発令</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <!--
+                                </logic:notEmpty>
+                                -->
+
+                                <!--
+                                <logic:empty name="oneDatas" property="listDetails">
+                                <table class="regular" border="1" width="100%">
+                                      <col span="1" width="2%">
+                                      <col span="1" width="20%">
+                                      <col span="1" width="7%">
+                                      <col span="1" width="10%">
+                                      <col span="1" width="6%">
+                                      <col span="1" width="10%">
+                                      <col span="1" width="6%">
+                                      <col span="1" width="5%">
+                                      <col span="1" width="3%">
+                                      <col span="1" width="10%">
+                                    <tbody>
+                                    </tbody>
+                                  <thead>
+                                    <tr>
+                                      <th align="center" rowspan="2">選択</th>
+                                      <th align="center" rowspan="2">例規名</th>
+                                      <th align="center" rowspan="2">区分</th>
+                                      <th align="center" rowspan="2">発令</th>
+                                      <th align="center" colspan="2">改正例規</th>
+                                      <th align="center" rowspan="2">施行日</th>
+                                      <th align="center" rowspan="2">世代</th>
+                                      <th align="center" rowspan="2">条</th>
+                                      <th rowspan="2">例規コード</th>
+                                    </tr>
+                                    <tr>
+                                      <th align="center">公布日</th>
+                                      <th align="center">発令</th>
+                                    </tr>
+                                  </thead>
+                                </table>
+                                <div align="left">＊指定された検索条件に該当する例規はありません。</div>
+                                </logic:empty>
+                                -->
+
+                                <br>
+                                <br>
+                                <!--
+                                </logic:iterate>
+                                -->
+                            </center>
+
+                        </div>
+                        <div id="page2">
+                            <input type="hidden" name="<eagle_rs:winIDKey/>" value="<eagle_rs:winID/>">
+                            <!--
+                                <html:hidden name="eagle.rsji.f02s.attr.name.display.data" property="pageNo"/>
+                                <html:hidden name="eagle.rsji.f02s.attr.name.display.data" property="kouteiKbn"/>
+                                -->
+
+                            <input type="hidden" name="pageNo" value="" />
+                            <input type="hidden" name="kouteiKbn" value="" />
+                            <input type="hidden" name="command" value="">
+                            <input type="hidden" name="outputWindowID" value="">
+
+                            <center>
+
+                                <!--コメント-->
+                                <!--
+                                <logic:iterate id="oneDatas" name="eagle.rsji.f02s.attr.name.result.datas" scope="request">
+                                -->
+
+                                <table class="regular" width="100%">
+                                    <col span="1" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <th align="left">
+                                                <!--
+                                      <eagle_rs:iterate id="oneTaikei" name="oneDatas" property="taikeis" scope="page" counterID="CNT" start="1">
+                                      <bean:write name="oneTaikei"/><br>
+                                      </eagle_rs:iterate>
+                                      -->
+                                                第2類 通規<br> 　第1章 通則
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <br>
+                                <br>
+                            </center>
+                        </div>
+                        <div id="page3">
+                            <input type="hidden" name="<eagle_rs:winIDKey/>" value="<eagle_rs:winID/>">
+                            <!--
+                                <html:hidden name="eagle.rsji.f02s.attr.name.display.data" property="pageNo"/>
+                                <html:hidden name="eagle.rsji.f02s.attr.name.display.data" property="kouteiKbn"/>
+                                -->
+
+                            <input type="hidden" name="pageNo" value="" />
+                            <input type="hidden" name="kouteiKbn" value="" />
+                            <input type="hidden" name="command" value="">
+                            <input type="hidden" name="outputWindowID" value="">
+
+                            <center>
+
+                                <!--コメント-->
+                                <!--
+                                <logic:iterate id="oneDatas" name="eagle.rsji.f02s.attr.name.result.datas" scope="request">
+                                -->
+
+                                <table class="regular" width="100%">
+                                    <col span="1" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <th align="left">
+                                                <!--
+                                      <eagle_rs:iterate id="oneTaikei" name="oneDatas" property="taikeis" scope="page" counterID="CNT" start="1">
+                                      <bean:write name="oneTaikei"/><br>
+                                      </eagle_rs:iterate>
+                                      -->
+                                                第3類 通規<br> 　第1章 通則
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <br>
+                                <br>
+                            </center>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-
 </body>
-<script language="JavaScript" src="./js/jquery-3.2.1.min.js"></script>
+<script language="JavaScript" src="./js/jquery.js"></script>
 <script language="JavaScript" src="./js/materialize.js"></script>
+<script language="JavaScript" src="./js/common.js"></script>
+
 
 </html>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/materialize.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
 </head>
 
 <body>
@@ -34,14 +35,24 @@
             </div>
         </div>
     </nav>
-    <div class="row center-align ">
-        <a href="rsJIf01s.html " class="btn ">画面切替（目次順）</a>
-        <a href="rsCOf01.html " class="btn ">出力指示</a>
-        <a href="rsJIf08.html " class="btn ">選択確認一覧</a>
-        <a href="rsJIf07.html " class="btn ">目次未登載一覧</a>
+    <div class="row center-align main-contents">
+
         <!-- 現在の追録発行情報 -->
         <div class="card col s12">
-            <div class="card-content ">
+            <div class="card-content">
+                <!-- Dropdown Trigger -->
+                <a class="dropdown-trigger btn right" data-target="dropdown1" data-constrainWidth=false><i class="material-icons">menu</i></a>
+
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content">
+                    <li class="disabled"><a>MENU</a></li>
+                    <li><a href="rsJIf01s.html " class="btn "><i class="material-icons right">sort</i>画面切替（目次順）</a></li>
+                    <li><a href="rsCOf01.html " class="btn "><i class="material-icons right">print</i>出力指示</a></li>
+                    <li><a href="rsJIf08.html " class="btn "><i class="material-icons right">playlist_add_check</i>選択確認一覧</a></li>
+                    <li><a href="rsJIf07.html " class="btn "><i class="material-icons right">clear_all</i>目次未登載一覧</a></li>
+                </ul>
+
+
                 <span class="card-title title">追録用世代一覧表(rsJIf01s.html)</span>
                 <div class="table_Section">
                     <table class="title_table">
@@ -597,5 +608,6 @@
 </body>
 <script language="JavaScript " src="./js/jquery-3.2.1.min.js "></script>
 <script language="JavaScript " src="./js/materialize.js "></script>
+<script language="JavaScript " src="./js/common.js "></script>
 
 </html>

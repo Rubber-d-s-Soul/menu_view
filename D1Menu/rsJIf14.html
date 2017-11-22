@@ -1,0 +1,284 @@
+<!-- ［確認用］選択済み一覧（公布日順） 画面-->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[改修]マスタ未更新例規一覧</title>
+    <link rel="stylesheet" href="./css/materialize.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">D1Menu</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="col s12">
+                <a href="skMNf01.html" class="breadcrumb">D1Menu</a>
+                <a href="skMNf02.html" class="breadcrumb">書名別行程メニュー</a>
+                <a href="rsJIf01s.html " class="breadcrumb">追録用世代一覧表</a>
+                <a href="rsJIf14.html " class="breadcrumb">マスタ未更新例規一覧</a>
+            </div>
+        </div>
+    </nav>
+    <div class="row center-align">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-title">［確認用］マスタ未更新例規一覧(rsJIf14.html)</div>
+
+
+                    <div style="border:2px solid #353535;height:76%;width:100%;mergin:4px;" class="flowauto">
+                        <form name="form" action="/JitenListNext">
+                            <div id="page1">
+                                <input type="hidden" name="<eagle_rs:winIDKey/>" value="<eagle_rs:winID/>">
+                                <!--
+                                <html:hidden name="eagle.rsji.f02s.attr.name.display.data" property="pageNo"/>
+                                <html:hidden name="eagle.rsji.f02s.attr.name.display.data" property="kouteiKbn"/>
+                                -->
+
+                                <input type="hidden" name="pageNo" value="" />
+                                <input type="hidden" name="kouteiKbn" value="" />
+                                <input type="hidden" name="command" value="">
+                                <input type="hidden" name="outputWindowID" value="">
+
+                                <center>
+
+                                    <!--コメント-->
+                                    <!--
+                                <logic:iterate id="oneDatas" name="eagle.rsji.f02s.attr.name.result.datas" scope="request">
+                                -->
+
+                                    <table class="bordered" width="100%">
+                                        <col span="1" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <th align="left">
+                                                    <!--
+                                      <eagle_rs:iterate id="oneTaikei" name="oneDatas" property="taikeis" scope="page" counterID="CNT" start="1">
+                                      <bean:write name="oneTaikei"/><br>
+                                      </eagle_rs:iterate>
+                                      -->
+                                                    第1類 通規<br> 　第1章 通則
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                    <!--
+                                <logic:notEmpty name="oneDatas" property="listDetails">
+                                -->
+
+                                    <table class="bordered striped" border="1" width="100%">
+                                        <col span="1" width="29%">
+                                        <col span="1" width="7%">
+                                        <col span="1" width="15%">
+                                        <col span="1" width="7%">
+                                        <col span="1" width="15%">
+                                        <col span="1" width="7%">
+                                        <col span="1" width="5%">
+                                        <col span="1" width="3%">
+                                        <col span="1" width="10%">
+
+                                        <tbody>
+                                            <tr class="kisuu">
+                                                <td class="regular" align="left">青南市職員の初任給、昇格、昇給等の基準等に関する規則</td>
+                                                <td class="regular" align="center">
+                                                    <font color="#ff0000">有効</font>
+                                                </td>
+                                                <td class="regular" align="left">平成19年規則第51号</td>
+                                                <td class="regular" align="center">平19.3.27</td>
+                                                <td class="regular" align="left">平成19年規則第51号</td>
+                                                <td class="regular" align="center">平19.3.27</td>
+                                                <td class="regular" align="center">1-0</td>
+                                                <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                                <td class="regular" align="left">H419902100051</td>
+                                            </tr>
+                                        </tbody>
+                                        <thead>
+                                            <tr>
+                                                <th align="center" rowspan="2">例規名</th>
+                                                <th align="center" rowspan="2">区分</th>
+                                                <th align="center" rowspan="2">発令</th>
+                                                <th align="center" colspan="2">改正例規</th>
+                                                <th align="center" rowspan="2">施行日</th>
+                                                <th align="center" rowspan="2">世代</th>
+                                                <th align="center" rowspan="2">条</th>
+                                                <th rowspan="2">例規コード</th>
+                                            </tr>
+                                            <tr>
+                                                <th align="center">公布日</th>
+                                                <th align="center">発令</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+
+                                    <table class="bordered" width="100%">
+                                        <col span="1" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <th align="left">
+                                                    第1類 通規<br> 　第2章 公告式
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="bordered striped" border="1" width="100%">
+                                        <col span="1" width="20%">
+                                        <col span="1" width="7%">
+                                        <col span="1" width="10%">
+                                        <col span="1" width="6%">
+                                        <col span="1" width="10%">
+                                        <col span="1" width="6%">
+                                        <col span="1" width="5%">
+                                        <col span="1" width="3%">
+                                        <col span="1" width="10%">
+                                        <tbody>
+                                            <tr class="kisuu">
+                                                <td class="regular" align="left">青南市職員公告式条例</td>
+                                                <td class="regular" align="center">
+                                                    <font color="#ff0000">一部有効</font>
+                                                </td>
+                                                <td class="regular" align="left">平成19年規則第51号</td>
+                                                <td class="regular" align="center">平19.3.27</td>
+                                                <td class="regular" align="left">平成19年規則第51号</td>
+                                                <td class="regular" align="center">平19.3.27</td>
+                                                <td class="regular" align="center">1-0</td>
+                                                <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                                <td class="regular" align="left">H419902100051</td>
+                                            </tr>
+                                        </tbody>
+                                        <thead>
+                                            <tr>
+                                                <th align="center" rowspan="2">例規名</th>
+                                                <th align="center" rowspan="2">区分</th>
+                                                <th align="center" rowspan="2">発令</th>
+                                                <th align="center" colspan="2">改正例規</th>
+                                                <th align="center" rowspan="2">施行日</th>
+                                                <th align="center" rowspan="2">世代</th>
+                                                <th align="center" rowspan="2">条</th>
+                                                <th rowspan="2">例規コード</th>
+                                            </tr>
+                                            <tr>
+                                                <th align="center">公布日</th>
+                                                <th align="center">発令</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+
+                                    <table class="bordered" width="100%">
+                                        <col span="1" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <th align="left">
+                                                    第2類 議会、選挙及び監査<br> 　第1章 議会
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="bordered striped" border="1" width="100%">
+                                        <col span="1" width="20%">
+                                        <col span="1" width="7%">
+                                        <col span="1" width="10%">
+                                        <col span="1" width="6%">
+                                        <col span="1" width="10%">
+                                        <col span="1" width="6%">
+                                        <col span="1" width="5%">
+                                        <col span="1" width="3%">
+                                        <col span="1" width="10%">
+                                        <tbody>
+                                            <tr class="kisuu">
+                                                <td class="regular" align="left">青南市議会定例会規則</td>
+                                                <td class="regular" align="center">
+                                                    <font color="#ff0000"></font>
+                                                </td>
+                                                <td class="regular" align="left" rowspan="2">平成19年規則第51号</td>
+                                                <td class="regular" align="center" rowspan="2">平19.3.27</td>
+                                                <td class="regular" align="left" rowspan="2">平成19年規則第51号</td>
+                                                <td class="regular" align="center">平19.3.27</td>
+                                                <td class="regular" align="center">2-0</td>
+                                                <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                                <td class="regular" align="left" rowspan="2">H419902100051</td>
+                                            </tr>
+                                            <tr class="kisuu">
+                                                <td class="regular" align="left">青南市議会定例会規則</td>
+                                                <td class="regular" align="center">
+                                                    <font color="#ff0000"></font>
+                                                </td>
+                                                <td class="regular" align="center">平20.3.27</td>
+                                                <td class="regular" align="center">2-1</td>
+                                                <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                            </tr>
+
+                                            <tr class="guusuu">
+                                                <td class="regular" align="left">青南市議会事務局設置条例</td>
+                                                <td class="regular" align="center">
+                                                    <font color="#ff0000"></font>
+                                                </td>
+                                                <td class="regular" align="left" rowspan="2">平成19年規則第51号</td>
+                                                <td class="regular" align="center" rowspan="2">平19.3.27</td>
+                                                <td class="regular" align="left" rowspan="2">平成19年規則第51号</td>
+                                                <td class="regular" align="center">平19.3.27</td>
+                                                <td class="regular" align="center">2-0</td>
+                                                <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                                <td class="regular" align="left" rowspan="2">H419902100051</td>
+                                            </tr>
+                                            <tr class="guusuu">
+                                                <td class="regular" align="left">青南市議会事務局設置条例</td>
+                                                <td class="regular" align="center">
+                                                    <font color="#ff0000">一部有効</font>
+                                                </td>
+                                                <td class="regular" align="center">平20.3.27</td>
+                                                <td class="regular" align="center">2-1</td>
+                                                <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( 'houcd', 'jyoulinkUrl', 'tsiJctCd', 'dispSedOya', 'dispSedEda' );">条</a></td>
+                                            </tr>
+                                        </tbody>
+                                        <thead>
+                                            <tr>
+                                                <th align="center" rowspan="2">例規名</th>
+                                                <th align="center" rowspan="2">区分</th>
+                                                <th align="center" rowspan="2">発令</th>
+                                                <th align="center" colspan="2">改正例規</th>
+                                                <th align="center" rowspan="2">施行日</th>
+                                                <th align="center" rowspan="2">世代</th>
+                                                <th align="center" rowspan="2">条</th>
+                                                <th rowspan="2">例規コード</th>
+                                            </tr>
+                                            <tr>
+                                                <th align="center">公布日</th>
+                                                <th align="center">発令</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+
+                                </center>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script language="JavaScript" src="./js/jquery-3.2.1.min.js"></script>
+<script language="JavaScript" src="./js/materialize.js"></script>
+
+</html>

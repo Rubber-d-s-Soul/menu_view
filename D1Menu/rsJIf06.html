@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/materialize.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
 </head>
 
 <body>
@@ -35,17 +36,724 @@
             </div>
         </div>
     </nav>
-    <a href="skMNf02.html" class="btn right"><i class="material-icons">account_balance</i></a>
     <div class="row center-align">
-        <h1>改正確認一覧</h1>
-        <h1>rsJIf06.html</h1>
-        <a href="rsCOf01.html" class="btn">出力指示</a>
-        <a href="rsJIf06.html" class="btn">画面切替（目次順）</a>
-        <a href="rsJIf08.html" class="btn">選択確認一覧</a>
-        <a href="rsJIf07.html" class="btn">目次未登載一覧</a>
+        <a href="rsJIf01s.html " class="btn "><i class="material-icons left">sort</i>画面切替（目次順）</a>
+        <a href="rsCOf01.html " class="btn "><i class="material-icons left">print</i>出力指示</a>
+        <a href="rsJIf08.html " class="btn "><i class="material-icons left">playlist_add_check</i>選択確認一覧</a>
+        <a href="rsJIf07.html " class="btn "><i class="material-icons left">clear_all</i>目次未登載一覧</a>
         <div class="card">
             <div class="card-content">
-                <div class="card-title">目次未搭載一覧(rsJIf07.html)</div>
+                <div class="card-title">改正確認一覧(rsJIf06.html)</div>
+                <div style="border:0px solid #353535;height:15%;mergin:4px;" class="flowauto">
+                    <table class="title_table">
+                        <tr>
+                            <td>
+                                <B>現在の追録発行情報</B>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="regular" width="80%" border="0">
+                        <col span="1" width="4%">
+                        <col span="1" width="1%">
+                        <col span="1" width="8%">
+                        <col span="1" width="2%">
+                        <col span="1" width="3%">
+                        <col span="1" width="1%">
+                        <col span="1" width="30%">
+                        <tbody>
+                            <tr>
+                                <td class="none"><b>書名</b></td>
+                                <td class="none">：</td>
+                                <td class="none" colspan="5">足寄町例規集（01647A）</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">【自】</td>
+                                <td colspan="3">【至】</td>
+                            </tr>
+                            <tr>
+                                <td class="none">公布日</td>
+                                <td class="none">：</td>
+                                <td class="none">　平成24年4月6日</td>
+                                <td class="none" align="center">～</td>
+                                <td class="none">公布日</td>
+                                <td class="none">：</td>
+                                <td class="none">　平成24年12月12日</td>
+                            </tr>
+                            <tr>
+                                <td class="none">施行日</td>
+                                <td class="none">：</td>
+                                <td class="none">　平成25年2月18日</td>
+                                <td class="none" align="center">～</td>
+                                <td class="none">施行日</td>
+                                <td class="none">：</td>
+                                <td class="none">
+                                    平成26年2月18日
+                                    <!-- tuikaMode=2のではない場合 -->
+                                    <!--
+                                        <logic:notEqual name="eagle.rsji.f01s.attr.name.display.data" property="tuikaMode" value="2">
+                                          　（前回追録施行日：<eagle_rs:wareki format="Gy年m月d日" name="eagle.rsji.f01s.attr.name.display.data" property="zenkaiShikouYmd4Disp" collection="eagle.rsji.f01s.attr.name.display.data" collection_property="gengous"/>まで含む）
+                                        </logic:notEqual>
+                                        -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="none" colspan="3" align="right">到来情報検索の扱い</td>
+                                <td class="none" colspan="4">：する</td>
+                                <!--
+                                    <logic:equal name="eagle.rsji.f06.attr.name.display.data" property="toraiKbn" value="true">
+                                        <td class="none" colspan = "4">：する</td>
+                                    </logic:equal>
+                                    <logic:notEqual name="eagle.rsji.f06.attr.name.display.data" property="toraiKbn" value="true">
+                                        <td class="none" colspan = "4">：しない</td>
+                                    </logic:notEqual>
+                                    -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><br>
+                <a href="rsJIf14.html">【警告】マスタ更新されていない例規が存在します。[48 例規]</a><br>
+                <!-- notMstUpdCount=0のではない場合 -->
+                <!--
+                        <logic:notEqual name="eagle.rsji.f01s.attr.name.display.data" property="notMstUpdCount" value="0">
+                          <a href="javascript:void(0);" onclick="notMstUpdSearch();">【警告】マスタ更新されていない例規が存在します。[<bean:write name="eagle.rsji.f01s.attr.name.display.data" property="notMstUpdCount"/> 例規]</a><br>
+                        </logic:notEqual>
+                        -->
+
+                <!-- tsuirokuFuyouCount=0のではない場合 -->
+                <!--
+                        <logic:notEqual name="eagle.rsji.f01s.attr.name.display.data" property="tsuirokuFuyouCount" value="0">
+                          <a href="javascript:void(0);" onclick="showFuyouHou();">【案内】追録不要例規が存在します。[<bean:write name="eagle.rsji.f01s.attr.name.display.data" property="tsuirokuFuyouCount"/> 例規]</a><br>
+                        </logic:notEqual>
+                        -->
+
+                <table class="title_table">
+                    <col span="1" width="68%">
+                    <col span="1" width="8%">
+
+                    <col span="1" width="16%">
+                    <col span="1" width="8%">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <B>検索結果</B>
+                            </td>
+                            <td></td>
+                            <td align="right">被改正例規数：</td>
+                            <td>65件</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- ページャ?
+                        <eagle_rs:page current="eagle.rsji.f01s.attr.name.current.page" total="eagle.rsji.f01s.attr.name.total.page" scriptFunc="paging"/>
+                        -->
+
+                <div style="display:table;border-collapse:collapse;border:2px solid #353535;height:76%;width:100%;mergin:4px;" class="flowauto">
+                    <form action="/TuirokuListNext">
+                        <input type="hidden" name="<eagle_rs:winIDKey/>" value="<eagle_rs:winID/>">
+                        <!--
+                        <input type="hidden"  name="eagle.rsji.f01s.attr.name.display.data" property="pageNo"/>
+                        -->
+                        <input type="hidden" name="command" value="">
+                        <input type="hidden" name="outputWindowID" value="">
+                        <center>
+                            <table class="regular" width="100%">
+
+                                <tbody>
+                                    <tr>
+                                        <th align="left">
+                                            <!--
+                                  <eagle_rs:iterate id="oneTaikei" name="oneDatas" roperty="taikeis" scope="page" counterID="CNT" start="1">
+                                  <bean:write name="oneTaikei"/><br>
+                                  </eagle_rs:iterate>
+                                  -->
+                                            公布日順
+                                        </TH>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+
+                            <!-- リストがある時 -->
+                            <table class="striped bordered" border="1" width="100%">
+                                <col span="1" width="3%">
+                                <col span="1" width="19%">
+                                <col span="1" width="5%">
+                                <col span="1" width="10%">
+                                <col span="1" width="5%">
+                                <col span="1" width="10%">
+                                <col span="1" width="5%">
+                                <col span="1" width="4%">
+                                <col span="1" width="2%">
+                                <col span="1" width="10%">
+                                <!-- dispOrder=1(公布日順)の場合 -->
+                                <col span="1" width="10%">
+
+                                <tbody>
+                                    <!-- 1 -->
+                                    <!-- 表示上で奇数のスタイルシートを適応 -->
+                                    <tr>
+                                        <td class="regular" align="center">
+                                            <input type="checkbox" name="checkedList" />
+                                        </td>
+                                        <td class="regular" align="left">足寄町国民健康保険病院看護師就業支援金賃与条例</td>
+                                        <td class="regular" align="center">
+                                            <font color="#ff0000">失効</font>
+                                            <!--
+                                            <logic:notEmpty name="oneMessage" property="zenkaiHouCd">
+                                              <br/>
+                                              <bean:write name="oneMessage" property="zenkaiHouCd"/>
+                                            </logic:notEmpty>
+                                            <logic:equal name="oneMessage" property="tsuirokuFuyou" value="true">
+                                              <br/>
+                                              <font color="#0000ff">追録不要</font>
+                                            </logic:equal>
+                                          -->
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年12月11日条例第35号
+                                        </td>
+
+                                        <td class="regular" align="center" rowspan="1">
+                                            平21.12.11
+                                        </td>
+
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年12月11日条例第35号
+                                        </td>
+
+                                        <td class="regular" align="center">
+                                            平25.4.1
+                                        </td>
+                                        <td class="regular" align="center">
+                                            1-2
+                                        </td>
+                                        <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '法令CD', '条例リンクURL', 'tsiJctCd', 'dispSedOya'/>', 'dispSedEda'/>' );">条</a></td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            H421901010035
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            <font color="#ff0000">廃止（目次未掲載）</font>
+                                            <!-- 通常時
+                                          <logic:notEqual name="oneMessage" property="miTosai" value="true">
+                                            <bean:write name="oneMessage" property="mkjTaikeiStr"/>
+                                          </logic:notEqual>
+                                          -->
+                                        </td>
+                                    </tr>
+
+                                    <!-- 2 -->
+                                    <tr class="guusuu">
+                                        <td class="regular" align="center">
+                                            <input type="checkbox" name="checkedList" />
+                                        </td>
+                                        <td class="regular" align="left">足寄町国民健康保険病院看護師就業支援金賃与条例施行規則</td>
+                                        <td class="regular" align="center">
+                                            <font color="#ff0000">失効</font>
+                                            <!--
+                                            <logic:notEmpty name="oneMessage" property="zenkaiHouCd">
+                                              <br/>
+                                              <bean:write name="oneMessage" property="zenkaiHouCd"/>
+                                            </logic:notEmpty>
+                                            <logic:equal name="oneMessage" property="tsuirokuFuyou" value="true">
+                                              <br/>
+                                              <font color="#0000ff">追録不要</font>
+                                            </logic:equal>
+                                          -->
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年12月11日規則第23号
+                                        </td>
+
+                                        <td class="regular" align="center" rowspan="1">
+                                            平21.12.11
+                                        </td>
+
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年12月11日規則第23号
+                                        </td>
+
+                                        <td class="regular" align="center">
+                                            平25.4.1
+                                        </td>
+                                        <td class="regular" align="center">
+                                            1-2
+                                        </td>
+                                        <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '法令CD', '条例リンクURL', 'tsiJctCd', 'dispSedOya'/>', 'dispSedEda'/>' );">条</a></td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            H421901010023
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            <font color="#ff0000">廃止（目次未掲載）</font>
+                                            <!-- 通常時
+                                          <logic:notEqual name="oneMessage" property="miTosai" value="true">
+                                            <bean:write name="oneMessage" property="mkjTaikeiStr"/>
+                                          </logic:notEqual>
+                                          -->
+                                        </td>
+                                    </tr>
+
+                                    <!-- 3 -->
+                                    <!-- 表示上で奇数のスタイルシートを適応 -->
+                                    <tr class="kisuu">
+                                        <td class="regular" align="center">
+                                            <input type="checkbox" name="checkedList" />
+                                        </td>
+                                        <td class="regular" align="left">足寄町住民生活に光をそそぐ基金条例</td>
+                                        <td class="regular" align="center">
+                                            <font color="#ff0000">失効</font>
+                                            <!--
+                                            <logic:notEmpty name="oneMessage" property="zenkaiHouCd">
+                                              <br/>
+                                              <bean:write name="oneMessage" property="zenkaiHouCd"/>
+                                            </logic:notEmpty>
+                                            <logic:equal name="oneMessage" property="tsuirokuFuyou" value="true">
+                                              <br/>
+                                              <font color="#0000ff">追録不要</font>
+                                            </logic:equal>
+                                          -->
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成23年3月28日条例第7号
+                                        </td>
+
+                                        <td class="regular" align="center" rowspan="1">
+                                            平23.3.28
+                                        </td>
+
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成23年3月28日条例第7号
+                                        </td>
+
+                                        <td class="regular" align="center">
+                                            平25.4.1
+                                        </td>
+                                        <td class="regular" align="center">
+                                            1-1
+                                        </td>
+                                        <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '法令CD', '条例リンクURL', 'tsiJctCd', 'dispSedOya'/>', 'dispSedEda'/>' );">条</a></td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            H423901010007
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            <font color="#ff0000">廃止（目次未掲載）</font>
+                                            <!-- 通常時
+                                          <logic:notEqual name="oneMessage" property="miTosai" value="true">
+                                            <bean:write name="oneMessage" property="mkjTaikeiStr"/>
+                                          </logic:notEqual>
+                                          -->
+                                        </td>
+                                    </tr>
+
+                                    <!-- 4 -->
+                                    <tr class="guusuu">
+                                        <td class="regular" align="center">
+                                            <input type="checkbox" name="checkedList" />
+                                        </td>
+                                        <td class="regular" align="left">乳幼児及び児童医療費助成に関する条例</td>
+                                        <td class="regular" align="center">
+                                            <font color="#ff0000">題名改正</font>
+                                            <!--
+                                            <logic:notEmpty name="oneMessage" property="zenkaiHouCd">
+                                              <br/>
+                                              <bean:write name="oneMessage" property="zenkaiHouCd"/>
+                                            </logic:notEmpty>
+                                            <logic:equal name="oneMessage" property="tsuirokuFuyou" value="true">
+                                              <br/>
+                                              <font color="#0000ff">追録不要</font>
+                                            </logic:equal>
+                                          -->
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            昭和48年3月20日条例第21号
+                                        </td>
+
+                                        <td class="regular" align="center" rowspan="1">
+                                            平24.3.23
+                                        </td>
+
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成24年3月23日条例第8号
+                                        </td>
+
+                                        <td class="regular" align="center">
+                                            平24.8.1
+                                        </td>
+                                        <td class="regular" align="center">
+                                            5-1
+                                        </td>
+                                        <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '法令CD', '条例リンクURL', 'tsiJctCd', 'dispSedOya'/>', 'dispSedEda'/>' );">条</a></td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            H348901010021
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            第8類 厚生 第一章 社会福祉
+                                        </td>
+                                    </tr>
+
+                                    <!-- 5 -->
+                                    <!-- 表示上で奇数のスタイルシートを適応 -->
+                                    <tr class="kisuu">
+                                        <td class="regular" align="center">
+                                            <input type="checkbox" name="checkedList" />
+                                        </td>
+                                        <td class="regular" align="left">足寄町森林整備地域活動支援交付金実施要領</td>
+                                        <td class="regular" align="center">
+                                            <font color="#ff0000">廃止(全改)</font>
+                                            <!--
+                                            <logic:notEmpty name="oneMessage" property="zenkaiHouCd">
+                                              <br/>
+                                              <bean:write name="oneMessage" property="zenkaiHouCd"/>
+                                            </logic:notEmpty>
+                                            <logic:equal name="oneMessage" property="tsuirokuFuyou" value="true">
+                                              <br/>
+                                              <font color="#0000ff">追録不要</font>
+                                            </logic:equal>
+                                          -->
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年9月24日条例要領第3号
+                                        </td>
+
+                                        <td class="regular" align="center" rowspan="1">
+                                            平24.4.6
+                                        </td>
+
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成24年4月6日要領第1号の2
+                                        </td>
+
+                                        <td class="regular" align="center">
+                                            平24.4.9
+                                        </td>
+                                        <td class="regular" align="center">
+                                            2-1
+                                        </td>
+                                        <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '法令CD', '条例リンクURL', 'tsiJctCd', 'dispSedOya'/>', 'dispSedEda'/>' );">条</a></td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            H421909160003
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            <font color="#ff0000">廃止（目次未掲載）</font>
+                                            <!-- 通常時
+                                          <logic:notEqual name="oneMessage" property="miTosai" value="true">
+                                            <bean:write name="oneMessage" property="mkjTaikeiStr"/>
+                                          </logic:notEqual>
+                                          -->
+                                        </td>
+                                    </tr>
+
+                                    <tr class="guusuu">
+                                        <td class="regular" align="center">
+                                            <input type="checkbox" name="checkedList" />
+                                        </td>
+                                        <td class="regular" align="left">足寄町国民健康保険病院看護師就業支援金賃与条例</td>
+                                        <td class="regular" align="center">
+                                            <font color="#ff0000">失効</font>
+                                            <!--
+                                            <logic:notEmpty name="oneMessage" property="zenkaiHouCd">
+                                              <br/>
+                                              <bean:write name="oneMessage" property="zenkaiHouCd"/>
+                                            </logic:notEmpty>
+                                            <logic:equal name="oneMessage" property="tsuirokuFuyou" value="true">
+                                              <br/>
+                                              <font color="#0000ff">追録不要</font>
+                                            </logic:equal>
+                                          -->
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年12月11日条例第35号
+                                        </td>
+
+                                        <td class="regular" align="center" rowspan="1">
+                                            平21.12.11
+                                        </td>
+
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年12月11日条例第35号
+                                        </td>
+
+                                        <td class="regular" align="center">
+                                            平25.4.1
+                                        </td>
+                                        <td class="regular" align="center">
+                                            1-2
+                                        </td>
+                                        <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '法令CD', '条例リンクURL', 'tsiJctCd', 'dispSedOya'/>', 'dispSedEda'/>' );">条</a></td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            H421901010035
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            <font color="#ff0000">廃止（目次未掲載）</font>
+                                            <!-- 通常時
+                                          <logic:notEqual name="oneMessage" property="miTosai" value="true">
+                                            <bean:write name="oneMessage" property="mkjTaikeiStr"/>
+                                          </logic:notEqual>
+                                          -->
+                                        </td>
+                                    </tr>
+
+                                    <!-- 表示上で奇数のスタイルシートを適応 -->
+                                    <tr class="kisuu">
+                                        <td class="regular" align="center">
+                                            <input type="checkbox" name="checkedList" />
+                                        </td>
+                                        <td class="regular" align="left">足寄町国民健康保険病院看護師就業支援金賃与条例</td>
+                                        <td class="regular" align="center">
+                                            <font color="#ff0000">失効</font>
+                                            <!--
+                                            <logic:notEmpty name="oneMessage" property="zenkaiHouCd">
+                                              <br/>
+                                              <bean:write name="oneMessage" property="zenkaiHouCd"/>
+                                            </logic:notEmpty>
+                                            <logic:equal name="oneMessage" property="tsuirokuFuyou" value="true">
+                                              <br/>
+                                              <font color="#0000ff">追録不要</font>
+                                            </logic:equal>
+                                          -->
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年12月11日条例第35号
+                                        </td>
+
+                                        <td class="regular" align="center" rowspan="1">
+                                            平21.12.11
+                                        </td>
+
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年12月11日条例第35号
+                                        </td>
+
+                                        <td class="regular" align="center">
+                                            平25.4.1
+                                        </td>
+                                        <td class="regular" align="center">
+                                            1-2
+                                        </td>
+                                        <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '法令CD', '条例リンクURL', 'tsiJctCd', 'dispSedOya'/>', 'dispSedEda'/>' );">条</a></td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            H421901010035
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            <font color="#ff0000">廃止（目次未掲載）</font>
+                                            <!-- 通常時
+                                          <logic:notEqual name="oneMessage" property="miTosai" value="true">
+                                            <bean:write name="oneMessage" property="mkjTaikeiStr"/>
+                                          </logic:notEqual>
+                                          -->
+                                        </td>
+                                    </tr>
+
+                                    <tr class="guusuu">
+                                        <td class="regular" align="center">
+                                            <input type="checkbox" name="checkedList" />
+                                        </td>
+                                        <td class="regular" align="left">足寄町国民健康保険病院看護師就業支援金賃与条例</td>
+                                        <td class="regular" align="center">
+                                            <font color="#ff0000">失効</font>
+                                            <!--
+                                            <logic:notEmpty name="oneMessage" property="zenkaiHouCd">
+                                              <br/>
+                                              <bean:write name="oneMessage" property="zenkaiHouCd"/>
+                                            </logic:notEmpty>
+                                            <logic:equal name="oneMessage" property="tsuirokuFuyou" value="true">
+                                              <br/>
+                                              <font color="#0000ff">追録不要</font>
+                                            </logic:equal>
+                                          -->
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年12月11日条例第35号
+                                        </td>
+
+                                        <td class="regular" align="center" rowspan="1">
+                                            平21.12.11
+                                        </td>
+
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年12月11日条例第35号
+                                        </td>
+
+                                        <td class="regular" align="center">
+                                            平25.4.1
+                                        </td>
+                                        <td class="regular" align="center">
+                                            1-2
+                                        </td>
+                                        <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '法令CD', '条例リンクURL', 'tsiJctCd', 'dispSedOya'/>', 'dispSedEda'/>' );">条</a></td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            H421901010035
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            <font color="#ff0000">廃止（目次未掲載）</font>
+                                            <!-- 通常時
+                                          <logic:notEqual name="oneMessage" property="miTosai" value="true">
+                                            <bean:write name="oneMessage" property="mkjTaikeiStr"/>
+                                          </logic:notEqual>
+                                          -->
+                                        </td>
+                                    </tr>
+
+                                    <!-- 表示上で奇数のスタイルシートを適応 -->
+                                    <tr class="kisuu">
+                                        <td class="regular" align="center">
+                                            <input type="checkbox" name="checkedList" />
+                                        </td>
+                                        <td class="regular" align="left">足寄町国民健康保険病院看護師就業支援金賃与条例</td>
+                                        <td class="regular" align="center">
+                                            <font color="#ff0000">失効</font>
+                                            <!--
+                                            <logic:notEmpty name="oneMessage" property="zenkaiHouCd">
+                                              <br/>
+                                              <bean:write name="oneMessage" property="zenkaiHouCd"/>
+                                            </logic:notEmpty>
+                                            <logic:equal name="oneMessage" property="tsuirokuFuyou" value="true">
+                                              <br/>
+                                              <font color="#0000ff">追録不要</font>
+                                            </logic:equal>
+                                          -->
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年12月11日条例第35号
+                                        </td>
+
+                                        <td class="regular" align="center" rowspan="1">
+                                            平21.12.11
+                                        </td>
+
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年12月11日条例第35号
+                                        </td>
+
+                                        <td class="regular" align="center">
+                                            平25.4.1
+                                        </td>
+                                        <td class="regular" align="center">
+                                            1-2
+                                        </td>
+                                        <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '法令CD', '条例リンクURL', 'tsiJctCd', 'dispSedOya'/>', 'dispSedEda'/>' );">条</a></td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            H421901010035
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            <font color="#ff0000">廃止（目次未掲載）</font>
+                                            <!-- 通常時
+                                          <logic:notEqual name="oneMessage" property="miTosai" value="true">
+                                            <bean:write name="oneMessage" property="mkjTaikeiStr"/>
+                                          </logic:notEqual>
+                                          -->
+                                        </td>
+                                    </tr>
+
+                                    <tr class="guusuu">
+                                        <td class="regular" align="center">
+                                            <input type="checkbox" name="checkedList" />
+                                        </td>
+                                        <td class="regular" align="left">足寄町国民健康保険病院看護師就業支援金賃与条例</td>
+                                        <td class="regular" align="center">
+                                            <font color="#ff0000">失効</font>
+                                            <!--
+                                            <logic:notEmpty name="oneMessage" property="zenkaiHouCd">
+                                              <br/>
+                                              <bean:write name="oneMessage" property="zenkaiHouCd"/>
+                                            </logic:notEmpty>
+                                            <logic:equal name="oneMessage" property="tsuirokuFuyou" value="true">
+                                              <br/>
+                                              <font color="#0000ff">追録不要</font>
+                                            </logic:equal>
+                                          -->
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年12月11日条例第35号
+                                        </td>
+
+                                        <td class="regular" align="center" rowspan="1">
+                                            平21.12.11
+                                        </td>
+
+                                        <td class="regular" align="left" rowspan="1">
+                                            平成21年12月11日条例第35号
+                                        </td>
+
+                                        <td class="regular" align="center">
+                                            平25.4.1
+                                        </td>
+                                        <td class="regular" align="center">
+                                            1-2
+                                        </td>
+                                        <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '法令CD', '条例リンクURL', 'tsiJctCd', 'dispSedOya'/>', 'dispSedEda'/>' );">条</a></td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            H421901010035
+                                        </td>
+                                        <td class="regular" align="left" rowspan="1">
+                                            <font color="#ff0000">廃止（目次未掲載）</font>
+                                            <!-- 通常時
+                                          <logic:notEqual name="oneMessage" property="miTosai" value="true">
+                                            <bean:write name="oneMessage" property="mkjTaikeiStr"/>
+                                          </logic:notEqual>
+                                          -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <thead>
+                                    <tr>
+                                        <th align="center" rowspan="2">選択</TH>
+                                        <th align="center" rowspan="2">例規名</TH>
+                                        <th align="center" rowspan="2">区分</TH>
+                                        <th align="center" rowspan="2">発令</TH>
+                                        <th align="center" colspan="2">改正例規</TH>
+                                        <th align="center" rowspan="2">施行日</TH>
+                                        <th align="center" rowspan="2">世代</TH>
+                                        <th align="center" rowspan="2">条</TH>
+                                        <th rowspan="2">例規コード</TH>
+                                        <th rowspan="2">目次</TH>
+                                    </tr>
+                                    <tr>
+                                        <th align="center">公布日</TH>
+                                        <th align="center">発令</TH>
+                                    </tr>
+                                </thead>
+                            </table>
+
+                            <!-- 空の時 -->
+                            <!--
+                        <table class="regular" border="1" width="100%">
+                              <col span="1" width="2%">
+                              <col span="1" width="20%">
+                              <col span="1" width="5%">
+                              <col span="1" width="10%">
+                              <col span="1" width="6%">
+                              <col span="1" width="10%">
+                              <col span="1" width="6%">
+                              <col span="1" width="5%">
+                              <col span="1" width="3%">
+                              <col span="1" width="10%">
+                            <tbody>
+                            </tbody>
+                          <thead>
+                            <tr>
+                              <th align="center" rowspan="2">選択</TH>
+                              <th align="center" rowspan="2">例規名</TH>
+                              <th align="center" rowspan="2">区分</TH>
+                              <th align="center" rowspan="2">発令</TH>
+                              <th align="center" colspan="2">改正例規</TH>
+                              <th align="center" rowspan="2">施行日</TH>
+                              <th align="center" rowspan="2">世代</TH>
+                              <th align="center" rowspan="2">条</TH>
+                              <th rowspan="2">例規コード</TH>
+                            </tr>
+                            <tr>
+                              <th align="center">公布日</th>
+                              <th align="center">発令</th>
+                            </tr>
+                          </thead>
+                        </table>
+                        <div align="left">＊指定された検索条件に該当する例規はありません。</div>
+                        <br>
+                        <br>  -->
+                        </center>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
