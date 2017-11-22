@@ -34,14 +34,565 @@
             </div>
         </div>
     </nav>
-    <a href="skMNf02.html " class="btn right "><i class="material-icons ">account_balance</i></a>
     <div class="row center-align ">
-        <h1>追録用世代一覧表</h1>
-        <h1>rsJIf01s.html</h1>
         <a href="rsJIf01s.html " class="btn ">画面切替（目次順）</a>
         <a href="rsCOf01.html " class="btn ">出力指示</a>
         <a href="rsJIf08.html " class="btn ">選択確認一覧</a>
         <a href="rsJIf07.html " class="btn ">目次未登載一覧</a>
+        <!-- 現在の追録発行情報 -->
+        <div class="card col s12">
+            <div class="card-content ">
+                <span class="card-title title">追録用世代一覧表(rsJIf01s.html)</span>
+                <div class="table_Section">
+                    <table class="title_table">
+                        <tr>
+                            <td>
+                                <b>現在の追録発行情報</b>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="regular" width="80%" border="0">
+                        <col span="1" width="4%">
+                        <col span="1" width="1%">
+                        <col span="1" width="8%">
+                        <col span="1" width="2%">
+                        <col span="1" width="3%">
+                        <col span="1" width="1%">
+                        <col span="1" width="30%">
+                        <tbody>
+                            <tr>
+                                <td class="none"><b>書名</b></td>
+                                <td class="none">：</td>
+                                <td class="none" colspan="5">例規集</td>
+                            </tr>
+                            <tr>
+                                <td class="none"><b>追録号数</b></td>
+                                <td class="none">：</td>
+                                <td class="none" colspan="5">
+                                    test 号
+                                    <c:if test="${!empty d1menu_online_bookmaking_trou_list_context.tuirokuToGosu}">
+                                        から　test 号まで
+                                    </c:if>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="none" colspan="7">
+                                    <b>
+            <c:if test="${d1menu_online_bookmaking_trou_list_context.tuikaMode != '2'}">
+            作成条件
+            </c:if>
+            <c:if test="${d1menu_online_bookmaking_trou_list_context.tuikaMode == '2'}">
+          (範囲外検索条件)
+            </c:if>
+          </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="none">　　公布日</td>
+                                <td class="none">：</td>
+                                <td class="none">
+                                    test
+                                </td>
+                                <td class="none" align="center">～</td>
+                                <td class="none">公布日</td>
+                                <td class="none">：</td>
+                                <td class="none">
+                                    test
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="none"></td>
+                                <td class="none"></td>
+                                <td class="none"></td>
+                                <td class="none"></td>
+                                <td class="none">施行日</td>
+                                <td class="none">：</td>
+                                <td class="none">
+                                    <c:if test="${!empty d1menu_online_bookmaking_trou_list_context.shikouJyoutaiYmd}">
+
+                                        <d1on:dateFormat format="%G%y年%m月%d日" date="${d1menu_online_bookmaking_trou_list_context.shikouJyoutaiYmd}" revise="true" whennull="" />
+                                    </c:if>
+                                    まで含む
+                                    <c:if test="${d1menu_online_bookmaking_trou_list_context.tuikaMode != '2'}">
+                                        （前回追録施行日：
+                                        <c:if test="${!empty d1menu_online_bookmaking_trou_list_context.zenkaiShikouYmd4Disp}">
+
+                                            <d1on:dateFormat format="%G%y年%m月%d日" date="${d1menu_online_bookmaking_trou_list_context.zenkaiShikouYmd4Disp}" revise="true" whennull="" />
+                                        </c:if>
+                                        まで含む）
+                                    </c:if>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--  -->
+                <table class="title_table">
+                    <col span="1" width="68%">
+                    <col span="1" width="8%">
+
+                    <col span="1" width="16%">
+                    <col span="1" width="8%">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <b>検索結果</b>
+                            </td>
+                            <td></td>
+                            <td align="right">被改正例規数：</td>
+                            <td>100件</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- table -->
+                <eagle_rs:page current="eagle.rsji.f01s.attr.name.current.page" total="eagle.rsji.f01s.attr.name.total.page" scriptFunc="paging" />
+
+                <div align="center">
+                    <c:if test="${!empty d1menu_online_bookmaking_trou_list_paging}">
+                        <coon:defPageList name="${d1menu_online_bookmaking_trou_list_paging}" funcJs="doPaging" />
+                    </c:if>
+                </div>
+                <!--  -->
+                <div style="display:table;border-collapse:collapse;border:2px solid #353535;height:76%;width:100%;mergin:4px;" class="flowauto">
+                    <form:form action="" modelAttribute="COListForm">
+                        <form:hidden path="pageNo" value="${d1menu_online_bookmaking_trou_list_context.pageNo}" />
+                        <form:hidden path="syomei" value="${d1menu_online_bookmaking_trou_list_context.syomei}" />
+                        <form:hidden path="syomeiCd" value="${d1menu_online_bookmaking_trou_list_context.syomeiCd}" />
+                        <form:hidden path="naiyouGenzaiYmd" value="${d1menu_online_bookmaking_trou_list_context.naiyouGenzaiYmd}" />
+                        <form:hidden path="shikouJyoutaiYmd" value="${d1menu_online_bookmaking_trou_list_context.shikouJyoutaiYmd}" />
+                        <form:hidden path="tsuirokuFuyouCount" value="${d1menu_online_bookmaking_trou_list_context.tsuirokuFuyouCount}" />
+                        <form:hidden path="kouteiKbn" value="${d1menu_online_bookmaking_trou_list_context.kouteiKbn}" />
+                        <form:hidden path="command" value="" />
+                        <input type="hidden" name="uniqueId" value="" />
+
+                        <center>
+                            <c:forEach var="oneDatas" items="${d1menu_online_bookmaking_trou_list_result}">
+                                <!--   
+                            <table class="regular" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <th align="left">
+                                                <c:forEach var="oneTaikei" items="${oneDatas.taikeis}" begin="0">
+                                                    <c:out value="${oneTaikei}" /><br>
+                                                </c:forEach>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            -->
+
+                                <!-- リストがある時 -->
+                                <c:if test="${! empty oneDatas.listDetails}">
+                                    <table class="regular striped bordered" border="1" width="100%">
+                                        <col span="1" width="3%">
+                                        <col span="1" width="19%">
+                                        <col span="1" width="5%">
+                                        <col span="1" width="10%">
+                                        <col span="1" width="5%">
+                                        <col span="1" width="10%">
+                                        <col span="1" width="5%">
+                                        <col span="1" width="4%">
+                                        <col span="1" width="2%">
+                                        <col span="1" width="10%">
+
+                                        <c:if test="${d1menu_online_bookmaking_trou_list_context.dispOrder != '1'}">
+                                            <col span="1" width="10%">
+                                        </c:if>
+
+                                        <tbody>
+                                            <!-- １データ -->
+                                            <c:forEach var="oneMessage" items="${oneDatas.listDetails}">
+
+                                                <tr class="kisuu">
+
+                                                    <!-- 「選択」 チェックボックス -->
+                                                    <td class="regular" align="center">
+
+
+                                                        <input type="checkbox">
+
+                                                    </td>
+                                                    <!-- 例規名 -->
+                                                    <td class="regular" align="left">
+                                                        足寄町森林整備地域活動支援交付金実施要領
+                                                    </td>
+                                                    <!-- 区分 -->
+                                                    <td class="regular" align="center">
+
+                                                        <font color="#ff0000">
+                                                            失効
+                                                        </font>
+                                                    </td>
+                                                    <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}">
+                                                            平成21年12月11日条例第35号
+                                                        </td>
+                                                    </c:if>
+
+                                                    <c:if test="${oneMessage.followKaihouCnt != 0}">
+                                                        <td class="regular" align="center" rowspan="${oneMessage.followKaihouCnt}">
+                                                            平21.12.11
+                                                        </td>
+
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followKaihouCnt}">
+
+                                                            平成21年12月11日条例第35号
+                                                        </td>
+                                                    </c:if>
+
+                                                    <!--施行日-->
+                                                    <td class="regular" align="center">
+                                                        平25.4.1
+                                                    </td>
+                                                    <td class="regular" align="center">
+                                                        1-2
+                                                    </td>
+                                                    <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '${oneMessage.houCd}', '${oneMessage.jyoulinkUrl}'
+                                                   , '${oneMessage.tsiJctCd}', '${oneMessage.dispSedOya}', '${oneMessage.dispSedEda}' );">条</a>
+                                                    </td>
+                                                    <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                        <!-- 例規コード -->
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}">
+                                                            H421901010035
+                                                        </td>
+                                                    </c:if>
+
+                                                    <c:if test="${d1menu_online_bookmaking_trou_list_context.dispOrder != '1'}">
+
+                                                        <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                            <!-- 目次 -->
+                                                            <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}" style="color:red;">
+                                                                廃止（目次未掲載）
+                                                            </td>
+                                                        </c:if>
+                                                    </c:if>
+                                                </tr>
+                                            </c:forEach>
+                                            <!-- １データ -->
+                                            <c:forEach var="oneMessage" items="${oneDatas.listDetails}">
+
+                                                <tr class="kisuu">
+
+                                                    <!-- 「選択」 チェックボックス -->
+                                                    <td class="regular" align="center">
+
+
+                                                        <input type="checkbox">
+
+                                                    </td>
+                                                    <!-- 例規名 -->
+                                                    <td class="regular" align="left">
+                                                        足寄町国民健康保険病院看護師就業支援金賃与条例
+                                                    </td>
+                                                    <!-- 区分 -->
+                                                    <td class="regular" align="center">
+
+                                                        <font color="#ff0000">
+                                                            失効
+                                                        </font>
+                                                    </td>
+                                                    <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}">
+                                                            平成21年12月11日条例第35号
+                                                        </td>
+                                                    </c:if>
+
+                                                    <c:if test="${oneMessage.followKaihouCnt != 0}">
+                                                        <td class="regular" align="center" rowspan="${oneMessage.followKaihouCnt}">
+                                                            平21.12.11
+                                                        </td>
+
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followKaihouCnt}">
+
+                                                            平成21年12月11日条例第35号
+                                                        </td>
+                                                    </c:if>
+
+                                                    <!--施行日-->
+                                                    <td class="regular" align="center">
+                                                        平25.4.1
+                                                    </td>
+                                                    <td class="regular" align="center">
+                                                        1-2
+                                                    </td>
+                                                    <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '${oneMessage.houCd}', '${oneMessage.jyoulinkUrl}'
+                                                                                                                                                   , '${oneMessage.tsiJctCd}', '${oneMessage.dispSedOya}', '${oneMessage.dispSedEda}' );">条</a>
+                                                    </td>
+                                                    <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                        <!-- 例規コード -->
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}">
+                                                            H421901010035
+                                                        </td>
+                                                    </c:if>
+
+                                                    <c:if test="${d1menu_online_bookmaking_trou_list_context.dispOrder != '1'}">
+
+                                                        <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                            <!-- 目次 -->
+                                                            <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}" style="color:red;">
+                                                                廃止（目次未掲載）
+                                                            </td>
+                                                        </c:if>
+                                                    </c:if>
+                                                </tr>
+                                            </c:forEach>
+                                            <!-- １データ -->
+                                            <c:forEach var="oneMessage" items="${oneDatas.listDetails}">
+
+                                                <tr class="kisuu">
+
+                                                    <!-- 「選択」 チェックボックス -->
+                                                    <td class="regular" align="center">
+
+
+                                                        <input type="checkbox">
+
+                                                    </td>
+                                                    <!-- 例規名 -->
+                                                    <td class="regular" align="left">
+                                                        乳幼児及び児童医療費助成に関する条例
+                                                    </td>
+                                                    <!-- 区分 -->
+                                                    <td class="regular" align="center">
+
+                                                        <font color="#ff0000">
+                                                            失効
+                                                        </font>
+                                                    </td>
+                                                    <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}">
+                                                            平成21年12月11日条例第35号
+                                                        </td>
+                                                    </c:if>
+
+                                                    <c:if test="${oneMessage.followKaihouCnt != 0}">
+                                                        <td class="regular" align="center" rowspan="${oneMessage.followKaihouCnt}">
+                                                            平21.12.11
+                                                        </td>
+
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followKaihouCnt}">
+
+                                                            平成21年12月11日条例第35号
+                                                        </td>
+                                                    </c:if>
+
+                                                    <!--施行日-->
+                                                    <td class="regular" align="center">
+                                                        平25.4.1
+                                                    </td>
+                                                    <td class="regular" align="center">
+                                                        1-2
+                                                    </td>
+                                                    <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '${oneMessage.houCd}', '${oneMessage.jyoulinkUrl}'
+                                                                                                       , '${oneMessage.tsiJctCd}', '${oneMessage.dispSedOya}', '${oneMessage.dispSedEda}' );">条</a>
+                                                    </td>
+                                                    <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                        <!-- 例規コード -->
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}">
+                                                            H421901010035
+                                                        </td>
+                                                    </c:if>
+
+                                                    <c:if test="${d1menu_online_bookmaking_trou_list_context.dispOrder != '1'}">
+
+                                                        <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                            <!-- 目次 -->
+                                                            <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}" style="color:red;">
+                                                                廃止（目次未掲載）
+                                                            </td>
+                                                        </c:if>
+                                                    </c:if>
+                                                </tr>
+                                            </c:forEach>
+                                            <!-- １データ -->
+                                            <c:forEach var="oneMessage" items="${oneDatas.listDetails}">
+
+                                                <tr class="kisuu">
+
+                                                    <!-- 「選択」 チェックボックス -->
+                                                    <td class="regular" align="center">
+
+
+                                                        <input type="checkbox">
+
+                                                    </td>
+                                                    <!-- 例規名 -->
+                                                    <td class="regular" align="left">
+                                                        足寄町国民健康保険病院看護師就業支援金賃与条例施行規則
+                                                    </td>
+                                                    <!-- 区分 -->
+                                                    <td class="regular" align="center">
+
+                                                        <font color="#ff0000">
+                                                            失効
+                                                        </font>
+                                                    </td>
+                                                    <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}">
+                                                            平成21年12月11日条例第35号
+                                                        </td>
+                                                    </c:if>
+
+                                                    <c:if test="${oneMessage.followKaihouCnt != 0}">
+                                                        <td class="regular" align="center" rowspan="${oneMessage.followKaihouCnt}">
+                                                            平21.12.11
+                                                        </td>
+
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followKaihouCnt}">
+
+                                                            平成21年12月11日条例第35号
+                                                        </td>
+                                                    </c:if>
+
+                                                    <!--施行日-->
+                                                    <td class="regular" align="center">
+                                                        平25.4.1
+                                                    </td>
+                                                    <td class="regular" align="center">
+                                                        1-2
+                                                    </td>
+                                                    <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '${oneMessage.houCd}', '${oneMessage.jyoulinkUrl}'
+                                                                                                       , '${oneMessage.tsiJctCd}', '${oneMessage.dispSedOya}', '${oneMessage.dispSedEda}' );">条</a>
+                                                    </td>
+                                                    <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                        <!-- 例規コード -->
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}">
+                                                            H421901010035
+                                                        </td>
+                                                    </c:if>
+
+                                                    <c:if test="${d1menu_online_bookmaking_trou_list_context.dispOrder != '1'}">
+
+                                                        <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                            <!-- 目次 -->
+                                                            <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}" style="color:red;">
+                                                                廃止（目次未掲載）
+                                                            </td>
+                                                        </c:if>
+                                                    </c:if>
+                                                </tr>
+                                            </c:forEach>
+                                            <!-- １データ -->
+                                            <c:forEach var="oneMessage" items="${oneDatas.listDetails}">
+
+                                                <tr class="kisuu">
+
+                                                    <!-- 「選択」 チェックボックス -->
+                                                    <td class="regular" align="center">
+
+
+                                                        <input type="checkbox">
+
+                                                    </td>
+                                                    <!-- 例規名 -->
+                                                    <td class="regular" align="left">
+                                                        足寄町住民生活に光をそそぐ基金条例
+                                                    </td>
+                                                    <!-- 区分 -->
+                                                    <td class="regular" align="center">
+
+                                                        <font color="#ff0000">
+                                                            失効
+                                                        </font>
+                                                    </td>
+                                                    <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}">
+                                                            平成21年12月11日条例第35号
+                                                        </td>
+                                                    </c:if>
+
+                                                    <c:if test="${oneMessage.followKaihouCnt != 0}">
+                                                        <td class="regular" align="center" rowspan="${oneMessage.followKaihouCnt}">
+                                                            平21.12.11
+                                                        </td>
+
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followKaihouCnt}">
+
+                                                            平成21年12月11日条例第35号
+                                                        </td>
+                                                    </c:if>
+
+                                                    <!--施行日-->
+                                                    <td class="regular" align="center">
+                                                        平25.4.1
+                                                    </td>
+                                                    <td class="regular" align="center">
+                                                        1-2
+                                                    </td>
+                                                    <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '${oneMessage.houCd}', '${oneMessage.jyoulinkUrl}'
+                                                                                                       , '${oneMessage.tsiJctCd}', '${oneMessage.dispSedOya}', '${oneMessage.dispSedEda}' );">条</a>
+                                                    </td>
+                                                    <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                        <!-- 例規コード -->
+                                                        <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}">
+                                                            H421901010035
+                                                        </td>
+                                                    </c:if>
+
+                                                    <c:if test="${d1menu_online_bookmaking_trou_list_context.dispOrder != '1'}">
+
+                                                        <c:if test="${oneMessage.followHikaihouCnt != 0}">
+                                                            <!-- 目次 -->
+                                                            <td class="regular" align="left" rowspan="${oneMessage.followHikaihouCnt}" style="color:red;">
+                                                                廃止（目次未掲載）
+                                                            </td>
+                                                        </c:if>
+                                                    </c:if>
+                                                </tr>
+                                            </c:forEach>
+
+                                        </tbody>
+                                        <thead>
+                                            <tr>
+                                                <th align="center" rowspan="2">選択</th>
+                                                <th align="center" rowspan="2">例規名</th>
+                                                <th align="center" rowspan="2">区分</th>
+                                                <th align="center" rowspan="2">発令</th>
+                                                <th align="center" colspan="2">改正例規</th>
+                                                <th align="center" rowspan="2">施行日</th>
+                                                <th align="center" rowspan="2">世代</th>
+                                                <th align="center" rowspan="2">条</th>
+                                                <th rowspan="2">例規コード</th>
+                                                <c:if test="${d1menu_online_bookmaking_trou_list_context.dispOrder != '1'}">
+
+                                                    <th rowspan="2">目次</th>
+                                                </c:if>
+                                            </tr>
+                                            <tr>
+                                                <th align="center">公布日</th>
+                                                <th align="center">発令</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </c:if>
+                                <c:if test="${empty oneDatas.listDetails}">
+                                    <table class="regular" border="1" width="100%">
+                                        <col span="1" width="3%">
+                                        <col span="1" width="19%">
+                                        <col span="1" width="5%">
+                                        <col span="1" width="10%">
+                                        <col span="1" width="6%">
+                                        <col span="1" width="10%">
+                                        <col span="1" width="6%">
+                                        <col span="1" width="5%">
+                                        <col span="1" width="3%">
+                                        <col span="1" width="10%">
+                                        <tbody>
+                                        </tbody>
+
+                                    </table>
+                                    <!-- <div align="left">＊指定された検索条件に該当する例規はありません。</div> -->
+                                    <br>
+                                    <br>
+                                </c:if>
+                            </c:forEach>
+                        </center>
+
+                    </form:form>
+                </div>
+
+            </div>
+        </div>
     </div>
 </body>
 <script language="JavaScript " src="./js/jquery-3.2.1.min.js "></script>

@@ -35,11 +35,262 @@
             </div>
         </div>
     </nav>
-    <div class="row center-align">
-        <h1>［出力指示］条件設定</h1>
-        <h1>rsCOf01html</h1>
-        <a href="rsCOf02.html" class="btn">出力</a>
-    </div>
+    <div class="row">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title">［出力指示］条件設定(rsCOf01html)</div>
+                <form method="post">
+                    <input type="hidden" name="<eagle_rs:winIDKey/>" value="<eagle_rs:winID/>">
+                    <input type="hidden" name="command" value="">
+
+                    <div style="border:0px solid #353535;mergin:4px;" align="left">
+                        <table class="title_table">
+                            <tr align="center">
+                                <td align="left"><b>検索条件</b></td>
+                            </tr>
+                        </table>
+                        <table class="regular" width="100%">
+                            <tbody>
+                                <!--
+                    <logic:iterate id="oneMessage" name="eagle.rsco.f01.attr.name.display.data" property="conditonNotes" scope="request">
+                    <tr>
+                      <td width="20px"></td>
+                      <td><bean:write name="oneMessage"/></td>
+                    </tr>
+                    </logic:iterate>
+                    -->
+                                <tr>
+                                    <td><b>書名：</b> 足寄町例規集（01647A）</td>
+                                </tr>
+                                <tr>
+                                    <td><b>追録号数：</b>1号</td>
+                                </tr>
+                                <tr>
+                                    <td><b>内容現在日：</b>平成21年4月1日</td>
+                                </tr>
+                                <tr>
+                                    <td><b>施行状態指定日：</b>平成21年7月1日まで施行されたもの</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <div style="border:0px solid #353535;mergin:4px;" align="left">
+                            <table class="title_table">
+                                <tr align="center">
+                                    <td align="left"><b>出力物</b></td>
+                                </tr>
+                            </table>
+                            <!--table class="regular" width="25%"-->
+                            <table class="regular" width="50%">
+                                <tbody>
+                                    <!--
+                    <logic:iterate id="oneMessage" name="eagle.rsco.output.attr.name.display.options" property="reqOutputs" scope="request">
+                       <tr>
+                         <td width="20px"></td>
+                         <td><eagle_rs:radio property="output" name="eagle.rsco.output.attr.name.target.data" idName="oneMessage" value="optionValue"/></td>
+                         <td><bean:write name="oneMessage" property="optionLabel"/></td>
+                       </tr>
+                    </logic:iterate>
+                    -->
+                                    <tr>
+                                        <td width="20px"></td>
+                                        <td><input type="radio" name="outputRadio" disabled/></td>
+                                        <td>XMLと新旧・条文リスト</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="20px"></td>
+                                        <td><input type="radio" name="outputRadio" /></td>
+                                        <td>XMLと条文リスト</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="20px"></td>
+                                        <td><input type="radio" name="outputRadio" /></td>
+                                        <td>XMLデータ</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="20px"></td>
+                                        <td><input type="radio" name="outputRadio" /></td>
+                                        <td>法令条文リスト</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="20px"></td>
+                                        <td><input type="radio" name="outputRadio" disabled/></td>
+                                        <td>新旧・条文リスト</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="20px"></td>
+                                        <!--
+                      <td>
+                        <logic:equal name="eagle.rsco.output.attr.name.target.data" property="isSelectKensa" value="true">
+                          <html:checkbox name="eagle.rsco.output.attr.name.target.data" property="outKensa"/>
+                        </logic:equal>
+                        <logic:notEqual name="eagle.rsco.output.attr.name.target.data" property="isSelectKensa" value="true">
+                          <html:checkbox name="eagle.rsco.output.attr.name.target.data" property="outKensa" disabled="true"/>
+                        </logic:notEqual>
+                        
+                      </td>
+                      -->
+                                        <td><input type="checkbox" name="outputRadio" disabled/></td>
+                                        <td>検査用リストで出力(出力条件は無効になります)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <div style="border:0px solid #353535;mergin:4px;" align="left">
+                            <table class="title_table">
+                                <tr align="center">
+                                    <td align="left"><b>出力条件</b></td>
+                                </tr>
+                            </table>
+
+                            <table class="regular" width="50%">
+                                <col span="1" width="2%">
+                                <col span="1" width="10%">
+                                <col span="1" width="1%">
+                                <col span="1" width="10%">
+                                <col span="1" width="10%">
+                                <tbody>
+                                    <tr>
+                                        <td class="none"></td>
+                                        <td class="none">法令名の書体</td>
+                                        <td class="none">：</td>
+                                        <!--
+                      <logic:iterate id="oneMessage" name="eagle.rsco.output.attr.name.display.options" property="fontStyleOptions" scope="request">
+                        <td><eagle_rs:radio property="fontStyle" name="eagle.rsco.output.attr.name.jyoken.data" idName="oneMessage" value="optionValue"/><bean:write name="oneMessage" property="optionLabel"/></td>
+                      </logic:iterate>
+                      -->
+                                        <td><input type="radio" name="fontStyleOptions" checked="check" />明朝</td>
+                                        <td><input type="radio" name="fontStyleOptions" />ゴシック</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="none"></td>
+                                        <td class="none">法令名のサイズ</td>
+                                        <td class="none">：</td>
+                                        <!--
+                      <logic:iterate id="oneMessage" name="eagle.rsco.output.attr.name.display.options" property="fontSizeOptions" scope="request">
+                        <td><eagle_rs:radio property="fontSize" name="eagle.rsco.output.attr.name.jyoken.data" idName="oneMessage" value="optionValue"/><bean:write name="oneMessage" property="optionLabel"/></td>
+                      </logic:iterate>
+                      -->
+                                        <td><input type="radio" name="fontSizeOptions" checked="check" />強調</td>
+                                        <td><input type="radio" name="fontSizeOptions" />同じ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="none"></td>
+                                        <td class="none">改正沿革</td>
+                                        <td class="none">：</td>
+                                        <!--
+                      <logic:iterate id="oneMessage" name="eagle.rsco.output.attr.name.display.options" property="enkakuOptions" scope="request">
+                        <td><eagle_rs:radio property="enkaku" name="eagle.rsco.output.attr.name.jyoken.data" idName="oneMessage" value="optionValue"/><bean:write name="oneMessage" property="optionLabel"/></td>
+                      </logic:iterate>
+                      -->
+                                        <td><input type="radio" name="enkakuOptions" />最終のみ</td>
+                                        <td><input type="radio" name="enkakuOptions" checked="check" />全て</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="none"></td>
+                                        <td class="none">様式</td>
+                                        <td class="none">：</td>
+                                        <!--
+                      <logic:iterate id="oneMessage" name="eagle.rsco.output.attr.name.display.options" property="youshikiOptions" scope="request">
+                        <td><eagle_rs:radio property="youshiki" name="eagle.rsco.output.attr.name.jyoken.data" idName="oneMessage" value="optionValue"/><bean:write name="oneMessage" property="optionLabel"/></td>
+                      </logic:iterate>
+                      -->
+                                        <td><input type="radio" name="youshikiOptions" checked="check" />有</td>
+                                        <td><input type="radio" name="youshikiOptions" />無</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="none"></td>
+                                        <td class="none">ノンブル（例規単位）</td>
+                                        <td class="none">：</td>
+                                        <!--
+                      <logic:iterate id="oneMessage" name="eagle.rsco.output.attr.name.display.options" property="nombreOptions" scope="request">
+                        <td><eagle_rs:radio property="nombre" name="eagle.rsco.output.attr.name.jyoken.data" idName="oneMessage" value="optionValue"/><bean:write name="oneMessage" property="optionLabel"/></td>
+                      </logic:iterate>
+                      -->
+                                        <td><input type="radio" name="nombreOptions" checked="check" />有</td>
+                                        <td><input type="radio" name="nombreOptions" />無</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="none"></td>
+                                        <td class="none">ヘッダ頁（条文リスト）</td>
+                                        <td class="none">：</td>
+                                        <!--
+                      <logic:iterate id="oneMessage" name="eagle.rsco.output.attr.name.display.options" property="headPgOptions" scope="request">
+                        <td><eagle_rs:radio property="headPg" name="eagle.rsco.output.attr.name.jyoken.data" idName="oneMessage" value="optionValue"/><bean:write name="oneMessage" property="optionLabel"/></td>
+                      </logic:iterate>
+                      -->
+                                        <td><input type="radio" name="headPgOptions" checked="check" />無</td>
+                                        <td><input type="radio" name="headPgOptions" />有</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <table class="title_table">
+                            <tr align="center">
+                                <td align="left"><b>処理を起動させる時期</b></td>
+                            </tr>
+                        </table>
+
+                        <table class="regular" width="35%">
+                            <col width="20px">
+                            <tbody>
+                                <tr>
+                                    <td width="20px"></td>
+                                    <!--
+                      <logic:iterate id="oneMessage" name="eagle.rsco.output.attr.name.display.options" property="outputSyoriKbns" scope="request">
+                        <td class="none">
+                          <td><eagle_rs:radio property="outputSyoriKbn" name="eagle.rsco.output.attr.name.target.data" idName="oneMessage" value="optionValue" />
+                          <bean:write name="oneMessage" property="optionLabel"/></td>
+                        </td>
+                      </logic:iterate>
+                      -->
+                                    <td><input type="radio" name="outputSyoriKbn" checked="check" />即時</td>
+                                    <td><input type="radio" name="outputSyoriKbn" />夜間</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
+                        <logic:equal name="eagle.rsco.output.attr.name.target.data" property="tuikaMode" value="2">
+                            <input type="hidden" name="tuikaMode" value="2">
+                        </logic:equal>
+                        <logic:notEqual name="eagle.rsco.output.attr.name.target.data" property="tuikaMode" value="2">
+                            <table class="title_table">
+                                <tr align="center">
+                                    <td align="left"><b>出力モード</b></td>
+                                </tr>
+                            </table>
+
+                            <table class="regular" width="35%">
+                                <col width="20px">
+                                <tbody>
+                                    <tr>
+                                        <td width="20px"></td>
+                                        <!--
+                        <logic:iterate id="oneMessage" name="eagle.rsco.output.attr.name.display.options" property="tuikaModeOptions" scope="request">
+                          <td class="none">
+                            <td><eagle_rs:radio property="tuikaMode" name="eagle.rsco.output.attr.name.target.data" idName="oneMessage" value="optionValue" />
+                            <bean:write name="oneMessage" property="optionLabel"/></td>
+                          </td>
+                        </logic:iterate>
+                        -->
+                                        <td><input type="radio" name="tuikaMode" checked="check" />初回出力</td>
+                                        <td><input type="radio" name="tuikaMode" />追加出力</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </logic:notEqual>
+                </form>
+                </div>
+                <a href="rsCOf02.html" class="btn">出力</a>
+            </div>
+        </div>
 </body>
 <script language="JavaScript" src="./js/jquery-3.2.1.min.js"></script>
 <script language="JavaScript" src="./js/materialize.js"></script>

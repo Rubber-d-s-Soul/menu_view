@@ -1,9 +1,27 @@
+html {
+    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+
+/*materialize overwrite*/
+
 .title {
-    font-family: 'Spectral SC', serif;
+    font-family: 'Spectral SC', ''serif;
 }
 
 .btn {
     background-color: #ffa726;
+}
+
+.card .card-content p.msg {
+    color: red;
+}
+
+
+/*table*/
+
+td {
+    padding: 13px 5px;
 }
 
 
@@ -65,4 +83,25 @@ span.card-title.title.center-align {
 
 .block_panel.btn {
     padding: 0px;
+}
+
+
+/*リストっぽいテーブル*/
+
+.table_Section {
+    font-size: 13px;
+    padding: 0px 10px 30px 10px;
+}
+
+.title_table {
+    color: #ef6c00;
+    background-color: #f5f5f5;
+}
+
+
+/*一時的*/
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    opacity: unset;
 }

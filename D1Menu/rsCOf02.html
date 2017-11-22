@@ -36,10 +36,206 @@
             </div>
         </div>
     </nav>
-    <div class="row center-align">
-        <a href="skMNf02.html" class="btn right"><i class="material-icons">account_balance</i></a>
-        <h1>［出力指示］指示結果</h1>
-        <h1>rsCOf02html</h1>
+    <div class="row">
+        <div class="col s10 offset-s1">
+            <div class="row center-align">
+                <div class="card col s12">
+                    <div class="card-content">
+                        <div class="card-title">[出力指示］指示結果(rsCOf02.html)</div>
+                        <p class="msg">※次の出力依頼を受付けました。ご確認ください。</p>
+                        <table class="title_table">
+                            <tr>
+                                <td><b>検索条件</b></td>
+                            </tr>
+                        </table>
+                        <table class="regular" width="100%">
+                            <tbody>
+                                <!--
+                            <logic:iterate id="oneMessage" name="eagle.rsco.f02.attr.name.display.data" property="conditonNotes" scope="request">
+                            <tr>
+                              <td width="20px"></td>
+                              <td><bean:write name="oneMessage"/></td>
+                            </tr>
+                            </logic:iterate>
+                            -->
+                                <tr>
+                                    <td><b>書名：</b> 足寄町例規集（01647A）</td>
+                                </tr>
+                                <tr>
+                                    <td><b>追録号数：</b>1号</td>
+                                </tr>
+                                <tr>
+                                    <td><b>内容現在日：</b>平成21年4月1日</td>
+                                </tr>
+                                <tr>
+                                    <td><b>施行状態指定日：</b>平成21年7月1日まで施行されたもの</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="title_table">
+                            <tr>
+                                <td><b>出力物</b></td>
+                            </tr>
+                        </table>
+                        <table width="50%">
+                            <!--col span="1" width="5%">
+                          <col span="1" width="40%">
+                          <col span="1" width="1%">
+                          <col span="1" width="54%"-->
+                            <col span="1" width="5%">
+                            <col span="1" width="60%">
+                            <col span="1" width="1%">
+                            <col span="1" width="34%">
+                            <tbody>
+                                <tr>
+                                    <td class="none"></td>
+                                    <td class="none">
+                                        <!--
+                                <eagle_rs:selected collection="eagle.rsco.output.attr.name.display.options" collection_property="reqOutputs" name="eagle.rsco.output.attr.name.target.data" property="output"/>
+                                <logic:equal name="eagle.rsco.output.attr.name.target.data" property="outKensa" value="true">
+                                  　検査用リストで出力
+                                </logic:equal>
+                                -->
+                                        XMLと条文リスト
+                                    </td>
+                                    <td class="none"></td>
+                                    <td class="none"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="title_table">
+                            <tr>
+                                <td><b>出力条件</b></td>
+                            </tr>
+                        </table>
+                        <table width="50%">
+                            <col span="1" width="5%">
+                            <col span="1" width="30%">
+                            <col span="1" width="1%">
+                            <col span="1" width="64%">
+                            <tbody>
+                                <tr>
+                                    <td class="none"></td>
+                                    <td class="none">法令名の書体</td>
+                                    <td class="none">：</td>
+                                    <td class="none">
+                                        <!--
+                              <eagle_rs:selected collection="eagle.rsco.output.attr.name.display.options" collection_property="fontStyleOptions" name="eagle.rsco.output.attr.name.jyoken.data" property="fontStyle"/>
+                              -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="none"></td>
+                                    <td class="none">法令名のサイズ</td>
+                                    <td class="none">：</td>
+                                    <td class="none">
+                                        <!--
+                              <eagle_rs:selected collection="eagle.rsco.output.attr.name.display.options" collection_property="fontSizeOptions" name="eagle.rsco.output.attr.name.jyoken.data" property="fontSize"/>
+                              -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="none"></td>
+                                    <td class="none">改正沿革</td>
+                                    <td class="none">：</td>
+                                    <td class="none">
+                                        <!--
+                              <eagle_rs:selected collection="eagle.rsco.output.attr.name.display.options" collection_property="enkakuOptions" name="eagle.rsco.output.attr.name.jyoken.data" property="enkaku"/>
+                              -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="none"></td>
+                                    <td class="none">様式</td>
+                                    <td class="none">：</td>
+                                    <td class="none">
+                                        <!--
+                              <eagle_rs:selected collection="eagle.rsco.output.attr.name.display.options" collection_property="youshikiOptions" name="eagle.rsco.output.attr.name.jyoken.data" property="youshiki"/>
+                              -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="none"></td>
+                                    <td class="none">ノンブル（例規単位）</td>
+                                    <td class="none">：</td>
+                                    <td class="none">
+                                        <!--
+                              <eagle_rs:selected collection="eagle.rsco.output.attr.name.display.options" collection_property="nombreOptions" name="eagle.rsco.output.attr.name.jyoken.data" property="nombre"/>
+                              -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="none"></td>
+                                    <td class="none">ヘッダ頁（条文リスト）</td>
+                                    <td class="none">：</td>
+                                    <td class="none">
+                                        <!--
+                              <eagle_rs:selected collection="eagle.rsco.output.attr.name.display.options" collection_property="headPgOptions" name="eagle.rsco.output.attr.name.jyoken.data" property="headPg"/>
+                              -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="title_table">
+                            <tr>
+                                <td><b>処理を起動させる時期</b></td>
+                            </tr>
+                        </table>
+                        <table width="50%">
+                            <col span="1" width="5%">
+                            <col span="1" width="20%">
+                            <col span="1" width="1%">
+                            <col span="1" width="74%">
+                            <tbody>
+                                <tr>
+                                    <td class="none"></td>
+                                    <td class="none">
+                                        <!--
+                                <eagle_rs:selected collection="eagle.rsco.output.attr.name.display.options" collection_property="outputSyoriKbns" name="eagle.rsco.output.attr.name.target.data" property="outputSyoriKbn"/>
+                                -->
+                                        即時
+                                    </td>
+                                    <td class="none"></td>
+                                    <td class="none"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <logic:notEmpty name="eagle.rsco.output.attr.name.target.data" property="tuikaMode">
+                            <logic:notEqual name="eagle.rsco.output.attr.name.target.data" property="tuikaMode" value="2">
+                                <table class="title_table">
+                                    <tr>
+                                        <td><b>出力モード</b></td>
+                                    </tr>
+                                </table>
+                                <table width="50%">
+                                    <col span="1" width="5%">
+                                    <col span="1" width="20%">
+                                    <col span="1" width="1%">
+                                    <col span="1" width="74%">
+                                    <tbody>
+                                        <tr>
+                                            <td class="none"></td>
+                                            <td class="none">
+                                                <!--
+                                <eagle_rs:selected collection="eagle.rsco.output.attr.name.display.options" collection_property="tuikaModeOptions" name="eagle.rsco.output.attr.name.target.data" property="tuikaMode"/>
+                                -->
+                                                初回出力
+                                            </td>
+                                            <td class="none"></td>
+                                            <td class="none"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </logic:notEqual>
+                        </logic:notEmpty>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script language="JavaScript" src="./js/jquery-3.2.1.min.js"></script>
