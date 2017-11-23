@@ -37,8 +37,24 @@ html {
 
 /*table*/
 
+thead tr {
+    background-color: #bdbdbd;
+}
+
+th {
+    padding: 5px 5px;
+}
+
 td {
     padding: 13px 5px;
+}
+
+thead th {
+    border: 1px solid #e0e0e0;
+}
+
+tbody tr th {
+    border: 1px solid #e0e0e0;
 }
 
 
