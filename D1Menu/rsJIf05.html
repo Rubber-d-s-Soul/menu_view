@@ -9,8 +9,8 @@
     <title>[改修]検索条件設定</title>
     <link rel="stylesheet" href="./css/materialize.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -37,14 +37,14 @@
         </div>
     </nav>
     <div class="row center-align">
-        <div class="card">
+        <div class="card col s10 offset-s1">
             <div class="card-content">
                 <div class="card-title">改正対象条文リスト/改正対象確認リスト/PDF追録リスト(rsJIf05.html)</div>
                 <div style="border:0px solid #353535;mergin:4px;" align="left">
                     <table class="title_table">
                         <tr align="center">
                             <td align="left">
-                                <B>現在の追録発行情報</B>
+                                <b>現在の追録発行情報</b>
                             </td>
                             <td align="right"></td>
                         </tr>
@@ -201,15 +201,15 @@
                             <tr>
                                 <td colspan="4" align="right">到来情報検索の扱い：</td>
                                 <td colspan="6">
-                                    <input type="radio" name="toraiKbn" />する
-                                    <input type="radio" name="toraiKbn" />しない
+                                    <label><input type="radio" name="toraiKbn" checked="check" /><span>する</span></label>
+                                    <label><input type="radio" name="toraiKbn"/><span>しない</span></label>
                                 </td>
                                 <td colspan="9">※公布日（自・至）、施行日（自・至）は必須</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <a href="rsJIf06.html" class="btn">検索</a>
+                <a href="rsJIf06.html" class="btn next_btn  waves-effect waves-light btn-large">検索</a>
             </div>
         </div>
     </div>

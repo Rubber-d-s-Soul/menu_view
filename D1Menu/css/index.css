@@ -1,5 +1,5 @@
 html {
-    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-family: "Sawarabi Mincho", 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 
 
@@ -12,9 +12,12 @@ html {
 
 /*materialize overwrite*/
 
+
+/*
 .title {
     font-family: 'Spectral SC', serif;
 }
+*/
 
 .btn {
     background-color: #ffa726;
@@ -25,6 +28,89 @@ html {
     background-color: #ffb74d;
 }
 
+.btn:focus,
+.btn-large:focus,
+.btn-floating:focus {
+    background-color: #ef6c00;
+}
+
+[type="radio"]:checked+span:after,
+[type="radio"].with-gap:checked+span:after {
+    background-color: #ffa726;
+}
+
+[type="radio"]:checked+span:after,
+[type="radio"].with-gap:checked+span:before,
+[type="radio"].with-gap:checked+span:after {
+    border: 2px solid #ffa726;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #ffa726;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #ffb74d;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #f57c00;
+    -webkit-box-shadow: 0 1px 0 0 #f57c00;
+    box-shadow: 0 1px 0 0 #f57c00;
+}
+
+input:not([type]):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=url]:not(.browser-default):focus:not([readonly])+label,
+input[type=time]:not(.browser-default):focus:not([readonly])+label,
+input[type=date]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #f57c00;
+}
+
+
+/*checkbox */
+
+[type="checkbox"]+span:not(.lever):before,
+[type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+    left: 8px;
+}
+
+input[type=checkbox]:checked:not(:disabled)~.lever:active::before,
+input[type=checkbox]:checked:not(:disabled).tabbed:focus~.lever::before {
+    -webkit-transform: scale(2.4);
+    transform: scale(2.4);
+    background-color: rgba(244, 122, 0, 0.15);
+}
+
+
+/*checkbox checked*/
+
+[type="checkbox"]:checked+span:not(.lever):before {
+    left: 0px;
+    border-right: 2px solid #f57c00;
+    border-bottom: 2px solid #f57c00;
+}
+
 .card .card-content p.msg {
     color: red;
 }
@@ -32,6 +118,19 @@ html {
 .dropdown-content li>a,
 .dropdown-content li>span {
     color: #f57c00;
+}
+
+.select-wrapper .caret {
+    z-index: 0;
+}
+
+
+/*btn*/
+
+.btn-small {
+    padding: 0 1rem;
+    height: 30px;
+    line-height: 30px;
 }
 
 
@@ -71,6 +170,7 @@ nav .nav-wrapper {
 nav .brand-logo {
     color: #f57c00;
     padding: 0 0 0 10px;
+    font-family: 'Spectral SC', serif;
 }
 
 nav ul a {
@@ -106,13 +206,29 @@ span.card-title.title.center-align {
     margin-top: 40px;
 }
 
+.next_btn {
+    margin-top: 30px;
+}
+
 
 /*メニュー*/
 
-.block_panel {
-    Height: 250px;
-    width: 250px;
-    margin: 20px 0 20px 0;
+@media screen and (min-width:480px) {
+    /*　画面サイズが480pxからはここを読み込む　*/
+    .block_panel {
+        Height: 150px;
+        width: 150px;
+        margin: 20px 0 20px 0;
+    }
+}
+
+@media screen and (min-width:940px) {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    .block_panel {
+        Height: 250px;
+        width: 250px;
+        margin: 20px 0 20px 0;
+    }
 }
 
 .block_panel.btn {
@@ -130,6 +246,16 @@ span.card-title.title.center-align {
 .title_table {
     color: #ef6c00;
     background-color: #f5f5f5;
+    margin-top: 20px;
+}
+
+.title_data {
+    margin: 50px 0 50px 0;
+}
+
+.msg_link {
+    color: red;
+    text-decoration: underline;
 }
 
 
@@ -147,7 +273,9 @@ a.dropdown-trigger.btn {
 
 /*一時的 後で消す*/
 
+
+/*
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
     opacity: unset;
-}
+}*/

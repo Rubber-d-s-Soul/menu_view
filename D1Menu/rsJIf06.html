@@ -9,8 +9,8 @@
     <title>[改修]改正確認一覧</title>
     <link rel="stylesheet" href="./css/materialize.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -36,13 +36,22 @@
             </div>
         </div>
     </nav>
-    <div class="row center-align">
-        <a href="rsJIf01s.html " class="btn "><i class="material-icons left">sort</i>画面切替（目次順）</a>
-        <a href="rsCOf01.html " class="btn "><i class="material-icons left">print</i>出力指示</a>
-        <a href="rsJIf08.html " class="btn "><i class="material-icons left">playlist_add_check</i>選択確認一覧</a>
-        <a href="rsJIf07.html " class="btn "><i class="material-icons left">clear_all</i>目次未登載一覧</a>
+    <div class="row center-align main-contents">
+
+
         <div class="card">
             <div class="card-content">
+                <!-- Dropdown Trigger -->
+                <a class="dropdown-trigger btn right" data-target="menu_dropdown" data-constrainWidth="false"><i class="material-icons">menu</i></a>
+
+
+                <ul id="menu_dropdown" class="dropdown-content">
+                    <li class="disabled"><a>MENU</a></li>
+                    <li><a href="rsJIf01s.html " class="breadcrumb"><i class="material-icons left">sort</i>画面切替（目次順）</a></li>
+                    <li><a href="rsCOf01.html " class="breadcrumb"><i class="material-icons left">print</i>出力指示</a></li>
+                    <li><a href="rsJIf08.html " class="breadcrumb"><i class="material-icons left">playlist_add_check</i>選択確認一覧</a></li>
+                    <li><a href="rsJIf07.html " class="breadcrumb"><i class="material-icons left">clear_all</i>目次未登載一覧</a></li>
+                </ul>
                 <div class="card-title">改正確認一覧(rsJIf06.html)</div>
                 <div style="border:0px solid #353535;height:15%;mergin:4px;" class="flowauto">
                     <table class="title_table">
@@ -135,7 +144,7 @@
                     <tbody>
                         <tr>
                             <td>
-                                <B>検索結果</B>
+                                <b>検索結果</b>
                             </td>
                             <td></td>
                             <td align="right">被改正例規数：</td>
@@ -168,7 +177,7 @@
                                   </eagle_rs:iterate>
                                   -->
                                             公布日順
-                                        </TH>
+                                        </th>
                                     </tr>
                                 </tbody>
                             </table>
@@ -194,7 +203,7 @@
                                     <!-- 表示上で奇数のスタイルシートを適応 -->
                                     <tr>
                                         <td class="regular" align="center">
-                                            <input type="checkbox" name="checkedList" />
+                                            <label><input type="checkbox"  /><span></span></label>
                                         </td>
                                         <td class="regular" align="left">足寄町国民健康保険病院看護師就業支援金賃与条例</td>
                                         <td class="regular" align="center">
@@ -245,7 +254,7 @@
                                     <!-- 2 -->
                                     <tr class="guusuu">
                                         <td class="regular" align="center">
-                                            <input type="checkbox" name="checkedList" />
+                                            <label><input type="checkbox"  /><span></span></label>
                                         </td>
                                         <td class="regular" align="left">足寄町国民健康保険病院看護師就業支援金賃与条例施行規則</td>
                                         <td class="regular" align="center">
@@ -297,7 +306,7 @@
                                     <!-- 表示上で奇数のスタイルシートを適応 -->
                                     <tr class="kisuu">
                                         <td class="regular" align="center">
-                                            <input type="checkbox" name="checkedList" />
+                                            <label><input type="checkbox"  /><span></span></label>
                                         </td>
                                         <td class="regular" align="left">足寄町住民生活に光をそそぐ基金条例</td>
                                         <td class="regular" align="center">
@@ -348,7 +357,7 @@
                                     <!-- 4 -->
                                     <tr class="guusuu">
                                         <td class="regular" align="center">
-                                            <input type="checkbox" name="checkedList" />
+                                            <label><input type="checkbox"  /><span></span></label>
                                         </td>
                                         <td class="regular" align="left">乳幼児及び児童医療費助成に関する条例</td>
                                         <td class="regular" align="center">
@@ -395,7 +404,7 @@
                                     <!-- 表示上で奇数のスタイルシートを適応 -->
                                     <tr class="kisuu">
                                         <td class="regular" align="center">
-                                            <input type="checkbox" name="checkedList" />
+                                            <label><input type="checkbox"  /><span></span></label>
                                         </td>
                                         <td class="regular" align="left">足寄町森林整備地域活動支援交付金実施要領</td>
                                         <td class="regular" align="center">
@@ -445,7 +454,7 @@
 
                                     <tr class="guusuu">
                                         <td class="regular" align="center">
-                                            <input type="checkbox" name="checkedList" />
+                                            <label><input type="checkbox"  /><span></span></label>
                                         </td>
                                         <td class="regular" align="left">足寄町国民健康保険病院看護師就業支援金賃与条例</td>
                                         <td class="regular" align="center">
@@ -496,7 +505,7 @@
                                     <!-- 表示上で奇数のスタイルシートを適応 -->
                                     <tr class="kisuu">
                                         <td class="regular" align="center">
-                                            <input type="checkbox" name="checkedList" />
+                                            <label><input type="checkbox"  /><span></span></label>
                                         </td>
                                         <td class="regular" align="left">足寄町国民健康保険病院看護師就業支援金賃与条例</td>
                                         <td class="regular" align="center">
@@ -546,7 +555,7 @@
 
                                     <tr class="guusuu">
                                         <td class="regular" align="center">
-                                            <input type="checkbox" name="checkedList" />
+                                            <label><input type="checkbox"  /><span></span></label>
                                         </td>
                                         <td class="regular" align="left">足寄町国民健康保険病院看護師就業支援金賃与条例</td>
                                         <td class="regular" align="center">
@@ -597,7 +606,7 @@
                                     <!-- 表示上で奇数のスタイルシートを適応 -->
                                     <tr class="kisuu">
                                         <td class="regular" align="center">
-                                            <input type="checkbox" name="checkedList" />
+                                            <label><input type="checkbox"  /><span></span></label>
                                         </td>
                                         <td class="regular" align="left">足寄町国民健康保険病院看護師就業支援金賃与条例</td>
                                         <td class="regular" align="center">
@@ -647,7 +656,7 @@
 
                                     <tr class="guusuu">
                                         <td class="regular" align="center">
-                                            <input type="checkbox" name="checkedList" />
+                                            <label><input type="checkbox" /><span></span></label>
                                         </td>
                                         <td class="regular" align="left">足寄町国民健康保険病院看護師就業支援金賃与条例</td>
                                         <td class="regular" align="center">
@@ -760,5 +769,6 @@
 </body>
 <script language="JavaScript" src="./js/jquery-3.2.1.min.js"></script>
 <script language="JavaScript" src="./js/materialize.js"></script>
+<script language="JavaScript" src="./js/common.js"></script>
 
 </html>

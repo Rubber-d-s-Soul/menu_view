@@ -9,8 +9,8 @@
     <title>[改修] リクエスト一覧</title>
     <link rel="stylesheet" href="./css/materialize.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -35,14 +35,186 @@
             </div>
         </div>
     </nav>
-    <a href="skMNf02.html" class="btn right"><i class="material-icons">account_balance</i></a>
-    <div class="row center-align">
-        <h1>リクエスト一覧</h1>
-        <a href="rsCOf01.html" class="btn">出力指示</a>
-        <a href="rsJIf07.html" class="btn">目次未登載一覧</a>
+    <div class="row center-align main-contents">
+        <div class="card">
+            <div class="card-content">
+
+                <div class="card-title">リクエスト一覧(skKrRequestList.html)</div>
+
+                <form action="/KobetuRequest">
+                    <input type="hidden" name="<eagle-rs:winIDKey/>" value="<eagle-rs:winID/>">
+                    <input type="hidden" name="instructions">
+                    <input type="hidden" name="target">
+                    <div class="buttons">
+                        <table width="100%">
+                            <col width="50%">
+                            <b>書名：足寄町国民健康保険病院看護師就業支援金賃与条例</b>
+                            <tbody>
+                                <tr>
+                                    <td hight="10" colspan="4">
+
+
+                                        <input type="button" class="btn btn-small" name="Const" value="絞り込み" />
+                                        <input type="button" class="btn btn-small" name="Const" value="再読込" />
+                                    </td>
+                                    <td hight="10" align="right">
+                                        <html:button property="Close" value="閉じる" onclick="window.close();" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <table class="title_table" width="100%">
+                        <tr align="center">
+                            <td><b>個別リクエスト状況</b></td>
+                        </tr>
+                    </table>
+                </form>
+
+                <div style="border:2px solid #353535;height:76%;width:100%;">
+                    <table class="bodered striped centered " boder="1" width="100%">
+                        <col span="1" width="6%">
+                        <col span="1" width="8%">
+                        <col span="1" width="10%">
+                        <col span="1" width="11%">
+                        <col span="1" width="11%">
+                        <col span="1" width="9%">
+                        <col span="1" width="5%">
+                        <col span="1" width="10%">
+                        <col span="1" width="8%">
+                        <col span="1" width="5%">
+                        <col span="1" width="9%">
+                        <col span="1" width="8%">
+                        <thead>
+                            <tr>
+                                <th class="regular" align="center">No.</th>
+                                <th class="regular" align="center">団体</th>
+                                <th class="regular" align="center">ユーザ</th>
+                                <th class="regular" align="center">立案No.</th>
+                                <th class="regular" align="center">プロセスコード</th>
+                                <th class="regular" align="center">リクエスト日</th>
+                                <th class="regular" align="center">時刻</th>
+                                <th class="regular" align="center">出力物</th>
+                                <th class="regular" align="center">出力形態</th>
+                                <th class="regular" align="center">処理<br/>区分</th>
+                                <th class="regular" align="center">状態</th>
+                                <th class="regular" align="center">選択</th>
+                            </tr>
+                        </thead>
+                        <tr class="kisuu">
+                            <td class="regular">50000</td>
+                            <td class="regular">01647A</td>
+                            <td class="regular">eagle</td>
+                            <td class="regular"></td>
+                            <td class="regular"></td>
+                            <td class="regular">平25.10.3</td>
+                            <td class="regular">14:36:26</td>
+                            <td class="regular">XMLと条文リスト</td>
+                            <td class="regular">
+                                データ
+                            </td>
+                            <td class="regular">即時</td>
+                            <td class="regular">処理中</td>
+                            <td class="regular">
+                                <!--  照会ボタンはコメントとする。<bean:write name="requestRecord" property="buttonInquiry"/>  -->
+                                <table border="0" width="100">
+                                    <tr>
+                                        <td width="50" align="center">
+                                            <input class="btn btn-small" type="button" value="照会" onclick="javascript:Inquiry()" />
+                                        </td>
+                                        <td width="50" align="center">
+                                            <input class="btn btn-small" type="button" value="中止" onclick="javascript:cancel()" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="guusuu">
+                            <td class="regular">40000</td>
+                            <td class="regular">01647A</td>
+                            <td class="regular">eagle</td>
+                            <td class="regular"></td>
+                            <td class="regular"></td>
+                            <td class="regular">平25.10.1</td>
+                            <td class="regular">20:52:44</td>
+                            <td class="regular">法令条文リスト</td>
+                            <td class="regular">
+                                <input class="btn btn-small" type="button" value="データ" onclick="javascript:downLoad()" />
+                            </td>
+                            <td class="regular">即時</td>
+                            <td class="regular">正常終了</td>
+                            <td class="regular">
+                                <!--  照会ボタンはコメントとする。<bean:write name="requestRecord" property="buttonInquiry"/>  -->
+                                <table border="0" width="100">
+                                    <tr>
+                                        <td width="50" align="center">
+                                            <input class="btn btn-small" type="button" value="照会" onclick="javascript:Inquiry()" />
+                                        </td>
+                                        <td width="50" align="center"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="kisuu">
+                            <td class="regular">30000</td>
+                            <td class="regular">01647A</td>
+                            <td class="regular">eagle</td>
+                            <td class="regular"></td>
+                            <td class="regular"></td>
+                            <td class="regular">平25.10.1</td>
+                            <td class="regular">20:42:44</td>
+                            <td class="regular">新旧・条文リスト</td>
+                            <td class="regular">
+                                <input class="btn btn-small" type="button" value="データ" onclick="javascript:downLoad()" />
+                            </td>
+                            <td class="regular">即時</td>
+                            <td class="regular">正常終了</td>
+                            <td class="regular">
+                                <!--  照会ボタンはコメントとする。<bean:write name="requestRecord" property="buttonInquiry"/>  -->
+                                <table border="0" width="100">
+                                    <tr>
+                                        <td width="50" align="center">
+                                            <input class="btn btn-small" type="button" value="照会" onclick="javascript:Inquiry()" />
+                                        </td>
+                                        <td width="50" align="center"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="guusuu">
+                            <td class="regular">20000</td>
+                            <td class="regular">01647A</td>
+                            <td class="regular">eagle</td>
+                            <td class="regular"></td>
+                            <td class="regular"></td>
+                            <td class="regular">平25.10.1</td>
+                            <td class="regular">20:29:09</td>
+                            <td class="regular">法令条文リスト</td>
+                            <td class="regular">
+                                <input class="btn btn-small" type="button" value="データ" />
+                            </td>
+                            <td class="regular">即時</td>
+                            <td class="regular">正常終了</td>
+                            <td class="regular">
+                                <!--  照会ボタンはコメントとする。<bean:write name="requestRecord" property="buttonInquiry"/>  -->
+                                <table border="0" width="100">
+                                    <tr>
+                                        <td width="50" align="center">
+                                            <input class="btn btn-small" type="button" value="照会" onclick="javascript:Inquiry()" />
+                                        </td>
+                                        <td width="50" align="center"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script language="JavaScript" src="./js/jquery-3.2.1.min.js"></script>
 <script language="JavaScript" src="./js/materialize.js"></script>
+<script language="JavaScript" src="./js/common.js"></script>
 
 </html>

@@ -12,8 +12,8 @@
     <title>[改修]［追録セットアップ］出力対象一覧</title>
     <link rel="stylesheet" href="./css/materialize.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -23,8 +23,6 @@
                 <a href="#" class="brand-logo">D1Menu</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
                 </ul>
             </div>
         </nav>
@@ -32,7 +30,7 @@
     <nav>
         <div class="nav-wrapper">
             <div class="col s12">
-                <a href="skMNf01.html" class="breadcrumb">D1Menu</a>
+                <a href="skMNf01.html" class="breadcrumb">足寄町例規集（01647A）</a>
                 <a href="skMNf02.html" class="breadcrumb">書名別行程メニュー</a>
                 <a href="rsJIf02s.html" class="breadcrumb">［追録セットアップ］出力対象一覧</a>
             </div>
@@ -52,8 +50,9 @@
                     <li><a href="rsCOf01.html "><i class="material-icons left">print</i>出力指示</a></li>
                     <li><a href="rsJIf07.html "><i class="material-icons left">clear_all</i>目次未登載一覧</a></li>
                 </ul>
+
                 <div class="card-title ">［追録セットアップ］出力対象一覧(rsJIf02s.html)</div>
-                <div style="border:0px solid #353535;height:12%;mergin:4px; " class="flowauto ">
+                <div style="border:0px solid #353535;height:12%" class="title_data">
 
                     <table class="title_table ">
                         <tr>
@@ -98,7 +97,7 @@
                     </table>
                 </div>
 
-                <a href="rsJIf14.html " onclick="notMstUpdSearch(); ">【警告】マスタ更新されていない例規が存在します。[45 例規]</a><br>
+                <a class="msg_link" href="rsJIf14.html ">【警告】マスタ更新されていない例規が存在します。[45 例規]</a><br>
 
                 <table class="title_table bordered ">
                     <col span="1 " width="68% ">
@@ -549,10 +548,7 @@
                         </div>
                         <div id="page2">
                             <input type="hidden" name="<eagle_rs:winIDKey/>" value="<eagle_rs:winID/>">
-                            <!--
-                                <html:hidden name="eagle.rsji.f02s.attr.name.display.data" property="pageNo"/>
-                                <html:hidden name="eagle.rsji.f02s.attr.name.display.data" property="kouteiKbn"/>
-                                -->
+
 
                             <input type="hidden" name="pageNo" value="" />
                             <input type="hidden" name="kouteiKbn" value="" />
@@ -576,10 +572,6 @@
                         </div>
                         <div id="page3">
                             <input type="hidden" name="<eagle_rs:winIDKey/>" value="<eagle_rs:winID/>">
-                            <!--
-                                <html:hidden name="eagle.rsji.f02s.attr.name.display.data" property="pageNo"/>
-                                <html:hidden name="eagle.rsji.f02s.attr.name.display.data" property="kouteiKbn"/>
-                                -->
 
                             <input type="hidden" name="pageNo" value="" />
                             <input type="hidden" name="kouteiKbn" value="" />
@@ -588,21 +580,12 @@
 
                             <center>
 
-                                <!--コメント-->
-                                <!--
-                                <logic:iterate id="oneDatas" name="eagle.rsji.f02s.attr.name.result.datas" scope="request">
-                                -->
 
                                 <table class="regular" width="100%">
                                     <col span="1" width="100%">
                                     <tbody>
                                         <tr>
                                             <th align="left">
-                                                <!--
-                                      <eagle_rs:iterate id="oneTaikei" name="oneDatas" property="taikeis" scope="page" counterID="CNT" start="1">
-                                      <bean:write name="oneTaikei"/><br>
-                                      </eagle_rs:iterate>
-                                      -->
                                                 第3類 通規<br> 　第1章 通則
                                             </th>
                                         </tr>

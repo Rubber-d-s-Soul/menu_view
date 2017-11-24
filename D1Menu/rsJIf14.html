@@ -9,8 +9,8 @@
     <title>[改修]マスタ未更新例規一覧</title>
     <link rel="stylesheet" href="./css/materialize.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -19,8 +19,6 @@
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo">D1Menu</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                 </ul>
             </div>
@@ -36,7 +34,7 @@
             </div>
         </div>
     </nav>
-    <div class="row center-align">
+    <div class="row center-align main-contents">
         <div class="col s12">
             <div class="card">
                 <div class="card-content">
@@ -64,7 +62,7 @@
                                 <logic:iterate id="oneDatas" name="eagle.rsji.f02s.attr.name.result.datas" scope="request">
                                 -->
 
-                                    <table class="bordered" width="100%">
+                                    <table class="bordered centered" width="100%">
                                         <col span="1" width="100%">
                                         <tbody>
                                             <tr>
@@ -85,12 +83,12 @@
                                 <logic:notEmpty name="oneDatas" property="listDetails">
                                 -->
 
-                                    <table class="bordered striped" border="1" width="100%">
-                                        <col span="1" width="29%">
+                                    <table class="bordered striped centered" border="1" width="100%">
+                                        <col span="1" width="20%">
                                         <col span="1" width="7%">
-                                        <col span="1" width="15%">
-                                        <col span="1" width="7%">
-                                        <col span="1" width="15%">
+                                        <col span="1" width="10%">
+                                        <col span="1" width="6%">
+                                        <col span="1" width="10%">
                                         <col span="1" width="7%">
                                         <col span="1" width="5%">
                                         <col span="1" width="3%">
@@ -129,7 +127,7 @@
                                         </thead>
                                     </table>
 
-                                    <table class="bordered" width="100%">
+                                    <table class="bordered centered" width="100%">
                                         <col span="1" width="100%">
                                         <tbody>
                                             <tr>
@@ -140,7 +138,7 @@
                                         </tbody>
                                     </table>
 
-                                    <table class="bordered striped" border="1" width="100%">
+                                    <table class="bordered striped centered" border="1" width="100%">
                                         <col span="1" width="20%">
                                         <col span="1" width="7%">
                                         <col span="1" width="10%">
@@ -183,7 +181,7 @@
                                         </thead>
                                     </table>
 
-                                    <table class="bordered" width="100%">
+                                    <table class="bordered centered" width="100%">
                                         <col span="1" width="100%">
                                         <tbody>
                                             <tr>
@@ -194,7 +192,7 @@
                                         </tbody>
                                     </table>
 
-                                    <table class="bordered striped" border="1" width="100%">
+                                    <table class="bordered striped centered" border="1" width="100%">
                                         <col span="1" width="20%">
                                         <col span="1" width="7%">
                                         <col span="1" width="10%">
