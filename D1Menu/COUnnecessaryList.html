@@ -36,7 +36,7 @@
             </div>
         </div>
     </nav>
-    <div class="row center-align">
+    <div class="row center-align main-contents">
         <div class="col s12">
             <div class="card">
                 <div class="card-content">
@@ -47,7 +47,7 @@
                             <table class="title_table">
                                 <tr>
                                     <td>
-                                        <B>現在の追録発行情報</B>
+                                        <b>現在の追録発行情報</b>
                                     </td>
                                 </tr>
                             </table>
@@ -117,125 +117,11 @@
                         </logic:equal>
                         <logic:equal name="eagle.rsji.f08.attr.name.display.data" property="kouteiKbn" value="5">
                             <!-- 改正確認リストの場合の検索条件 -->
-                            <table class="title_table">
-                                <tr>
-                                    <td>
-                                        <B>検索条件</B>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table class="regular" width="80%" border="0">
-                                <col span="1" width="4%">
-                                <col span="1" width="1%">
-                                <col span="1" width="8%">
-                                <col span="1" width="2%">
-                                <col span="1" width="3%">
-                                <col span="1" width="1%">
-                                <col span="1" width="20%">
-                                <tbody>
-                                    <tr>
-                                        <td class="none">書名</td>
-                                        <td class="none">：</td>
-                                        <td class="none" colspan="5">
-                                            <bean:write name="eagle.rsji.f08.attr.name.display.data" property="syomei" />（
-                                            <bean:write name="eagle.rsji.f08.attr.name.display.data" property="syomeiCd" />）</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="4">【自】</td>
-                                        <td colspan="3">【至】</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="none">公布日</td>
-                                        <td class="none">：</td>
-                                        <td class="none">
-                                            <eagle_rs:wareki format="Gy年m月d日" name="eagle.rsji.f08.attr.name.display.data" property="koufuYmdFrom" collection="eagle.rsji.f08.attr.name.display.data" collection_property="gengous" />
-                                        </td>
-                                        <td class="none" align="center">～</td>
-                                        <td class="none">公布日</td>
-                                        <td class="none">：</td>
-                                        <td class="none">
-                                            <eagle_rs:wareki format="Gy年m月d日" name="eagle.rsji.f08.attr.name.display.data" property="koufuYmdTo" collection="eagle.rsji.f08.attr.name.display.data" collection_property="gengous" />
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="none"></td>
-                                        <td class="none"></td>
-                                        <td class="none"></td>
-                                        <td class="none"></td>
-                                        <td class="none">施行日</td>
-                                        <td class="none">：</td>
-                                        <td class="none">
-                                            <eagle_rs:wareki format="Gy年m月d日" name="eagle.rsji.f08.attr.name.display.data" property="shikouYmd" collection="eagle.rsji.f08.attr.name.display.data" collection_property="gengous" />まで含む</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+
                         </logic:equal>
                         <logic:equal name="eagle.rsji.f08.attr.name.display.data" property="kouteiKbn" value="7">
                             <!-- ＰＤＦ追録リストの場合の検索条件 -->
-                            <table class="title_table">
-                                <tr>
-                                    <td>
-                                        <b>検索条件</b>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table class="regular" width="80%" border="0">
-                                <col span="1" width="4%">
-                                <col span="1" width="1%">
-                                <col span="1" width="8%">
-                                <col span="1" width="2%">
-                                <col span="1" width="3%">
-                                <col span="1" width="1%">
-                                <col span="1" width="20%">
-                                <tbody>
-                                    <tr>
-                                        <td class="none">書名</td>
-                                        <td class="none">：</td>
-                                        <td class="none" colspan="5">
-                                            <bean:write name="eagle.rsji.f08.attr.name.display.data" property="syomei" />（
-                                            <bean:write name="eagle.rsji.f08.attr.name.display.data" property="syomeiCd" />）</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="4">【自】</td>
-                                        <td colspan="3">【至】</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="none">公布日</td>
-                                        <td class="none">：</td>
-                                        <td class="none">
-                                            <eagle_rs:wareki format="Gy年m月d日" name="eagle.rsji.f08.attr.name.display.data" property="koufuYmdFrom" collection="eagle.rsji.f08.attr.name.display.data" collection_property="gengous" />
-                                        </td>
-                                        <td class="none" align="center">～</td>
-                                        <td class="none">公布日</td>
-                                        <td class="none">：</td>
-                                        <td class="none">
-                                            <eagle_rs:wareki format="Gy年m月d日" name="eagle.rsji.f08.attr.name.display.data" property="koufuYmdTo" collection="eagle.rsji.f08.attr.name.display.data" collection_property="gengous" />
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="none">施行日</td>
-                                        <td class="none">：</td>
-                                        <td class="none">
-                                            <eagle_rs:wareki format="Gy年m月d日" name="eagle.rsji.f08.attr.name.display.data" property="shikouYmdFrom" collection="eagle.rsji.f08.attr.name.display.data" collection_property="gengous" />
-                                        </td>
-                                        <td class="none" align="center">～</td>
-                                        <td class="none">施行日</td>
-                                        <td class="none">：</td>
-                                        <td class="none">
-                                            <eagle_rs:wareki format="Gy年m月d日" name="eagle.rsji.f08.attr.name.display.data" property="shikouYmd" collection="eagle.rsji.f08.attr.name.display.data" collection_property="gengous" />
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="none" colspan="3" align="right">到来情報検索の扱い</td>
-                                        <logic:equal name="eagle.rsji.f08.attr.name.display.data" property="toraiKbn" value="true">
-                                            <td class="none" colspan="4">：する</td>
-                                        </logic:equal>
-                                        <logic:notEqual name="eagle.rsji.f08.attr.name.display.data" property="toraiKbn" value="true">
-                                            <td class="none" colspan="4">：しない</td>
-                                        </logic:notEqual>
-                                    </tr>
-                                </tbody>
-                            </table>
+
                         </logic:equal>
                     </div>
                     <table class="title_table">
@@ -247,7 +133,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <B>選択済み一覧（公布日順）</B>
+                                    <b>選択済み一覧（公布日順）</b>
                                 </td>
                                 <td></td>
                                 <td align="right">選択数：</td>
@@ -293,16 +179,16 @@
                                         </td>
                                         <logic:notEqual name="oneMessage" property="followHikaihouCnt" value="0">
 
-                                            <td class="regular" align="left" rowspan="<bean:write name=" oneMessage " property="followHikaihouCnt "/>">
+                                            <td class="regular" align="left">
                                                 <bean:write name="oneMessage" property="hatsurei" />
                                             </td>
                                         </logic:notEqual>
                                         <logic:notEqual name="oneMessage" property="followKaihouCnt" value="0">
 
-                                            <td class="regular" align="center" rowspan="<bean:write name=" oneMessage " property="followKaihouCnt "/>">
+                                            <td class="regular" align="center">
                                                 <eagle_rs:wareki format="Gy.m.d" name="oneMessage" property="lastKoufuYmd" collection="eagle.rsji.f08.attr.name.display.data" collection_property="gengousShort" />
                                             </td>
-                                            <td class="regular" align="left" rowspan="<bean:write name=" oneMessage " property="followKaihouCnt "/>">
+                                            <td class="regular" align="left">
                                                 <bean:write name="oneMessage" property="lastHatsurei" />
                                             </td>
                                         </logic:notEqual>
@@ -312,14 +198,13 @@
                                         <td class="regular" align="center">
                                             <bean:write name="oneMessage" property="sedNo" />
                                         </td>
-                                        <td class="regular" align="center"><a href="javascript:void(0);" onclick="jyou( '<bean:write name=" oneMessage " property="houCd "/>', '<bean:write name="oneMessage " property="jyoulinkUrl "/>', '<bean:write name="oneMessage " property="tsiJctCd
-                                                "/>', '<bean:write name="oneMessage " property="dispSedOya "/>', '<bean:write name="oneMessage " property="dispSedEda "/>' );">条</a></td>
-                                        <logic:notEqual name="oneMessage" property="followHikaihouCnt" value="0">
+                                        <td class="regular" align="center"><a href="javascript:void(0);">条</a></td>
+                                        <logic:notEqual name="oneMessage " property="followHikaihouCnt " value="0 ">
 
-                                            <td class="regular" align="left" rowspan="<bean:write name=" oneMessage " property="followHikaihouCnt "/>">
+                                            <td class="regular " align="left ">
                                                 <bean:write name="oneMessage" property="houCd" />
                                             </td>
-                                            <td class="regular" align="left" rowspan="<bean:write name=" oneMessage " property="followHikaihouCnt "/>">
+                                            <td class="regular" align="left">
                                                 <logic:equal name="oneMessage" property="miTosai" value="true">
 
                                                     <font color="#ff0000">
@@ -344,7 +229,7 @@
                                         <th align="center" rowspan="2">世代</th>
                                         <th align="center" rowspan="2">条</th>
                                         <th rowspan="2">例規コード</th>
-                                        <th rowspan="2">目次</TH>
+                                        <th rowspan="2">目次</th>
                                     </tr>
                                     <tr>
                                         <th align="center">公布日</th>
@@ -367,14 +252,14 @@
                                 <tbody></tbody>
                                 <thead>
                                     <tr>
-                                        <th align="center" rowspan="2">例規名</TH>
-                                        <th align="center" rowspan="2">区分</TH>
-                                        <th align="center" rowspan="2">発令</TH>
-                                        <th align="center" colspan="2">改正例規</TH>
-                                        <th align="center" rowspan="2">施行日</TH>
-                                        <th align="center" rowspan="2">世代</TH>
-                                        <th align="center" rowspan="2">条</TH>
-                                        <th rowspan="2">例規コード</TH>
+                                        <th align="center" rowspan="2">例規名</th>
+                                        <th align="center" rowspan="2">区分</th>
+                                        <th align="center" rowspan="2">発令</th>
+                                        <th align="center" colspan="2">改正例規</th>
+                                        <th align="center" rowspan="2">施行日</th>
+                                        <th align="center" rowspan="2">世代</th>
+                                        <th align="center" rowspan="2">条</th>
+                                        <th rowspan="2">例規コード</th>
                                     </tr>
                                     <tr>
                                         <th align="center">公布日</th>
