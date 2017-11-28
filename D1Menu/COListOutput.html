@@ -267,15 +267,8 @@
                                 <tbody>
                                     <tr>
                                         <td width="20px"></td>
-                                        <!--
-                        <logic:iterate id="oneMessage" name="eagle.rsco.output.attr.name.display.options" property="tuikaModeOptions" scope="request">
-                          <td class="none">
-                            <td><eagle_rs:radio property="tuikaMode" name="eagle.rsco.output.attr.name.target.data" idName="oneMessage" value="optionValue" />
-                            <bean:write name="oneMessage" property="optionLabel"/></td>
-                          </td>
-                        </logic:iterate>
-                        -->
-                                        <td><label><input type="radio" name="tuikaMode" checked="check" /><span>初回出力</span></label> </td>
+                   
+                                     <td><label><input type="radio" name="tuikaMode" checked="check" /><span>初回出力</span></label> </td>
                                     <td><label><input type="radio" name="tuikaMode" /><span>追加出力</span></label></td>
                                 </tr>
                             </tbody>
@@ -283,7 +276,7 @@
                         </logic:notEqual>
                 </form>
                 </div>
-                <a href="rsCOf02.html" class="btn next_btn waves-effect waves-light btn-large">出力</a>
+                <a href="COListOutputRes.html" class="btn next_btn waves-effect waves-light btn-large">出力</a>
             </div>
         </div>
 </body>
