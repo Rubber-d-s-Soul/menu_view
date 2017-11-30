@@ -1,361 +1,444 @@
-html {
-    font-family: "Sawarabi Mincho", 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-    color: #212121;
-    overflow-y: scroll;
-}
+    /*
 
-#menu_html {
-    font-family: "Rounded Mplus 1c";
-    background-color: #455a64;
-    color: #fafafa;
-}
+#fffc77
+rgb(255, 252, 119)
 
-
-/*共通*/
-
-.main-contents {
-    padding: 2em;
-}
-
-
-/*materialize overwrite*/
-
-
-/*
-.title {
-    font-family: 'Spectral SC', serif;
-}
 */
-
-.btn {
-    background-color: #ffa726;
-}
-
-.btn:hover,
-.btn-large:hover {
-    background-color: #ffb74d;
-}
-
-.btn:focus,
-.btn-large:focus,
-.btn-floating:focus {
-    background-color: #ef6c00;
-}
-
-[type="radio"]:checked+span:after,
-[type="radio"].with-gap:checked+span:after {
-    background-color: #ffa726;
-}
-
-[type="radio"]:checked+span:after,
-[type="radio"].with-gap:checked+span:before,
-[type="radio"].with-gap:checked+span:after {
-    border: 2px solid #ffa726;
-}
-
-.switch label input[type=checkbox]:checked+.lever:after {
-    background-color: #ffa726;
-}
-
-.switch label input[type=checkbox]:checked+.lever {
-    background-color: #ffb74d;
-}
-
-input:not([type]):focus:not([readonly]),
-input[type=text]:not(.browser-default):focus:not([readonly]),
-input[type=password]:not(.browser-default):focus:not([readonly]),
-input[type=email]:not(.browser-default):focus:not([readonly]),
-input[type=url]:not(.browser-default):focus:not([readonly]),
-input[type=time]:not(.browser-default):focus:not([readonly]),
-input[type=date]:not(.browser-default):focus:not([readonly]),
-input[type=datetime]:not(.browser-default):focus:not([readonly]),
-input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
-input[type=tel]:not(.browser-default):focus:not([readonly]),
-input[type=number]:not(.browser-default):focus:not([readonly]),
-input[type=search]:not(.browser-default):focus:not([readonly]),
-textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #f57c00;
-    -webkit-box-shadow: 0 1px 0 0 #f57c00;
-    box-shadow: 0 1px 0 0 #f57c00;
-}
-
-input:not([type]):focus:not([readonly])+label,
-input[type=text]:not(.browser-default):focus:not([readonly])+label,
-input[type=password]:not(.browser-default):focus:not([readonly])+label,
-input[type=email]:not(.browser-default):focus:not([readonly])+label,
-input[type=url]:not(.browser-default):focus:not([readonly])+label,
-input[type=time]:not(.browser-default):focus:not([readonly])+label,
-input[type=date]:not(.browser-default):focus:not([readonly])+label,
-input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
-input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
-input[type=tel]:not(.browser-default):focus:not([readonly])+label,
-input[type=number]:not(.browser-default):focus:not([readonly])+label,
-input[type=search]:not(.browser-default):focus:not([readonly])+label,
-textarea.materialize-textarea:focus:not([readonly])+label {
-    color: #f57c00;
-}
-
-
-/*checkbox */
-
-[type="checkbox"]+span:not(.lever):before,
-[type="checkbox"]:not(.filled-in)+span:not(.lever):after {
-    left: 8px;
-}
-
-input[type=checkbox]:checked:not(:disabled)~.lever:active::before,
-input[type=checkbox]:checked:not(:disabled).tabbed:focus~.lever::before {
-    -webkit-transform: scale(2.4);
-    transform: scale(2.4);
-    background-color: rgba(244, 122, 0, 0.15);
-}
-
-
-/*checkbox checked*/
-
-[type="checkbox"]:checked+span:not(.lever):before {
-    left: 0px;
-    border-right: 2px solid #f57c00;
-    border-bottom: 2px solid #f57c00;
-}
-
-.card .card-content p.msg {
-    color: red;
-}
-
-.dropdown-content li>a,
-.dropdown-content li>span {
-    color: #f57c00;
-}
-
-.select-wrapper .caret {
-    z-index: 0;
-}
-
-
-/*btn*/
-
-.btn-small {
-    padding: 0 1rem;
-    height: 30px;
-    line-height: 30px;
-}
-
-
-/*table*/
-
-thead tr {
-    background-color: #bdbdbd;
-}
-
-th {
-    padding: 5px 5px;
-}
-
-td {
-    padding: 13px 5px;
-}
-
-thead th {
-    border: 1px solid #e0e0e0;
-}
-
-tbody tr th {
-    border: 1px solid #e0e0e0;
-}
-
-
-/*navbar*/
-
-nav {
-    border-bottom: 1px solid#ddd;
-    background-color: #37474f;
-    /*background-image: linear-gradient(0deg, #1a237e, #770e88);*/
-    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0);
-}
-
-nav .nav-wrapper {
-    padding: 0 10px 0 10px;
-}
-
-
-/*
+    
+    html {
+        font-family: "Rounded Mplus 1c";
+        color: #212121;
+        overflow-y: scroll;
+        background-color: #f9face;
+    }
+    
+    #menu_html {
+        font-family: "Rounded Mplus 1c";
+        background-color: #f9face;
+        /*background-color: #7d8c94;*/
+        /*background: linear-gradient(#7d8c94, #11232b);*/
+        color: #11232b;
+    }
+    /*共通*/
+    
+    .main-contents {
+        padding: 2em;
+    }
+    /*materialize overwrite*/
+    
+    .card-title.title {
+        font-weight: 500;
+        font-size: 30px;
+    }
+    
+    .btn {
+        background-color: #af5227;
+    }
+    
+    .btn:hover,
+    .btn-large:hover {
+        background-color: #af6544;
+    }
+    
+    .btn:focus,
+    .btn-large:focus,
+    .btn-floating:focus {
+        background-color: #af6544;
+    }
+    
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:after {
+        background-color: #af5227;
+    }
+    
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:before,
+    [type="radio"].with-gap:checked+span:after {
+        border: 2px solid #af5227;
+    }
+    
+    .switch label input[type=checkbox]:checked+.lever:after {
+        background-color: #af5227;
+    }
+    
+    .switch label input[type=checkbox]:checked+.lever {
+        background-color: #af6544;
+    }
+    
+    input:not([type]),
+    input[type=text]:not(.browser-default),
+    input[type=password]:not(.browser-default),
+    input[type=email]:not(.browser-default),
+    input[type=url]:not(.browser-default),
+    input[type=time]:not(.browser-default),
+    input[type=date]:not(.browser-default),
+    input[type=datetime]:not(.browser-default),
+    input[type=datetime-local]:not(.browser-default),
+    input[type=tel]:not(.browser-default),
+    input[type=number]:not(.browser-default),
+    input[type=search]:not(.browser-default),
+    textarea.materialize-textarea {
+        background-color: #fdfde4;
+    }
+    
+    input:not([type]):focus:not([readonly]),
+    input[type=text]:not(.browser-default):focus:not([readonly]),
+    input[type=password]:not(.browser-default):focus:not([readonly]),
+    input[type=email]:not(.browser-default):focus:not([readonly]),
+    input[type=url]:not(.browser-default):focus:not([readonly]),
+    input[type=time]:not(.browser-default):focus:not([readonly]),
+    input[type=date]:not(.browser-default):focus:not([readonly]),
+    input[type=datetime]:not(.browser-default):focus:not([readonly]),
+    input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+    input[type=tel]:not(.browser-default):focus:not([readonly]),
+    input[type=number]:not(.browser-default):focus:not([readonly]),
+    input[type=search]:not(.browser-default):focus:not([readonly]),
+    textarea.materialize-textarea:focus:not([readonly]) {
+        border-bottom: 1px solid #8d2e11;
+        -webkit-box-shadow: 0 1px 0 0 #8d2e11;
+        box-shadow: 0 1px 0 0 #8d2e11;
+    }
+    
+    input:not([type]):focus:not([readonly])+label,
+    input[type=text]:not(.browser-default):focus:not([readonly])+label,
+    input[type=password]:not(.browser-default):focus:not([readonly])+label,
+    input[type=email]:not(.browser-default):focus:not([readonly])+label,
+    input[type=url]:not(.browser-default):focus:not([readonly])+label,
+    input[type=time]:not(.browser-default):focus:not([readonly])+label,
+    input[type=date]:not(.browser-default):focus:not([readonly])+label,
+    input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+    input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+    input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+    input[type=number]:not(.browser-default):focus:not([readonly])+label,
+    input[type=search]:not(.browser-default):focus:not([readonly])+label,
+    textarea.materialize-textarea:focus:not([readonly])+label {
+        color: #8d2e11;
+        padding-left: 0px;
+    }
+    
+    .input-field>label {
+        color: #584d2f;
+        font-size: 1.1em;
+        padding-left: 10px;
+    }
+    
+    .card .card-action {
+        border-top: 1px solid #fafafa;
+    }
+    
+    .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+        color: #fafafa;
+    }
+    /*checkbox */
+    
+    [type="checkbox"]+span:not(.lever):before,
+    [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+        left: 8px;
+    }
+    
+    input[type=checkbox]:checked:not(:disabled)~.lever:active::before,
+    input[type=checkbox]:checked:not(:disabled).tabbed:focus~.lever::before {
+        -webkit-transform: scale(2.4);
+        transform: scale(2.4);
+        background-color: rgba(244, 122, 0, 0.15);
+    }
+    /*checkbox checked*/
+    
+    [type="checkbox"]:checked+span:not(.lever):before {
+        left: 0px;
+        border-right: 2px solid #8d2e11;
+        border-bottom: 2px solid #8d2e11;
+    }
+    
+    .card .card-content p.msg {
+        color: red;
+    }
+    
+    .dropdown-content li>a,
+    .dropdown-content li>span {
+        color: #8d2e11;
+    }
+    
+    .select-wrapper .caret {
+        z-index: 0;
+    }
+    /*btn*/
+    
+    .btn-small {
+        padding: 0 1rem;
+        height: 30px;
+        line-height: 30px;
+    }
+    /*table*/
+    
+    thead tr {
+        background-color: #bdbdbd;
+    }
+    
+    th {
+        padding: 5px 5px;
+    }
+    
+    td {
+        padding: 8px 5px;
+    }
+    
+    thead th {
+        border: 1px solid #e0e0e0;
+    }
+    
+    table.centered thead tr th,
+    table.centered tbody tr td {
+        text-align: center;
+    }
+    
+    tbody tr th {
+        border: 1px solid #e0e0e0;
+    }
+    /*navbar*/
+    
+    nav {
+        border-bottom: 1px solid#ddd;
+        /* background-color: #37474f;*/
+        background-color: #c7c788;
+        /*background-image: linear-gradient(0deg, #1a237e, #770e88);*/
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0);
+    }
+    
+    nav .nav-wrapper {
+        padding: 0 10px 0 10px;
+    }
+    /*
 nav .brand-logo {
     color: linear-gradient(0deg, #880e4f, #770e88);
     padding: 0 0 0 10px;
     font-family: 'Spectral SC', serif;
 }
 */
-
-nav .brand-logo {
-    color: #fafafa;
-}
-
-nav .brand-logo::before {
-    color: #4a148c;
-    -webkit-mask-image: -webkit-linear-gradient(-85deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 1));
-}
-
-nav .brand-logo::after {
-    color: #d7edff;
-    -webkit-mask-image: -webkit-linear-gradient(-85deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.25) 48%, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0));
-}
-
-nav ul a {
-    color: #fafafa;
-}
-
-
-/*breadcrumb*/
-
-.breadcrumb {
-    color: #fafafa;
-}
-
-.breadcrumb::before {
-    color: #fafafa;
-}
-
-.breadcrumb:last-child {
-    color: #fafafa;
-}
-
-
-/*card title*/
-
-span.card-title.title.center-align {
-    margin-bottom: 30px;
-}
-
-
-/**/
-
-#menu_card {
-    margin-top: 40px;
-}
-
-.next_btn {
-    margin-top: 30px;
-}
-
-
-/*メニュー画面*/
-
-body.menu_body {
-    /* background-image: linear-gradient(0deg, #880e4f, #4a148c);*/
-}
-
-.collapsible.popout>li.menu_list {
-    margin-bottom: 10px;
-}
-
-.collapsible-header:hover {
-    /*background-image: linear-gradient(0deg, rgba(26, 36, 126, 0.507), rgba(118, 14, 136, 0.493));*/
-    background-color: #546e7a;
-    transition: all .3s;
-}
-
-.collapsible-header {
-    font-size: 1.5em;
-    /*background-image: linear-gradient(0deg, rgba(26, 36, 126, 0.185), rgba(118, 14, 136, 0.185));*/
-    background-color: #37474f;
-    border-bottom: transparent;
-}
-
-.collapsible-header i {
-    font-size: 1.5em;
-}
-
-.collapsible-body {
-    padding: 0em;
-    border-bottom: 0px;
-}
-
-.collapsible-body ul li {
-    border-bottom: 1px solid#ddd;
-    padding: 10px 0px 10px 0px;
-    margin-bottom: 0px;
-}
-
-.collapsible-body ul li:hover {
-    border-bottom: 1px solid#ddd;
-    padding: 10px 0px 10px 0px;
-    margin-bottom: 0px;
-    background-color: #546e7a;
-    transition: all .3s;
-}
-
-.collapsible-body ul li:last-child {
-    border-bottom: 0px solid#ddd;
-}
-
-.collapsible-body ul li a {
-    color: #fafafa;
-    font-size: 1.5em;
-}
-
-@media screen and (min-width:480px) {
-    /*　画面サイズが480pxからはここを読み込む　*/
-    .block_panel {
-        Height: 150px;
-        width: 150px;
-        margin: 20px 0 20px 0;
+    
+    nav .brand-logo {
+        color: #fafafa;
     }
-}
-
-@media screen and (min-width:940px) {
-    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
-    .block_panel {
-        Height: 200px;
-        width: 200px;
-        margin: 20px 0 20px 0;
+    
+    nav .brand-logo::before {
+        color: #4a148c;
+        -webkit-mask-image: -webkit-linear-gradient(-85deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 1));
     }
-}
-
-.block_panel.btn {
-    padding: 0px;
-}
-
-
-/*リストっぽいテーブル*/
-
-.table_Section {
-    font-size: 13px;
-    padding: 0px 10px 30px 10px;
-}
-
-.title_table {
-    color: #ef6c00;
-    background-color: #f5f5f5;
-    margin-top: 20px;
-}
-
-.title_data {
-    margin: 50px 0 50px 0;
-}
-
-.msg_link {
-    color: red;
-    text-decoration: underline;
-}
-
-
-/**/
-
-a.dropdown-trigger.btn {
-    padding: 0 1rem;
-}
-
-.dropdown-content li.disabled a {
-    cursor: default;
-    color: #999;
-}
-
-
-/*一時的 後で消す*/
-
-
-/*
+    
+    nav .brand-logo::after {
+        color: #d7edff;
+        -webkit-mask-image: -webkit-linear-gradient(-85deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.25) 48%, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0));
+    }
+    
+    nav ul a {
+        color: #fafafa;
+    }
+    /*breadcrumb*/
+    
+    .breadcrumb {
+        color: #fafafa;
+    }
+    
+    .breadcrumb::before {
+        color: #fafafa;
+    }
+    
+    .breadcrumb:last-child {
+        color: #fafafa;
+    }
+    /*card title*/
+    
+    span.card-title.title.center-align {
+        margin-bottom: 30px;
+    }
+    /**/
+    
+    #menu_card {
+        margin-top: 40px;
+    }
+    
+    .next_btn {
+        margin-top: 30px;
+    }
+    /*メニュー画面*/
+    
+    body.menu_body {
+        /* background-image: linear-gradient(0deg, #880e4f, #4a148c);*/
+    }
+    
+    .collapsible.popout>li.menu_list {
+        margin-bottom: 10px;
+    }
+    
+    .collapsible-header:hover {
+        /*background-image: linear-gradient(0deg, rgba(26, 36, 126, 0.507), rgba(118, 14, 136, 0.493));*/
+        background-color: #c7c788;
+        transition: all .3s;
+    }
+    
+    .collapsible-header {
+        font-size: 1.5em;
+        /*background-image: linear-gradient(0deg, rgba(26, 36, 126, 0.185), rgba(118, 14, 136, 0.185));*/
+        background-color: #c7c788;
+        color: #fafafa;
+        border-bottom: transparent;
+    }
+    
+    .collapsible-header i {
+        font-size: 1.5em;
+    }
+    
+    .collapsible-body {
+        padding: 0em;
+        border-bottom: 0px;
+    }
+    
+    .collapsible-body ul li {
+        border-bottom: 1px solid#ddd;
+        padding: 10px 0px 10px 0px;
+        margin-bottom: 0px;
+        background-color: #f1f1d8;
+    }
+    
+    .collapsible-body ul li:hover {
+        border-bottom: 1px solid#ddd;
+        padding: 10px 0px 10px 0px;
+        margin-bottom: 0px;
+        background-color: #d3d3b0;
+        transition: all .3s;
+    }
+    
+    .collapsible-body ul li:last-child {
+        border-bottom: 0px solid#ddd;
+    }
+    
+    .collapsible-body ul li a {
+        color: #40525a;
+        font-size: 1.5em;
+    }
+    
+    @media screen and (min-width:480px) {
+        /*　画面サイズが480pxからはここを読み込む　*/
+        .block_panel {
+            Height: 150px;
+            width: 150px;
+            margin: 20px 0 20px 0;
+        }
+    }
+    
+    @media screen and (min-width:940px) {
+        /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+        .block_panel {
+            Height: 200px;
+            width: 200px;
+            margin: 20px 0 20px 0;
+        }
+    }
+    
+    .block_panel.btn {
+        padding: 0px;
+    }
+    /*リストっぽいテーブル*/
+    
+    .table_Section {
+        font-size: 16px;
+        padding: 0px 10px 25px 10px;
+    }
+    
+    .title_table {
+        color: #fafafa;
+        background-color: #c7c788;
+        margin-top: 20px;
+        font-size: 1.1em;
+    }
+    
+    .title_data {
+        margin: 50px 0 50px 0;
+    }
+    
+    .msg_link {
+        color: red;
+        text-decoration: underline;
+    }
+    /**/
+    
+    a.dropdown-trigger.btn {
+        padding: 0 1rem;
+    }
+    
+    .dropdown-content li.disabled a {
+        cursor: default;
+        color: #999;
+    }
+    /*一時的 後で消す*/
+    /*
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
     opacity: unset;
+*/
+    
+    .form-row {
+        margin-bottom: 0px;
+    }
+    /*table*/
+    
+    table.striped.bordered.centered tbody tr td {
+        padding: 2px 5px;
+    }
+    
+    table.striped.bordered.centered tbody tr {
+        border-bottom: 1px solid #999;
+    }
+    
+    table.striped.bordered.centered thead tr th {
+        padding: 0px 5px;
+    }
+    
+    tr.no-border {
+        border: 0px;
+    }
+    
+    .card-content.syomei-card {
+        padding: 40px 24px 40px 24px;
+    }
+    
+    .card.earth {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .title-bold {
+        font-weight: 500;
+    }
+    
+    .earth {
+        background-color: #c7c788;
+    }
+    
+    .earth-card {
+        background-color: #fcfcf7;
+    }
+    
+    .tr-icon {
+        color: #6d1b1b;
+    }
+    
+    .co-icon {
+        color: #968714;
+    }
+    
+    .req-icon {
+        color: #3e6d1b;
+    }
+    
+    .nav-icon {
+        color: #54441d;
+    }
+    /* color: #54441d;*/
+    
+    @media only screen and (min-width: 601px) {
+        nav {
+            height: 50px;
+            line-height: 50px;
+        }
+    }

@@ -1,0 +1,113 @@
+<!-- メニュー画面-->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[改修]書名別行程メニュー</title>
+    <link rel="stylesheet" href="./css/materialize.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">D1Menu</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="col s12">
+                <a href="skMNf01.html" class="breadcrumb">D1Menu 足寄町例規集（01647A）</a>
+                <a href="skMNf02.html" class="breadcrumb">書名別行程メニュー</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row center-align">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-title">書名別行程メニュー(skMNf02.html)</div>
+                        <h4>書名：足寄町例規集（01647A） </h4>
+                    </div>
+                </div>
+                <section>
+                    <h3>追録作成工程</h3>
+                    <div class="row">
+                        <div class="col s12 m4 l4">
+                            <a href="TRConfDisplay.html" class="z-depth-1 block_panel btn">追録号数設定</a>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <a href="COTargetList.html" class="z-depth-1 block_panel btn">データ出力（セットアップ用）</a>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <a href="COListSearch.html" class="z-depth-1 block_panel btn">データ出力（一般用）</a>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <a href="TROuList.html" class="z-depth-1 block_panel btn">追録用リスト・データ出力</a>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <a href="TROuSearch.html" class="z-depth-1 block_panel btn">追録用リスト・データ出力（追録範囲外）</a>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <a class="z-depth-1 block_panel btn">F</a>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>一般利用工程</h3>
+                    <div class="row">
+                        <div class="col s12 m4 l4">
+                            <a href="#" class="z-depth-1 block_panel btn"></a>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <a href="COListSearch.html" class="z-depth-1 block_panel btn">条文リスト</a>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <a href="IpListSearch.html" class="z-depth-1 block_panel btn">改正対象条文リスト</a>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <a href="IpListSearch.html" class="z-depth-1 block_panel btn">改正対象確認リスト</a>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <a href="IpRevList.html" class="z-depth-1 block_panel btn">PDF追録リスト</a>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <a href="IpRevList.html" class="z-depth-1 block_panel btn"></a>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>処理状況確認</h3>
+                    <div class="row">
+                        <div class="col s12 m4 l4">
+                            <a href="SkKrRequestList.html" class="z-depth-1 block_panel btn">個別リクエスト状況</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+<script language="JavaScript" src="./js/jquery-3.2.1.min.js"></script>
+<script language="JavaScript" src="./js/materialize.js"></script>
+<script>
+    $(window).on('load', function() {
+        M.toast({
+            html: 'この書名はセットアップされていません。' + '<br/>' + '追録号数設定の上、セットアップしてください。',
+            classes: 'rounded'
+        })
+    });
+</script>
+
+</html>

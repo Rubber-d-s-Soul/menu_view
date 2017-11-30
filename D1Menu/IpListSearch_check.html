@@ -1,4 +1,4 @@
-<!-- 追録用世代一覧表 画面-->
+<!-- 検索条件設定) 画面-->
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>[改修]［追録用データ出力(範囲外)］検索条件設定</title>
+    <title>[改修]検索条件設定</title>
     <link rel="stylesheet" href="./css/materialize.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Spectral+SC" rel="stylesheet">
@@ -29,14 +29,15 @@
             <div class="col s12">
                 <a href="skMNf01.html" class="breadcrumb">D1Menu 足寄町例規集（01647A）</a>
                 <a href="skMNf02.html" class="breadcrumb">書名別行程メニュー</a>
-                <a href="TROuSearch.html" class="breadcrumb">［追録用データ出力(範囲外)］検索条件設定</a>
+                <a href="IpListSearch_check.html" class="breadcrumb">改正対象確認リスト
+                    </a>
             </div>
         </div>
     </nav>
-    <div class="row center-align ">
-        <div class="card  earth-card col s10 offset-s1">
+    <div class="row center-align">
+        <div class="card col s10 offset-s1">
             <div class="card-content">
-                <div class="card-title title">［追録用データ出力(範囲外)］検索条件設定</div>
+                <div class="card-title title"><i class="material-icons co-icon">compare</i>改正対象確認リスト</div>
                 <div style="border:0px solid #353535;mergin:4px;" align="left">
                     <table class="title_table">
                         <tr align="center">
@@ -46,7 +47,6 @@
                             <td align="right"></td>
                         </tr>
                     </table>
-
                     <table class="a" width="35%">
                         <col width="4%">
                         <col width="8%">
@@ -61,15 +61,14 @@
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>追録号数</td>
+                                <td>登録例規数</td>
                                 <td>：</td>
                                 <td>
-                                    60号(<span style="color:red">※条件により</span>)「～61号まで」と付く場合
+                                    662件
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-
                 </div>
                 <div style="border:0px solid #353535;mergin:4px;" align="left">
                     <table class="title_table">
@@ -79,7 +78,6 @@
                             </td>
                         </tr>
                     </table>
-
                     <table class="a" width="85%">
                         <col width="5%">
                         <col width="1%">
@@ -191,19 +189,23 @@
                                 <td>日</td>
                             </tr>
 
-                            <tr class="no-border">
-                                <td colspan="10"></td>
-                                <td colspan="9">※施行日未入力の場合は公布日と同じ</td>
+                            <tr>
+                                <td colspan="4" align="right">到来情報検索の扱い：</td>
+                                <td colspan="6">
+                                    <label><input type="radio" name="toraiKbn" checked="check" /><span>する</span></label>
+                                    <label><input type="radio" name="toraiKbn"/><span>しない</span></label>
+                                </td>
+                                <td colspan="9">※公布日（自・至）、施行日（自・至）は必須</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <a href="TROuList.html " class="btn next_btn waves-effect waves-light btn-large">検索</a>
+                <a href="IpRevList.html" class="btn next_btn  waves-effect waves-light btn-large">検索</a>
             </div>
         </div>
     </div>
 </body>
-<script language="JavaScript " src="./js/jquery-3.2.1.min.js "></script>
-<script language="JavaScript " src="./js/materialize.js "></script>
+<script language="JavaScript" src="./js/jquery-3.2.1.min.js"></script>
+<script language="JavaScript" src="./js/materialize.js"></script>
 
 </html>
