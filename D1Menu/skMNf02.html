@@ -49,33 +49,33 @@
                                 <li class="menu_list active">
                                     <div class="collapsible-header center-align"><i class="material-icons tr-icon">note_add</i>追録作成工程</div>
                                     <div class="collapsible-body">
-                                        <ul>
-                                            <li><a href="TRConfDisplay.html">追録号数設定</a></li>
-                                            <li><a href="COTargetList.html">データ出力（セットアップ用）</a></li>
+                                        <ul class="left-align">
+                                            <li><a href="TRConfDisplay.html"><i class="material-icons tr-icon">note_add</i>追録号数設定</a></li>
+                                            <li><a href="COTargetList.html"><i class="material-icons tr-icon">view_list</i>データ出力（セットアップ用）</a></li>
                                             <li>
-                                                <a href="COListSearch.html">データ出力（一般用）</a>
+                                                <a href="COListSearch.html"><i class="material-icons tr-icon">find_in_page</i>データ出力（一般用）</a>
                                             </li>
-                                            <li><a href="TROuList.html">追録用リスト・データ出力</a></li>
-                                            <li><a href="TROuSearch.html">追録用リスト・データ出力（追録範囲外）</a></li>
+                                            <li><a href="TROuList.html"><i class="material-icons tr-icon">format_list_numbered</i>追録用リスト・データ出力</a></li>
+                                            <li><a href="TROuSearch.html"><i class="material-icons tr-icon">search</i>追録用リスト・データ出力（追録範囲外）</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="menu_list">
-                                    <div class="collapsible-header"><i class="material-icons co-icon">place</i>一般利用工程</div>
+                                    <div class="collapsible-header"><i class="material-icons co-icon">local_library</i>一般利用工程</div>
                                     <div class="collapsible-body">
-                                        <ul>
-                                            <li><a href="COListSearch_book.html">条文リスト</a></li>
-                                            <li><a href="IpListSearch_PDF.html">PDF追録リスト</a></li>
-                                            <li><a href="IpListSearch.html">改正対象条文リスト</a></li>
-                                            <li><a href="IpListSearch_check.html">改正対象確認リスト</a></li>
+                                        <ul class="left-align">
+                                            <li><a href="COListSearch_book.html"><i class="material-icons co-icon">library_books</i> 条文リスト(単行本・PDF台本)<span class="chip explain_chip right">指定時点での全例規</span></a></li>
+                                            <li><a href="IpListSearch_PDF.html"><i class="material-icons co-icon">picture_as_pdf</i>条文リスト（PDF追録）<span class="chip explain_chip  right" >範囲指定での改正例規(最終世代)</span></a></li>
+                                            <li><a href="IpListSearch.html"><i class="material-icons co-icon">list</i>改正対象条文リスト<span class="chip explain_chip  right">範囲指定での改正例規(最終世代)</span></a></li>
+                                            <li><a href="IpListSearch_check.html"><i class="material-icons co-icon">compare</i>改正対象確認リスト<span class="chip explain_chip  right">範囲指定での改正例規(世代順)</span></a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="menu_list">
                                     <div class="collapsible-header"><i class="material-icons req-icon">timelapse</i>処理状況確認</div>
                                     <div class="collapsible-body">
-                                        <ul>
-                                            <li><a href="SkKrRequestList.html">個別リクエスト状況</a></li>
+                                        <ul class="left-align">
+                                            <li><a href="SkKrRequestList.html"><i class="material-icons req-icon">timelapse</i>個別リクエスト状況</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -174,6 +174,13 @@
     });
     $(document).ready(function() {
         $('.collapsible').collapsible();
+    });
+    $("div.collapsible-body ul li").on("click", function() {
+        console.log("click");
+        var url = $(this).children().attr("href");
+        location.href = url;
+        //$(this).children().click();
+        //
     });
 </script>
 

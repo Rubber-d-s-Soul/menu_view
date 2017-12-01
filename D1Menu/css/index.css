@@ -299,7 +299,7 @@ nav .brand-logo {
     
     .collapsible-body ul li {
         border-bottom: 1px solid#ddd;
-        padding: 10px 0px 10px 0px;
+        padding: 10px 10px 10px 10px;
         margin-bottom: 0px;
         background-color: #f1f1d8;
     }
@@ -309,6 +309,7 @@ nav .brand-logo {
         padding: 10px 0px 10px 0px;
         margin-bottom: 0px;
         background-color: #d3d3b0;
+        cursor: pointer;
         transition: all .3s;
     }
     
@@ -321,12 +322,37 @@ nav .brand-logo {
         font-size: 1.5em;
     }
     
+    .collapsible-body ul li a i {
+        margin: 0 10px 0 10px;
+    }
+    /*メニュー画面のchip*/
+    
+    .explain_chip {
+        background-color: rgba(84, 67, 29, 0.3);
+        margin-left: 20px;
+    }
+    
     @media screen and (min-width:480px) {
         /*　画面サイズが480pxからはここを読み込む　*/
         .block_panel {
             Height: 150px;
             width: 150px;
             margin: 20px 0 20px 0;
+        }
+        #background-icon {
+            top: 20%;
+            left: 8%;
+        }
+    }
+    
+    @media only screen and (min-width: 601px) {
+        nav {
+            height: 50px;
+            line-height: 50px;
+        }
+        #background-icon {
+            top: 20%;
+            left: 8%;
         }
     }
     
@@ -336,6 +362,10 @@ nav .brand-logo {
             Height: 200px;
             width: 200px;
             margin: 20px 0 20px 0;
+        }
+        #background-icon {
+            top: 20%;
+            left: 50%;
         }
     }
     
@@ -447,10 +477,3 @@ nav .brand-logo {
         color: #54441d;
     }
     /* color: #54441d;*/
-    
-    @media only screen and (min-width: 601px) {
-        nav {
-            height: 50px;
-            line-height: 50px;
-        }
-    }
