@@ -22,7 +22,7 @@ rgb(255, 252, 119)
     /*共通*/
     
     .main-contents {
-        padding: 2em;
+        padding: 0.5em 2em;
     }
     /*materialize overwrite*/
     
@@ -180,15 +180,19 @@ rgb(255, 252, 119)
     }
     
     th {
-        padding: 5px 5px;
+        padding: 0px 5px;
     }
     
     td {
-        padding: 8px 5px;
+        padding: 5px 5px;
     }
     
     thead th {
         border: 1px solid #e0e0e0;
+    }
+    
+    table {
+        line-height: 1;
     }
     
     table.centered thead tr th,
@@ -382,12 +386,12 @@ nav .brand-logo {
     .title_table {
         color: #fafafa;
         background-color: rgba(199, 199, 136, 0.95);
-        margin-top: 20px;
-        font-size: 1.1em;
+        margin-top: 10px;
+        font-size: 1em;
     }
     
     .title_data {
-        margin: 50px 0 50px 0;
+        margin: 5px 0 5px 0;
     }
     
     .msg_link {
@@ -417,7 +421,7 @@ nav .brand-logo {
     /*table*/
     
     table.striped.bordered.centered tbody tr td {
-        padding: 2px 5px;
+        padding: 1px 5px;
     }
     
     table.striped.bordered.centered tbody tr {
@@ -439,6 +443,10 @@ nav .brand-logo {
     .card.earth {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    
+    .card .card-content.list-card {
+        padding: 10px 25px;
     }
     
     .title-bold {
@@ -476,4 +484,23 @@ nav .brand-logo {
     .nav-icon {
         color: #54441d;
     }
+    
+    .nav-btn {
+        background-color: rgba(84, 67, 29, 0.8);
+    }
+    
+    center {
+        font-size: 13px;
+    }
     /* color: #54441d;*/
+    
+    .mobile-fab-tip {
+        position: fixed;
+        right: 85px;
+        padding: 0px 0.5rem;
+        text-align: right;
+        background-color: #323232;
+        border-radius: 2px;
+        color: #FFF;
+        width: auto;
+    }
