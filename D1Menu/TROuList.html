@@ -18,27 +18,32 @@
         <nav>
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo">D1Menu</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><i class="material-icons">close</i></li>
-                </ul>
+                <a href="#" class="right"><i class="material-icons">close</i></a>
+                <div class="center-align">
+                    <a href="skMNf01.html" class="breadcrumb">D1Menu 足寄町例規集（01647A）</a>
+                    <a href="skMNf02.html" class="breadcrumb">書名別行程メニュー</a>
+                    <a href="TROuList.html" class="breadcrumb">追録用世代一覧表</a>
+                </div>
             </div>
         </nav>
     </header>
-    <nav>
-        <div class="nav-wrapper">
-            <div class="col s12">
-                <a href="skMNf01.html" class="breadcrumb">D1Menu 足寄町例規集（01647A）</a>
-                <a href="skMNf02.html" class="breadcrumb">書名別行程メニュー</a>
-                <a href="TROuList.html" class="breadcrumb">追録用世代一覧表</a>
-            </div>
-        </div>
-    </nav>
     <div class="row  main-contents">
         <i id="background-icon" class="material-icons tr-icon">format_list_numbered</i>
         <!-- 現在の追録発行情報 -->
         <div class="card earth-card">
             <div class="card-content">
-                <!-- Dropdown Trigger -->
+                <div class="fixed-action-btn horizontal click-to-toggle">
+                    <a class="btn-floating btn-large nav-btn ">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul>
+                        <li><a class="btn-floating nav-btn"><i class="material-icons left">sort</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">画面切替（目次順）</a></li>
+                        <li><a href="COListOutput.html" class="btn-floating nav-btn"><i class="material-icons left">print</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">出力指示</a></li>
+                        <li><a href="CONoTosaiList.html" class="btn-floating nav-btn"><i class="material-icons left">clear_all</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">目次未登載一覧</a></li>
+                        <li><a href="CoSelectList.html" class="btn-floating nav-btn"><i class="material-icons left">playlist_add_check</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">選択確認一覧</a></li>
+                    </ul>
+                </div>
+                <!-- Dropdown Trigger 
                 <a class="dropdown-trigger btn right" data-target="menu_dropdown" data-constrainWidth="false"><i class="material-icons">menu</i></a>
                 <ul id="menu_dropdown" class="dropdown-content">
                     <li class="disabled"><a>MENU</a></li>
@@ -46,7 +51,7 @@
                     <li><a href="COListOutput.html "><i class="material-icons left">print</i>出力指示</a></li>
                     <li><a href="CoSelectList.html "><i class="material-icons left">playlist_add_check</i>選択確認一覧</a></li>
                     <li><a href="CONoTosaiList.html "><i class="material-icons left">clear_all</i>目次未登載一覧</a></li>
-                </ul>
+                </ul>-->
 
                 <span class="card-title title center-align"><i class="material-icons tr-icon">format_list_numbered</i>追録用世代一覧表</span>
                 <div class="table_Section">
@@ -177,10 +182,7 @@
 
                                     <!-- 「選択」 チェックボックス -->
                                     <td class="regular" align="center">
-
-
-                                        <input type="checkbox">
-
+                                        <label><input type="checkbox"  /><span></span></label>
                                     </td>
                                     <!-- 例規名 -->
                                     <td class="regular" align="left">
@@ -232,7 +234,7 @@
                                     <td class="regular" align="center">
 
 
-                                        <input type="checkbox">
+                                        <label><input type="checkbox"  /><span></span></label>
 
                                     </td>
                                     <!-- 例規名 -->
@@ -289,7 +291,7 @@
                                     <td class="regular" align="center">
 
 
-                                        <input type="checkbox">
+                                        <label><input type="checkbox"  /><span></span></label>
 
                                     </td>
                                     <!-- 例規名 -->
@@ -344,7 +346,7 @@
                                     <td class="regular" align="center">
 
 
-                                        <input type="checkbox">
+                                        <label><input type="checkbox"  /><span></span></label>
 
                                     </td>
                                     <!-- 例規名 -->
@@ -399,7 +401,7 @@
                                     <td class="regular" align="center">
 
 
-                                        <input type="checkbox">
+                                        <label><input type="checkbox"  /><span></span></label>
 
                                     </td>
                                     <!-- 例規名 -->

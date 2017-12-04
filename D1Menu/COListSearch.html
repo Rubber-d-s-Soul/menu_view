@@ -80,7 +80,7 @@
                                 <td>：</td>
                                 <td>
                                     <!-- 元号 -->
-                                    <select name="gango">
+                                    <select name="gango" size="1">
                                         <option value="heisei" selected>平成</option>
                                         <option value="syouwa">昭和</option>
                                         <option value="taisyo">大正</option>
@@ -136,5 +136,10 @@
 </body>
 <script language="JavaScript" src="./js/jquery-3.2.1.min.js"></script>
 <script language="JavaScript" src="./js/materialize.js"></script>
+<script>
+    $(document).ready(function() {
+        $('select').select();
+    });
+</script>
 
 </html>

@@ -21,6 +21,7 @@
         <nav>
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo">D1Menu</a>
+                <!-- パンくずリスト -->
                 <div class="center-align">
                     <a href="skMNf01.html" class="breadcrumb">D1Menu 足寄町例規集（01647A）</a>
                     <a href="skMNf02.html" class="breadcrumb">書名別行程メニュー</a>
@@ -51,12 +52,12 @@
             <div class="card-content list-card">
 
                 <div class="fixed-action-btn horizontal click-to-toggle">
-                    <a class="btn-floating btn-large nav-btn tooltipped" data-position="top" data-delay="50" data-tooltip="MENU">
+                    <a class="btn-floating btn-large nav-btn">
                         <i class="material-icons">menu</i>
                     </a>
                     <ul>
-                        <li><a class="btn-floating nav-btn"><i class="material-icons left">print</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">出力指示</a></li>
-                        <li><a class="btn-floating nav-btn"><i class="material-icons left">clear_all</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">目次未登載一覧</a></li>
+                        <li><a href="COListOutput.html" class="btn-floating nav-btn"><i class="material-icons left">print</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">出力指示</a></li>
+                        <li><a href="CONoTosaiList.html" class="btn-floating nav-btn"><i class="material-icons left">clear_all</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">目次未登載一覧</a></li>
                     </ul>
                 </div>
 
@@ -135,12 +136,12 @@
                         </tr>
                     </tbody>
                 </table>
-
+                <!--
                 <p>
                     <div id="link " style="float:left; "></div>
                     <div id="page " style="float:right; "><span id="nowPage "></span> ／ <span id="allPage "></span></div>
                 </p>
-
+            -->
                 <div style="border:2px solid #353535;height:76%;width:100%;mergin:4px; " class="flowauto ">
                     <form name="form " action="/JitenListNext ">
                         <div id="page1 ">
@@ -179,7 +180,7 @@
                                     <tbody>
                                         <tr class="kisuu">
                                             <td class="regular" align="center">
-                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                                <label><input type="checkbox"  /><span></span></label>
                                             </td>
                                             <td class="regular" align="left">市町の廃置分合</td>
                                             <td class="regular" align="center"></td>
@@ -193,7 +194,7 @@
                                         </tr>
                                         <tr class="guusuu">
                                             <td class="regular" align="center">
-                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                                <label><input type="checkbox"  /><span></span></label>
                                             </td>
                                             <td class="regular" align="left">青南市役所の位置に関する条例</td>
                                             <td class="regular" align="center"></td>
@@ -207,7 +208,7 @@
                                         </tr>
                                         <tr class="kisuu">
                                             <td class="regular" align="center">
-                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                                <label><input type="checkbox"  /><span></span></label>
                                             </td>
                                             <td class="regular" align="left">青南市総合支所設置条例</td>
                                             <td class="regular" align="center"></td>
@@ -221,7 +222,7 @@
                                         </tr>
                                         <tr class="guusuu">
                                             <td class="regular" align="center">
-                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                                <label><input type="checkbox"  /><span></span></label>
                                             </td>
                                             <td class="regular" align="left">青南市地域自治区の設置に関する条例</td>
                                             <td class="regular" align="center"></td>
@@ -279,7 +280,7 @@
                                     <tbody>
                                         <tr class="kisuu">
                                             <td class="regular" align="center">
-                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                                <label><input type="checkbox"  /><span></span></label>
                                             </td>
                                             <td class="regular" align="left">青南市公告式条例</td>
                                             <td class="regular" align="center"></td>
@@ -293,7 +294,7 @@
                                         </tr>
                                         <tr class="guusuu">
                                             <td class="regular" align="center">
-                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                                <label><input type="checkbox"  /><span></span></label>
                                             </td>
                                             <td class="regular" align="left">青南市告示規則</td>
                                             <td class="regular" align="center"></td>
@@ -351,7 +352,7 @@
                                     <tbody>
                                         <tr class="kisuu">
                                             <td class="regular" align="center">
-                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                                <label><input type="checkbox"  /><span></span></label>
                                             </td>
                                             <td class="regular" align="left">青南市名誉市民条例</td>
                                             <td class="regular" align="center"></td>
@@ -410,7 +411,7 @@
                                     <tbody>
                                         <tr class="kisuu">
                                             <td class="regular" align="center">
-                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                                <label><input type="checkbox"  /><span></span></label>
                                             </td>
                                             <td class="regular" align="left">青南市名誉市民条例</td>
                                             <td class="regular" align="center"></td>
@@ -469,7 +470,7 @@
                                     <tbody>
                                         <tr class="kisuu">
                                             <td class="regular" align="center">
-                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                                <label><input type="checkbox"  /><span></span></label>
                                             </td>
                                             <td class="regular" align="left">青南市名誉市民条例</td>
                                             <td class="regular" align="center"></td>
@@ -528,7 +529,7 @@
                                     <tbody>
                                         <tr class="kisuu">
                                             <td class="regular" align="center">
-                                                <input type="checkbox" name="checkedList" value="1" checked="check">
+                                                <label><input type="checkbox"  /><span></span></label>
                                             </td>
                                             <td class="regular" align="left">青南市名誉市民条例</td>
                                             <td class="regular" align="center"></td>
@@ -565,7 +566,7 @@
                             </center>
 
                         </div>
-                        <div id="page2">
+                        <div id="page2" style="display:none;">
                             <input type="hidden" name="<eagle_rs:winIDKey/>" value="<eagle_rs:winID/>">
 
 
@@ -589,7 +590,7 @@
                                 </table>
                             </center>
                         </div>
-                        <div id="page3">
+                        <div id="page3" style="display:none;">
                             <input type="hidden" name="<eagle_rs:winIDKey/>" value="<eagle_rs:winID/>">
 
                             <input type="hidden" name="pageNo" value="" />

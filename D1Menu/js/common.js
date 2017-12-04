@@ -17,6 +17,17 @@ $(function() {
         $(conf_dom.class.card_title).show("normal");
     });
 
+    //出力設定用
+    $(conf_dom.class.output_set_card).on("mouseenter", function() {
+        console.log("header hide");
+        $(conf_dom.header).hide("normal");
+    });
+
+    $(conf_dom.class.output_set_card).on("mouseleave", function() {
+        console.log("header show");
+        $(conf_dom.header).show("normal");
+    });
+
     $('.fixed-action-btn').floatingActionButton({
         direction: 'top',
         hoverEnabled: false
@@ -31,6 +42,7 @@ var conf_dom = {
     header: "header",
     center: "center",
     class: {
-        card_title: ".card-title"
+        card_title: ".card-title",
+            output_set_card: ".output_card",
     }
 }

@@ -18,21 +18,15 @@
         <nav>
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo">D1Menu</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">Link</a></li>
-                </ul>
+                <a href="#" class="right"><i class="material-icons">close</i></a>
+                <div class="center-align">
+                    <a href="skMNf01.html" class="breadcrumb">D1Menu 足寄町例規集（01647A）</a>
+                    <a href="skMNf02.html" class="breadcrumb">書名別行程メニュー</a>
+                    <a href="COListSearch.html" class="breadcrumb">条文リスト（単行本用）</a>
+                </div>
             </div>
         </nav>
     </header>
-    <nav>
-        <div class="nav-wrapper">
-            <div class="col s12">
-                <a href="skMNf01.html" class="breadcrumb">D1Menu 足寄町例規集（01647A）</a>
-                <a href="skMNf02.html" class="breadcrumb">書名別行程メニュー</a>
-                <a href="COListSearch.html" class="breadcrumb">条文リスト（単行本用）</a>
-            </div>
-        </div>
-    </nav>
     <div class="row center-align">
         <i id="background-icon" class="material-icons co-icon">library_books</i>
         <div class="card earth-card col s10 offset-s1">
@@ -75,7 +69,7 @@
                     <table class="regular" width="50%">
                         <tbody>
                             <tr>
-                                <td width="20px"></td>
+                                <td width="100px"></td>
                                 <td>内容現在日</td>
                                 <td>：</td>
                                 <td>
@@ -88,7 +82,7 @@
                                     </select>
                                 </td>
                                 <td>
-                                    <input type="text" name="gango_year" style="text-align:right" value="24" size="1" maxlength="2" />
+                                    <input type="text" name="gango_year" style="text-align:right" value="24" size="2" maxlength="2" />
                                 </td>
                                 <td>年</td>
                                 <td>
@@ -106,7 +100,7 @@
                                 <td>：</td>
                                 <td>
                                     <!-- 元号 -->
-                                    <select name="gango">
+                                    <select name="gango" size="1">
                                         <option value="heisei" selected>平成</option>
                                         <option value="syouwa">昭和</option>
                                         <option value="taisyo">大正</option>
@@ -136,5 +130,10 @@
 </body>
 <script language="JavaScript" src="./js/jquery-3.2.1.min.js"></script>
 <script language="JavaScript" src="./js/materialize.js"></script>
+<script>
+    $(document).ready(function() {
+        $('select').select();
+    });
+</script>
 
 </html>

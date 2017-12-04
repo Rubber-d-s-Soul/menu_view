@@ -18,27 +18,19 @@
         <nav>
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo">D1Menu</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                </ul>
+                <div class="center-align">
+                    <a href="skMNf01.html" class="breadcrumb">D1Menu 足寄町例規集（01647A）</a>
+                    <a href="skMNf02.html" class="breadcrumb">書名別行程メニュー</a>
+                    <a href="#!" class="breadcrumb">追録用世代一覧表</a>
+                    <a href="#!" class="breadcrumb">［出力指示］条件設定</a>
+                </div>
             </div>
         </nav>
     </header>
-    <nav>
-        <div class="nav-wrapper">
-            <div class="col s12">
-                <a href="skMNf01.html" class="breadcrumb">D1Menu 足寄町例規集（01647A）</a>
-                <a href="skMNf02.html" class="breadcrumb">書名別行程メニュー</a>
-                <a href="#!" class="breadcrumb">追録用世代一覧表</a>
-                <a href="#!" class="breadcrumb">［出力指示］条件設定</a>
-            </div>
-        </div>
-    </nav>
+
     <div class="row center-align">
         <i id="background-icon" class="material-icons left">print</i>
-        <div class="card earth-card col s10 offset-s1">
+        <div class="card earth-card col s10 offset-s1 hoverable output_card">
             <div class="card-content">
                 <div class="card-title title"><i class="material-icons nav-icon">print</i>［出力指示］条件設定</div>
                 <form method="post">
@@ -46,12 +38,12 @@
                     <input type="hidden" name="command" value="">
 
                     <div style="border:0px solid #353535;mergin:4px;" align="left">
-                        <table class="title_table">
+                        <table class="title_table output_table">
                             <tr align="center">
                                 <td align="left"><b>検索条件</b></td>
                             </tr>
                         </table>
-                        <table class="regular" width="100%">
+                        <table class="regular output_table" width="100%">
                             <tbody>
                                 <!--
                     <logic:iterate id="oneMessage" name="eagle.rsco.f01.attr.name.display.data" property="conditonNotes" scope="request">
@@ -78,13 +70,13 @@
 
 
                         <div style="border:0px solid #353535;mergin:4px;" align="left">
-                            <table class="title_table">
+                            <table class="title_table output_table">
                                 <tr align="center">
                                     <td align="left"><b>出力物</b></td>
                                 </tr>
                             </table>
                             <!--table class="regular" width="25%"-->
-                            <table class="regular" width="50%">
+                            <table class="regular output_table" width="50%">
                                 <tbody>
                                     <!--
                     <logic:iterate id="oneMessage" name="eagle.rsco.output.attr.name.display.options" property="reqOutputs" scope="request">
@@ -95,11 +87,22 @@
                        </tr>
                     </logic:iterate>
                     -->
+
                                     <tr>
                                         <td width="20px"></td>
-                                        <td><label><input type="radio" name="fontStyleOptions" checked="check" /><span>XMLと新旧・条文リスト</span></label></td>
+                                        <td>
+                                            <!-- 元号 -->
+                                            <select name="gango">
+                                                        <option value="heisei" selected>XMLと新旧・条文リスト</option>
+                                                        <option value="syouwa">XMLと条文リスト</option>
+                                                        <option value="taisyo">XMLデータ</option>
+                                                        <option value="meiji">法令条文リスト</option>
+                                                        <option value="taisyo">新旧・条文リスト</option>
+                                                    </select></td>
                                         <td></td>
                                     </tr>
+                                    <!--
+                                        XMLと新旧・条文リスト
                                     <tr>
                                         <td width="20px"></td>
                                         <td><label><input type="radio" name="fontStyleOptions" checked="check" /><span>XMLと条文リスト</span></label></td>
@@ -120,6 +123,7 @@
                                         <td><label><input type="radio" name="fontStyleOptions" checked="check" /><span>新旧・条文リスト</span></label></td>
                                         <td></td>
                                     </tr>
+                                -->
                                     <tr>
                                         <td width="20px"></td>
                                         <td>
@@ -133,13 +137,13 @@
                         </div>
 
                         <div style="border:0px solid #353535;mergin:4px;" align="left">
-                            <table class="title_table">
+                            <table class="title_table output_tabel">
                                 <tr align="center">
                                     <td align="left"><b>出力条件</b></td>
                                 </tr>
                             </table>
 
-                            <table class="regular" width="50%">
+                            <table class="regular output_table" width="50%">
                                 <col span="1" width="2%">
                                 <col span="1" width="10%">
                                 <col span="1" width="1%">
@@ -226,13 +230,13 @@
 
                         </div>
 
-                        <table class="title_table">
+                        <table class="title_table output_table">
                             <tr align="center">
                                 <td align="left"><b>処理を起動させる時期</b></td>
                             </tr>
                         </table>
 
-                        <table class="regular" width="35%">
+                        <table class="regular output_table" width="35%">
                             <col width="20px">
                             <tbody>
                                 <tr>
@@ -250,20 +254,17 @@
                                 </tr>
                             </tbody>
                         </table>
-
-
-
                         <logic:equal name="eagle.rsco.output.attr.name.target.data" property="tuikaMode" value="2">
                             <input type="hidden" name="tuikaMode" value="2">
                         </logic:equal>
                         <logic:notEqual name="eagle.rsco.output.attr.name.target.data" property="tuikaMode" value="2">
-                            <table class="title_table">
+                            <table class="title_table output_table">
                                 <tr align="center">
                                     <td align="left"><b>出力モード</b></td>
                                 </tr>
                             </table>
 
-                            <table class="regular" width="35%">
+                            <table class="regular output_table" width="35%">
                                 <col width="20px">
                                 <tbody>
                                     <tr>
@@ -283,5 +284,11 @@
 </body>
 <script language="JavaScript" src="./js/jquery-3.2.1.min.js"></script>
 <script language="JavaScript" src="./js/materialize.js"></script>
+<script language="JavaScript" src="./js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        $('select').select();
+    });
+</script>
 
 </html>

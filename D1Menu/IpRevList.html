@@ -18,27 +18,32 @@
         <nav>
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo">D1Menu</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">Link</a></li>
-                </ul>
+                <!-- パンくずリスト -->
+                <div class="center-align">
+                    <a href="skMNf01.html" class="breadcrumb">D1Menu 足寄町例規集（01647A）</a>
+                    <a href="IpListSearch.html" class="breadcrumb">改正対象条文リスト</a>
+                    <a href="IpRevList.html" class="breadcrumb">改正確認一覧</a>
+                </div>
             </div>
         </nav>
     </header>
-    <nav>
-        <div class="nav-wrapper">
-            <div class="col s12">
-                <a href="skMNf01.html" class="breadcrumb">D1Menu 足寄町例規集（01647A）</a>
-                <a href="skMNf02.html" class="breadcrumb">書名別行程メニュー</a>
-                <a href="IpListSearch.html" class="breadcrumb">改正対象条文リスト</a>
-                <a href="IpRevList.html" class="breadcrumb">改正確認一覧</a>
-            </div>
-        </div>
-    </nav>
+
     <div class="row center-align main-contents">
         <i id="background-icon" class="material-icons co-icon">assignment</i>
         <div class="card earth-card">
-            <div class="card-content">
-                <!-- Dropdown Trigger -->
+            <div class="card-content list-card">
+                <div class="fixed-action-btn horizontal click-to-toggle">
+                    <a class="btn-floating btn-large nav-btn ">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul>
+                        <li><a class="btn-floating nav-btn"><i class="material-icons left">sort</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">画面切替（目次順）</a></li>
+                        <li><a href="COListOutput.html" class="btn-floating nav-btn"><i class="material-icons left">print</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">出力指示</a></li>
+                        <li><a href="CONoTosaiList.html" class="btn-floating nav-btn"><i class="material-icons left">clear_all</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">目次未登載一覧</a></li>
+                        <li><a href="CoSelectList.html" class="btn-floating nav-btn"><i class="material-icons left">playlist_add_check</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">選択確認一覧</a></li>
+                    </ul>
+                </div>
+                <!-- Dropdown Trigger 
                 <a class="dropdown-trigger btn right" data-target="menu_dropdown" data-constrainWidth="false"><i class="material-icons">menu</i></a>
 
 
@@ -49,6 +54,7 @@
                     <li><a href="CoSelectList.html "><i class="material-icons left">playlist_add_check</i>選択確認一覧</a></li>
                     <li><a href="CONoTosaiList.html "><i class="material-icons left">clear_all</i>目次未登載一覧</a></li>
                 </ul>
+            -->
                 <div class="card-title title"><i class="material-icons co-icon">assignment</i>改正確認一覧</div>
                 <div style="border:0px solid #353535;height:15%;mergin:4px;" class="flowauto">
                     <table class="title_table">
@@ -178,8 +184,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <br>
-
                             <!-- リストがある時 -->
                             <table class="striped bordered" border="1" width="100%">
                                 <col span="1" width="3%">
