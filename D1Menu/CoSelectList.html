@@ -21,7 +21,6 @@
                 <a href="#" class="right"><i class="material-icons">close</i></a>
                 <div class="center-align">
                     <a href="skMNf01.html" class="breadcrumb">D1Menu 足寄町例規集（01647A）</a>
-                    <a href="skMNf02.html" class="breadcrumb">書名別行程メニュー</a>
                     <a href="TROuList.html" class="breadcrumb">追録用世代一覧表</a>
                     <a href="CoSelectList.html" class="breadcrumb">選択確認一覧</a>
                 </div>
@@ -93,10 +92,9 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <br><br>
                     </logic:equal>
                     <logic:equal name="eagle.rsji.f08.attr.name.display.data" property="kouteiKbn" value="5">
-                        <!-- 改正確認リストの場合の検索条件 -->
+                        <!-- 改正確認リストの場合の検索条件 
                         <table class="title_table">
                             <tr>
                                 <td>
@@ -151,7 +149,7 @@
                         </table>
                     </logic:equal>
                     <logic:equal name="eagle.rsji.f08.attr.name.display.data" property="kouteiKbn" value="7">
-                        <!-- ＰＤＦ追録リストの場合の検索条件 -->
+                        <!-- ＰＤＦ追録リストの場合の検索条件
                         <table class="title_table">
                             <tr>
                                 <td>
@@ -214,10 +212,10 @@
                                     <logic:notEqual name="eagle.rsji.f08.attr.name.display.data" property="toraiKbn" value="true">
                                         <td class="none" colspan="4">：しない</td>
                                     </logic:notEqual>
-                                -->
+                                
                                 </tr>
                             </tbody>
-                        </table>
+                        </table> -->
                     </logic:equal>
                 </div>
                 <table class="title_table">
@@ -238,108 +236,84 @@
                         </tr>
                     </tbody>
                 </table>
+
                 <div style="border:2px solid #353535;height:76%;width:100%;mergin:4px;" class="flowauto">
-                    <logic:notEmpty name="eagle.rsji.f08.attr.name.result.datas">
-                        <table class="regular" border="1" width="100%">
-                            <col span="1" width="20%">
-                            <col span="1" width="2%">
-                            <col span="1" width="11%">
-                            <col span="1" width="5%">
-                            <col span="1" width="10%">
-                            <col span="1" width="5%">
-                            <col span="1" width="4%">
-                            <col span="1" width="3%">
-                            <col span="1" width="9%">
-                            <col span="1" width="10%">
+                    <center>
+                        <logic:notEmpty name="eagle.rsji.f08.attr.name.result.datas">
+                            <table class="regular" border="1" width="100%">
+                                <col span="1" width="20%">
+                                <col span="1" width="2%">
+                                <col span="1" width="11%">
+                                <col span="1" width="5%">
+                                <col span="1" width="10%">
+                                <col span="1" width="5%">
+                                <col span="1" width="4%">
+                                <col span="1" width="3%">
+                                <col span="1" width="9%">
+                                <col span="1" width="10%">
 
-                            <tbody>
-                                <eagle_rs:iterate id="oneMessage" name="eagle.rsji.f08.attr.name.result.datas" scope="request" counterID="CNT" start="1">
-                                    <tr class="kisuu">
+                                <tbody>
+                                    <eagle_rs:iterate id="oneMessage" name="eagle.rsji.f08.attr.name.result.datas" scope="request" counterID="CNT" start="1">
+                                        <tr class="kisuu">
 
-                                        <td class="regular" align="left">
-                                            <bean:write name="oneMessage" property="houName" />
-                                        </td>
-                                        <td class="regular" align="left">
-                                        </td>
-
-                                        <td class="regular" align="center">
-                                        </td>
-                                        <td class="regular" align="left">
-                                        </td>
-                                        <td class="regular" align="center">
-                                            <eagle_rs:wareki format="Gy.m.d" name="oneMessage" property="shikouYmd" collection="eagle.rsji.f08.attr.name.display.data" collection_property="gengousShort" />
-                                        </td>
-                                        <td class="regular" align="center">
-                                            <bean:write name="oneMessage" property="sedNo" />
-                                        </td>
-                                        <td class="regular" align="center">
                                             <td class="regular" align="left">
-                                                <bean:write name="oneMessage" property="houCd" />
+                                                <bean:write name="oneMessage" property="houName" />
                                             </td>
-                                        </td>
-                                        <td class="regular" align="left">
-                                            <logic:equal name="oneMessage" property="miTosai" value="true">
+                                            <td class="regular" align="left">
+                                            </td>
 
-                                                <font color="#ff0000">
-                                                    <bean:write name="oneMessage" property="mkjTaikeiStr" />
-                                                </font>
-                                            </logic:equal>
+                                            <td class="regular" align="center">
+                                            </td>
+                                            <td class="regular" align="left">
+                                            </td>
+                                            <td class="regular" align="center">
+                                                <eagle_rs:wareki format="Gy.m.d" name="oneMessage" property="shikouYmd" collection="eagle.rsji.f08.attr.name.display.data" collection_property="gengousShort" />
+                                            </td>
+                                            <td class="regular" align="center">
+                                                <bean:write name="oneMessage" property="sedNo" />
+                                            </td>
+                                            <td class="regular" align="center">
+                                                <td class="regular" align="left">
+                                                    <bean:write name="oneMessage" property="houCd" />
+                                                </td>
+                                            </td>
+                                            <td class="regular" align="left">
+                                                <logic:equal name="oneMessage" property="miTosai" value="true">
 
-                                        </td>
+                                                    <font color="#ff0000">
+                                                        <bean:write name="oneMessage" property="mkjTaikeiStr" />
+                                                    </font>
+                                                </logic:equal>
 
+                                            </td>
+
+                                        </tr>
+                                    </eagle_rs:iterate>
+                                </tbody>
+                                <thead>
+                                    <tr>
+                                        <th align="center" rowspan="2">例規名</th>
+                                        <th align="center" rowspan="2">区分</th>
+                                        <th align="center" rowspan="2">発令</th>
+                                        <th align="center" colspan="2">改正例規</th>
+                                        <th align="center" rowspan="2">施行日</th>
+                                        <th align="center" rowspan="2">世代</th>
+                                        <th align="center" rowspan="2">条</th>
+                                        <th rowspan="2">例規コード</th>
+                                        <th rowspan="2">目次</th>
                                     </tr>
-                                </eagle_rs:iterate>
-                            </tbody>
-                            <thead>
-                                <tr>
-                                    <th align="center" rowspan="2">例規名</th>
-                                    <th align="center" rowspan="2">区分</th>
-                                    <th align="center" rowspan="2">発令</th>
-                                    <th align="center" colspan="2">改正例規</th>
-                                    <th align="center" rowspan="2">施行日</th>
-                                    <th align="center" rowspan="2">世代</th>
-                                    <th align="center" rowspan="2">条</th>
-                                    <th rowspan="2">例規コード</th>
-                                    <th rowspan="2">目次</th>
-                                </tr>
-                                <tr>
-                                    <th align="center">公布日</th>
-                                    <th align="center">発令</th>
-                                </tr>
-                            </thead>
-                        </table>
-                    </logic:notEmpty>
-                    <logic:empty name="eagle.rsji.f08.attr.name.result.datas">
-                        <table class="regular" border="1" width="100%">
-                            <col span="1" width="20%">
-                            <col span="1" width="2%">
-                            <col span="1" width="11%">
-                            <col span="1" width="5%">
-                            <col span="1" width="10%">
-                            <col span="1" width="5%">
-                            <col span="1" width="4%">
-                            <col span="1" width="3%">
-                            <col span="1" width="9%">
-                            <tbody></tbody>
-                            <thead>
-                                <tr>
-                                    <th align="center" rowspan="2">例規名</th>
-                                    <th align="center" rowspan="2">区分</th>
-                                    <th align="center" rowspan="2">発令</th>
-                                    <th align="center" colspan="2">改正例規</th>
-                                    <th align="center" rowspan="2">施行日</th>
-                                    <th align="center" rowspan="2">世代</th>
-                                    <th align="center" rowspan="2">条</th>
-                                    <th rowspan="2">例規コード</th>
-                                </tr>
-                                <tr>
-                                    <th align="center">公布日</th>
-                                    <th align="center">発令</th>
-                                </tr>
-                            </thead>
-                        </table>
-                        <div align="left">＊指定された検索条件に該当する例規はありません。</div>
-                    </logic:empty>
+                                    <tr>
+                                        <th align="center">公布日</th>
+                                        <th align="center">発令</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </logic:notEmpty>
+                        <logic:empty name="eagle.rsji.f08.attr.name.result.datas">
+
+                            <div align="left">＊指定された検索条件に該当する例規はありません。</div>
+                        </logic:empty>
+                    </center>
                 </div>
             </div>
         </div>
@@ -347,5 +321,6 @@
 </body>
 <script language="JavaScript" src="./js/jquery-3.2.1.min.js"></script>
 <script language="JavaScript" src="./js/materialize.js"></script>
+<script language="JavaScript" src="./js/common.js"></script>
 
 </html>

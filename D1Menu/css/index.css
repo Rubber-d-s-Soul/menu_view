@@ -186,6 +186,7 @@ rgb(255, 252, 119)
     
     th {
         padding: 0px 5px;
+        background-color: #ab9e6a;
     }
     
     td {
@@ -193,7 +194,7 @@ rgb(255, 252, 119)
     }
     
     thead th {
-        border: 1px solid #e0e0e0;
+        border: 1px solid #f9f9f9;
     }
     
     table {
@@ -206,7 +207,8 @@ rgb(255, 252, 119)
     }
     
     tbody tr th {
-        border: 1px solid #e0e0e0;
+        border-right: 1px solid #f9f9f9;
+        border-left: 1px solid #f9f9f9;
     }
     /*navbar*/
     
@@ -263,6 +265,15 @@ nav .brand-logo {
     
     span.card-title.title.center-align {
         margin-bottom: 0px;
+    }
+    /**/
+    
+    .pagination {
+        margin: 5px;
+    }
+    
+    .pagination li.active {
+        background-color: #af5227;
     }
     /*top*/
     
@@ -543,4 +554,8 @@ nav .brand-logo {
         border-radius: 2px;
         color: #FFF;
         width: auto;
+    }
+    
+    ul.pagenation {
+        font-size: 10px;
     }

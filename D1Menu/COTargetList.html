@@ -56,8 +56,8 @@
                         <i class="material-icons">menu</i>
                     </a>
                     <ul>
-                        <li><a href="COListOutput.html" class="btn-floating nav-btn"><i class="material-icons left">print</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">出力指示</a></li>
-                        <li><a href="CONoTosaiList.html" class="btn-floating nav-btn"><i class="material-icons left">clear_all</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">目次未登載一覧</a></li>
+                        <li><a href="COListOutput.html" target="_blank" class="btn-floating nav-btn"><i class="material-icons left">print</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">出力指示</a></li>
+                        <li><a href="CONoTosaiList.html" target="_blank" class="btn-floating nav-btn"><i class="material-icons left">clear_all</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">目次未登載一覧</a></li>
                     </ul>
                 </div>
 
@@ -116,10 +116,22 @@
                         </tbody>
                     </table>
                 </div>
+                <!-- alertリンク -->
                 <div class=" center-align">
                     <a class="msg_link" href="rsJIf14.html ">【警告】マスタ更新されていない例規が存在します。[45 例規]</a><br>
                 </div>
-                <table class="title_table bordered ">
+                <!-- ページャ -->
+                <ul class="pagination center-align">
+                    <label class="left"><input type="checkbox"  checked="check" /><span>全選択</span></label>
+
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+                <div></div>
+                <table class="title_table bordered " style="margin-top:0px;">
                     <col span="1 " width="68% ">
                     <col span="1 " width="8% ">
 
@@ -618,6 +630,7 @@
                         </div>
                     </form>
                 </div>
+
             </div>
         </div>
     </div>

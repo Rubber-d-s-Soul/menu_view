@@ -168,7 +168,8 @@
     $(document).ready(function() {
         $('.collapsible').collapsible();
     });
-    $("div.collapsible-body ul li").on("click", function() {
+    $("div.collapsible-body ul li").on("click", function(e) {
+        e.preventDefault();
         console.log("click");
         var url = $(this).children().attr("href");
 

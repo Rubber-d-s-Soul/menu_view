@@ -38,9 +38,9 @@
                     </a>
                     <ul>
                         <li><a class="btn-floating nav-btn"><i class="material-icons left">sort</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">画面切替（目次順）</a></li>
-                        <li><a href="COListOutput.html" class="btn-floating nav-btn"><i class="material-icons left">print</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">出力指示</a></li>
-                        <li><a href="CONoTosaiList.html" class="btn-floating nav-btn"><i class="material-icons left">clear_all</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">目次未登載一覧</a></li>
-                        <li><a href="CoSelectList.html" class="btn-floating nav-btn"><i class="material-icons left">playlist_add_check</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">選択確認一覧</a></li>
+                        <li><a href="COListOutput.html" target="_blank" class="btn-floating nav-btn"><i class="material-icons left">print</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">出力指示</a></li>
+                        <li><a href="CONoTosaiList.html" target="_blank" class="btn-floating nav-btn"><i class="material-icons left">clear_all</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">目次未登載一覧</a></li>
+                        <li><a href="CoSelectList.html" target="_blank" class="btn-floating nav-btn"><i class="material-icons left">playlist_add_check</i></a><a href="#" class="btn-floating mobile-fab-tip modal-trigger">選択確認一覧</a></li>
                     </ul>
                 </div>
                 <!-- Dropdown Trigger 
@@ -55,6 +55,7 @@
                     <li><a href="CONoTosaiList.html "><i class="material-icons left">clear_all</i>目次未登載一覧</a></li>
                 </ul>
             -->
+
                 <div class="card-title title"><i class="material-icons co-icon">assignment</i>改正確認一覧</div>
                 <div style="border:0px solid #353535;height:15%;mergin:4px;" class="flowauto">
                     <table class="title_table">
@@ -137,7 +138,16 @@
                           <a href="javascript:void(0);" onclick="showFuyouHou();">【案内】追録不要例規が存在します。[<bean:write name="eagle.rsji.f01s.attr.name.display.data" property="tsuirokuFuyouCount"/> 例規]</a><br>
                         </logic:notEqual>
                         -->
+                <!-- ページャ -->
+                <ul class="pagination center-align">
+                    <label class="left"><input type="checkbox"  checked="check" /><span>全選択</span></label>
 
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
                 <table class="title_table">
                     <col span="1" width="68%">
                     <col span="1" width="8%">
